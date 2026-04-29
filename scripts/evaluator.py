@@ -36,7 +36,15 @@ BANNED_PHRASES = [
     "per my last email",
 ]
 
+GENERIC_OUTPUT_PHRASES = [
+    "help you",
+    "we are excited",
+]
+
 CTA_PATTERNS = [
+    r"\b(?:15|min|minute|minutes|call|chat|meeting)\b",
+    r"\blet me know\b",
+    r"\bwould you\b",
     r"\bwould\b.*\b(useful|help|work)\b",
     r"\bare you open\b",
     r"\bcan we\b",
@@ -48,22 +56,21 @@ CTA_PATTERNS = [
 
 
 def check_signal_mention(output: Any, signal: str) -> int:
-    """Return 1 when the output mentions the task's signal, otherwise 0."""
+    """Return 1 when the output reflects the task signal, otherwise 0."""
     text = normalize_text(output_to_text(output))
     signal_text = normalize_text(signal)
+    if any(phrase in text for phrase in GENERIC_OUTPUT_PHRASES):
+        return 0
     if not signal_text:
         return 0
     if signal_text in text:
         return 1
 
     signal_tokens = important_tokens(signal_text)
-    if not signal_tokens:
-        return 0
-    matched = sum(1 for token in signal_tokens if token in text)
-    return 1 if matched / len(signal_tokens) >= 0.7 else 0
+    return 1 if signal_tokens and any(token in text for token in signal_tokens) else 0
 
 
-def check_tone_score(output: Any) -> int:
+def check_tone_score(output: Any, signal: str = "") -> int:
     """Score Tenacious tone from 1 to 5.
 
     Tone calibration:
@@ -75,17 +82,20 @@ def check_tone_score(output: Any) -> int:
       free of banned phrases.
 
     Threshold rationale:
-    The Tenacious style guide treats banned phrases and external "bench"
-    language as regenerate conditions, so any such hit caps the score at 2.
-    Cold outreach is expected to stay near or below 120 words, so messages over
-    160 words lose directness. A clean, concise message gets 5.
+    The Tenacious style guide treats banned phrases as regenerate conditions,
+    so those score 1. External "bench" language and condescension score 2.
+    Weakly personalized messages under 60 words score 3, while grounded,
+    structured messages can score 5.
     """
     text = output_to_text(output)
     normalized = normalize_text(text)
     word_count = count_words(text)
 
     banned_hits = [phrase for phrase in BANNED_PHRASES if phrase in normalized]
-    if banned_hits or re.search(r"\bbench\b", normalized):
+    generic_spam = [phrase for phrase in GENERIC_OUTPUT_PHRASES if phrase in normalized]
+    if banned_hits or generic_spam:
+        return 1
+    if re.search(r"\bbench\b", normalized):
         return 2
 
     condescending = [
@@ -104,40 +114,51 @@ def check_tone_score(output: Any) -> int:
 
     if word_count == 0:
         return 1
+    if word_count < 60:
+        return 3
     if word_count > 160:
         return 3
     if word_count > 120:
         return 4
-    return 5
+
+    signal_text = normalize_text(signal)
+    signal_tokens = important_tokens(signal_text)
+    has_signal_detail = bool(
+        signal_text and (signal_text in normalized or any(token in normalized for token in signal_tokens))
+    )
+    structured_specific = has_signal_detail and "tenacious" in normalized
+    if structured_specific:
+        return 5
+    return 4
 
 
 def check_cta(output: Any) -> int:
     """Return 1 when the output contains at least one clear call to action."""
     text = normalize_text(output_to_text(output))
-    if "?" in text:
-        return 1
     return 1 if any(re.search(pattern, text) for pattern in CTA_PATTERNS) else 0
 
 
 def evaluate_task(task: Mapping[str, Any]) -> Dict[str, Any]:
     """Evaluate one task and return the required score object."""
-    task_input = task.get("input", {})
-    if not isinstance(task_input, Mapping):
-        task_input = {}
+    input_data = task.get("input", {})
+    if not isinstance(input_data, Mapping):
+        input_data = {}
 
     output = task.get("output", "")
-    signal = str(task_input.get("signal", ""))
+    signal = str(input_data.get("signal", ""))
 
-    scores = {
-        "signal": check_signal_mention(output, signal),
-        "tone": check_tone_score(output),
-        "cta": check_cta(output),
-    }
-    total = scores["signal"] + scores["tone"] + scores["cta"]
+    signal_score = check_signal_mention(output, signal)
+    tone_score = check_tone_score(output, signal)
+    cta_score = check_cta(output)
+
     return {
         "task_id": task.get("task_id", ""),
-        "scores": scores,
-        "total": total,
+        "scores": {
+            "signal": signal_score,
+            "tone": tone_score,
+            "cta": cta_score,
+        },
+        "total": signal_score + tone_score + cta_score,
     }
 
 
@@ -164,7 +185,23 @@ def normalize_text(text: str) -> str:
 
 def important_tokens(text: str) -> List[str]:
     """Extract useful tokens from a signal string."""
-    stopwords = {"a", "an", "and", "at", "by", "for", "from", "in", "of", "on", "the", "to", "with"}
+    stopwords = {
+        "a",
+        "an",
+        "and",
+        "at",
+        "by",
+        "for",
+        "from",
+        "in",
+        "new",
+        "of",
+        "on",
+        "team",
+        "the",
+        "to",
+        "with",
+    }
     tokens = re.findall(r"\b[\w$.-]+\b", text)
     return [token for token in tokens if token not in stopwords and len(token) > 1]
 
