@@ -1,0 +1,482 @@
+[
+  {
+    "input": {
+      "company": "Verbit",
+      "signal": "22 layoffs reported on 2025-09-10",
+      "context": "industry: Data; location: New York City; country: United States; stage: Series E; source: https://www.calcalistech.com/ctechnews/article/r19t0xjixg"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Verbit team,\n\nI saw 22 layoffs reported on 2025-09-10. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Data often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Sonder",
+      "signal": "100% workforce reduction reported on 2025-11-10",
+      "context": "industry: Travel; location: SF Bay Area; country: United States; stage: Post-IPO; source: https://skift.com/2025/11/10/sonder-shuts-down-after-marriott-termination-marking-the-end-of-a-hospitality-experiment/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Sonder team,\n\nI saw 100% workforce reduction reported on 2025-11-10. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Travel often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Inbound Health",
+      "signal": "100% workforce reduction reported on 2025-12-01",
+      "context": "industry: Healthcare; location: Minneapolis; country: United States; stage: Series B; source: https://www.axios.com/pro/health-tech-deals/2025/12/01/inbound-health-closing-home-care-waiver"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Inbound Health team,\n\nI saw 100% workforce reduction reported on 2025-12-01. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Healthcare often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "MyBambu",
+      "signal": "141 layoffs (100% workforce reduction) reported on 2025-11-05",
+      "context": "industry: Finance; location: Memphis; country: United States; stage: Unknown; source: https://cbs12.com/news/local/new-west-palm-beach-fintech-firm-to-lay-off-141-employees-amid-funding-collapse-layoff-south-florida-palm-beach-county-downtown-west-palm-beach-news-mybambu-a-fintech-startup-2751-s-dixie-hwy-420-november-5-2025"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi MyBambu team,\n\nI saw 141 layoffs (100% workforce reduction) reported on 2025-11-05. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Finance often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Block",
+      "signal": "4,000 layoffs (40% workforce reduction) reported on 2026-02-26",
+      "context": "industry: Finance; location: SF Bay Area; country: United States; stage: Post-IPO; source: https://www.cnbc.com/2026/02/26/block-laying-off-about-4000-employees-nearly-half-of-its-workforce.html"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Block team,\n\nI saw 4,000 layoffs (40% workforce reduction) reported on 2026-02-26. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Finance often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Zupee",
+      "signal": "170 layoffs (30% workforce reduction) reported on 2025-09-11",
+      "context": "industry: Consumer; location: New Delhi, Non-U.S.; country: India; stage: Series B; source: https://yourstory.com/2025/09/zupee-employees-real-money-gaming-ban-layoffs"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Zupee team,\n\nI saw 170 layoffs (30% workforce reduction) reported on 2025-09-11. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Consumer often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Paycom",
+      "signal": "500 layoffs reported on 2025-10-01",
+      "context": "industry: HR; location: Oklahoma City; country: United States; stage: Post-IPO; source: https://www.oklahoman.com/story/business/information-technology/2025/10/01/paycom-layoffs-2025-workers-replaced-with-ai/86448337007/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Paycom team,\n\nI saw 500 layoffs reported on 2025-10-01. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in HR often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Sorbet",
+      "signal": "the layoffs.fyi restructure entry dated 2025-09-14",
+      "context": "industry: Finance; location: Tel Aviv, Non-U.S.; country: Israel; stage: Series A; source: https://www.calcalistech.com/ctechnews/article/syhzsenjxl"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Sorbet team,\n\nI saw the layoffs.fyi restructure entry dated 2025-09-14. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Finance often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Meta",
+      "signal": "200 layoffs reported on 2026-04-02",
+      "context": "industry: Consumer; location: SF Bay Area; country: United States; stage: Post-IPO; source: https://www.sfchronicle.com/tech/article/meta-layoffs-silicon-valley-22186184.php"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Meta team,\n\nI saw 200 layoffs reported on 2026-04-02. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Consumer often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Gloo",
+      "signal": "the layoffs.fyi restructure entry dated 2026-01-29",
+      "context": "industry: Consumer; location: Boulder; country: United States; stage: Post-IPO; source: https://www.bizjournals.com/denver/news/2026/01/29/ai-company-cuts-staff-reduces-executive-salaries.html"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Gloo team,\n\nI saw the layoffs.fyi restructure entry dated 2026-01-29. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Consumer often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "MicroVision",
+      "signal": "49 layoffs reported on 2026-03-03",
+      "context": "industry: Other; location: Seattle; country: United States; stage: Post-IPO; source: https://www.bizjournals.com/seattle/news/2026/03/03/microvision-lidar-redmond-layoffs-warn-cars.html"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi MicroVision team,\n\nI saw 49 layoffs reported on 2026-03-03. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in your market often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Zipcar",
+      "signal": "126 layoffs reported on 2026-02-02",
+      "context": "industry: Transportation; location: Boston; country: United States; stage: Acquired; source: https://www.boston.com/news/business/2026/02/02/zipcar-to-close-seaport-headquarters-cut-more-than-100-jobs/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Zipcar team,\n\nI saw 126 layoffs reported on 2026-02-02. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Transportation often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Dayforce",
+      "signal": "5% workforce reduction reported on 2026-02-11",
+      "context": "industry: HR; location: Toronto, Non-U.S.; country: Canada; stage: Post-IPO; source: Internal memo"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Dayforce team,\n\nI saw 5% workforce reduction reported on 2026-02-11. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in HR often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "theGist",
+      "signal": "100% workforce reduction reported on 2025-09-03",
+      "context": "industry: Other; location: Tel Aviv, Non-U.S.; country: Israel; stage: Seed; source: https://www.calcalistech.com/ctechnews/article/jeyngl375"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi theGist team,\n\nI saw 100% workforce reduction reported on 2025-09-03. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in your market often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Glossier",
+      "signal": "50 layoffs (33% workforce reduction) reported on 2026-02-11",
+      "context": "industry: Retail; location: New York City; country: United States; stage: Series E; source: https://www.businessoffashion.com/news/cosmetics/glossier-layoffs-2026/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Glossier team,\n\nI saw 50 layoffs (33% workforce reduction) reported on 2026-02-11. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Retail often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Amazon",
+      "signal": "84 layoffs reported on 2025-12-15",
+      "context": "industry: Retail; location: Seattle; country: United States; stage: Post-IPO; source: https://www.bizjournals.com/seattle/news/2025/12/15/amazon-layoffs-84-february.html"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Amazon team,\n\nI saw 84 layoffs reported on 2025-12-15. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Retail often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Huawei",
+      "signal": "50 layoffs reported on 2026-02-15",
+      "context": "industry: Hardware; location: Tel Aviv, Non-U.S.; country: Israel; stage: Unknown; source: https://www.calcalistech.com/ctechnews/article/bkmmdojuwx"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Huawei team,\n\nI saw 50 layoffs reported on 2026-02-15. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Hardware often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Salesforce",
+      "signal": "30 layoffs reported on 2025-09-03",
+      "context": "industry: Sales; location: Dublin, Non-U.S.; country: United States; stage: Post-IPO; source: https://www.thejournal.ie/salesforce-ireland-redundancies-6806486-Sep2025/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Salesforce team,\n\nI saw 30 layoffs reported on 2025-09-03. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Sales often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Quandoo",
+      "signal": "100% workforce reduction reported on 2026-03-26",
+      "context": "industry: Food; location: Berlin, Non-U.S.; country: Germany; stage: Acquired; source: https://finance.yahoo.com/markets/stocks/articles/quandoo-shut-restaurant-booking-platform-112913577.html"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Quandoo team,\n\nI saw 100% workforce reduction reported on 2026-03-26. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Food often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Acko",
+      "signal": "60 layoffs (5% workforce reduction) reported on 2026-04-20",
+      "context": "industry: Finance; location: Mumbai, Non-U.S.; country: India; stage: Unknown; source: https://inc42.com/buzz/acko-cuts-5-workforce-in-pre-ipo-restructuring/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Acko team,\n\nI saw 60 layoffs (5% workforce reduction) reported on 2026-04-20. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Finance often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "GamesKraft",
+      "signal": "280 layoffs reported on 2025-11-10",
+      "context": "industry: Consumer; location: Bengaluru, Non-U.S.; country: India; stage: Unknown; source: https://inc42.com/buzz/real-money-gaming-ban-gameskrafts-layoff-count-climbs-to-400/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi GamesKraft team,\n\nI saw 280 layoffs reported on 2025-11-10. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Consumer often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Oracle",
+      "signal": "30,000 layoffs reported on 2026-03-31",
+      "context": "industry: Other; location: SF Bay Area; country: United States; stage: Post-IPO; source: https://www.cnbc.com/2026/03/31/oracle-layoffs-ai-spending.html"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Oracle team,\n\nI saw 30,000 layoffs reported on 2026-03-31. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in your market often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Chegg",
+      "signal": "388 layoffs (45% workforce reduction) reported on 2025-10-27",
+      "context": "industry: Education; location: SF Bay Area; country: United States; stage: Post-IPO; source: https://www.reuters.com/sustainability/boards-policy-regulation/hit-by-ai-edtech-firm-chegg-slashes-jobs-names-new-ceo-major-overhaul-2025-10-27/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Chegg team,\n\nI saw 388 layoffs (45% workforce reduction) reported on 2025-10-27. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Education often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Shutterfly",
+      "signal": "80 layoffs reported on 2026-04-16",
+      "context": "industry: Manufacturing; location: Haifa, Non-U.S.; country: United States; stage: Post-IPO; source: https://www.calcalistech.com/ctechnews/article/rkx2avanzg"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Shutterfly team,\n\nI saw 80 layoffs reported on 2026-04-16. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Manufacturing often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Fiverr",
+      "signal": "250 layoffs (30% workforce reduction) reported on 2025-09-15",
+      "context": "industry: Other; location: Tel Aviv, Non-U.S.; country: Israel; stage: Post-IPO; source: https://www.wsj.com/business/fiverr-to-cut-about-250-jobs-in-refocusing-effort-reiterates-guidance-8f15ee4b"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Fiverr team,\n\nI saw 250 layoffs (30% workforce reduction) reported on 2025-09-15. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in your market often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Oracle",
+      "signal": "101 layoffs reported on 2025-09-03",
+      "context": "industry: Other; location: Seattle; country: United States; stage: Post-IPO; source: https://www.seattletimes.com/business/cloud-computing-giant-oracle-lays-off-more-seattle-workers/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Oracle team,\n\nI saw 101 layoffs reported on 2025-09-03. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in your market often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Vimeo",
+      "signal": "10% workforce reduction reported on 2025-09-03",
+      "context": "industry: Consumer; location: New York City; country: United States; stage: Post-IPO; source: https://www.linkedin.com/posts/phmoyer_today-we-announced-that-we-will-be-reducing-activity-7369003115422851074-qHt-/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Vimeo team,\n\nI saw 10% workforce reduction reported on 2025-09-03. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Consumer often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "StoreDot",
+      "signal": "the layoffs.fyi restructure entry dated 2026-01-13",
+      "context": "industry: Other; location: Tel Aviv, Non-U.S.; country: Israel; stage: Series D; source: https://www.calcalistech.com/ctechnews/article/sjkqkmeb11x"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi StoreDot team,\n\nI saw the layoffs.fyi restructure entry dated 2026-01-13. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in your market often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Teads",
+      "signal": "180 layoffs (10% workforce reduction) reported on 2025-12-04",
+      "context": "industry: Marketing; location: New York City; country: United States; stage: Unknown; source: https://www.calcalistech.com/ctechnews/article/skb9q0lgwl"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Teads team,\n\nI saw 180 layoffs (10% workforce reduction) reported on 2025-12-04. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Marketing often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "UKG",
+      "signal": "300 layoffs reported on 2025-11-18",
+      "context": "industry: HR; location: Montevideo, Non-U.S.; country: Uruguay; stage: Unknown; source: https://www.elobservador.com.uy/cafe-y-negocios/la-multinacional-ukg-cierra-sus-operaciones-uruguay-y-despide-300-profesionales-n6025098"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi UKG team,\n\nI saw 300 layoffs reported on 2025-11-18. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in HR often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "SSense",
+      "signal": "215 layoffs reported on 2026-03-05",
+      "context": "industry: Retail; location: Montreal, Non-U.S.; country: Canada; stage: Series A; source: https://betakit.com/ssense-cut-more-than-200-jobs-days-after-founders-won-bid-to-buy-back-company/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi SSense team,\n\nI saw 215 layoffs reported on 2026-03-05. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Retail often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Kiwi.com",
+      "signal": "250 layoffs (36% workforce reduction) reported on 2026-01-29",
+      "context": "industry: Travel; location: Brno, Non-U.S.; country: Czech Republic; stage: Unknown; source: https://forbes.cz/kiwi-pokracuje-v-propousteni-odchazi-tretina-zamestnancu/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Kiwi.com team,\n\nI saw 250 layoffs (36% workforce reduction) reported on 2026-01-29. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Travel often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Bill.com",
+      "signal": "6% workforce reduction reported on 2025-10-15",
+      "context": "industry: Finance; location: SF Bay Area; country: United States; stage: Post-IPO; source: https://www.bill.com/blog/a-message-to-bill-employees"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Bill.com team,\n\nI saw 6% workforce reduction reported on 2025-10-15. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Finance often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Whatfix",
+      "signal": "60 layoffs (6% workforce reduction) reported on 2025-12-09",
+      "context": "industry: AI; location: Bengaluru, Non-U.S.; country: India; stage: Series E; source: https://inc42.com/buzz/softbank-backed-whatfix-fires-60-employees/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Whatfix team,\n\nI saw 60 layoffs (6% workforce reduction) reported on 2025-12-09. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in AI often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Porter",
+      "signal": "350 layoffs (18% workforce reduction) reported on 2025-11-04",
+      "context": "industry: Logistics; location: Bengaluru, Non-U.S.; country: India; stage: Series F; source: https://inc42.com/buzz/exclusive-porter-lays-off-over-350-employees/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Porter team,\n\nI saw 350 layoffs (18% workforce reduction) reported on 2025-11-04. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Logistics often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Expedia",
+      "signal": "the layoffs.fyi restructure entry dated 2026-01-26",
+      "context": "industry: Travel; location: Seattle; country: United States; stage: Post-IPO; source: https://www.bizjournals.com/seattle/news/2026/01/26/expedia-layoffs-tech-team-interbay-travel.html"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Expedia team,\n\nI saw the layoffs.fyi restructure entry dated 2026-01-26. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Travel often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "xAI",
+      "signal": "500 layoffs reported on 2025-09-12",
+      "context": "industry: AI; location: SF Bay Area; country: United States; stage: Unknown; source: https://www.businessinsider.com/elon-musk-xai-layoffs-data-annotators-2025-9"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi xAI team,\n\nI saw 500 layoffs reported on 2025-09-12. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in AI often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Entropy",
+      "signal": "100% workforce reduction reported on 2026-01-25",
+      "context": "industry: Crypto; location: New York City; country: United States; stage: Seed; source: https://www.theblock.co/post/386942/entropy-a16z-backed-decentralized-custody-startup-is-winding-down-and-returning-capital-to-investors"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Entropy team,\n\nI saw 100% workforce reduction reported on 2026-01-25. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Crypto often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "InvestCloud",
+      "signal": "150 layoffs reported on 2026-03-10",
+      "context": "industry: Finance; location: Los Angeles; country: United States; stage: Private Equity; source: https://citywire.com/ria/news/investcloud-lays-off-150-sources/a2485606"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi InvestCloud team,\n\nI saw 150 layoffs reported on 2026-03-10. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Finance often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "eToro",
+      "signal": "105 layoffs (7% workforce reduction) reported on 2026-01-13",
+      "context": "industry: Finance; location: Tel Aviv, Non-U.S.; country: Israel; stage: Unknown; source: https://www.calcalistech.com/ctechnews/article/sjedi1vh11x"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi eToro team,\n\nI saw 105 layoffs (7% workforce reduction) reported on 2026-01-13. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Finance often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "C3.ai",
+      "signal": "280 layoffs (26% workforce reduction) reported on 2026-02-25",
+      "context": "industry: AI; location: SF Bay Area; country: United States; stage: Series F; source: https://www.morningstar.com/stocks/xnys/ai/earnings-transcript"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi C3.ai team,\n\nI saw 280 layoffs (26% workforce reduction) reported on 2026-02-25. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in AI often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "VSCO",
+      "signal": "24 layoffs reported on 2025-12-09",
+      "context": "industry: Consumer; location: SF Bay Area; country: United States; stage: Series B; source: https://techcrunch.com/2025/12/09/vsco-lays-off-24-staff-as-its-consumer-business-suffers/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi VSCO team,\n\nI saw 24 layoffs reported on 2025-12-09. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Consumer often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Eventbrite",
+      "signal": "the layoffs.fyi restructure entry dated 2026-04-13",
+      "context": "industry: Consumer; location: SF Bay Area; country: United States; stage: Acquired; source: https://www.reuters.com/technology/bending-spoons-cuts-eventbrite-staff-rolls-out-product-changes-after-takeover-2026-04-13/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Eventbrite team,\n\nI saw the layoffs.fyi restructure entry dated 2026-04-13. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Consumer often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Amazon",
+      "signal": "100 layoffs reported on 2026-03-04",
+      "context": "industry: Retail; location: Seattle; country: United States; stage: Post-IPO; source: https://finance.yahoo.com/news/amazon-cuts-more-jobs-time-212928090.html"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Amazon team,\n\nI saw 100 layoffs reported on 2026-03-04. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Retail often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Payoneer",
+      "signal": "60 layoffs (6% workforce reduction) reported on 2025-12-08",
+      "context": "industry: Finance; location: New York City; country: United States; stage: Post-IPO; source: https://www.calcalistech.com/ctechnews/article/s1fu4c4zzg"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Payoneer team,\n\nI saw 60 layoffs (6% workforce reduction) reported on 2025-12-08. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Finance often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Games 24x7",
+      "signal": "400 layoffs reported on 2025-09-01",
+      "context": "industry: Consumer; location: Mumbai, Non-U.S.; country: India; stage: Unknown; source: https://www.peoplematters.in/news/strategic-hr/after-mpl-games24x7-lays-off-400-employees-govt-steps-in-43232"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Games 24x7 team,\n\nI saw 400 layoffs reported on 2025-09-01. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Consumer often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "NeuroPixel.AI",
+      "signal": "100% workforce reduction reported on 2026-04-03",
+      "context": "industry: Retail; location: Bengaluru, Non-U.S.; country: India; stage: Seed; source: https://entrackr.com/news/flipkart-backed-neuropixelai-shuts-operations-amid-financial-strain-11448982"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi NeuroPixel.AI team,\n\nI saw 100% workforce reduction reported on 2026-04-03. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Retail often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Cars.com",
+      "signal": "11% workforce reduction reported on 2026-04-09",
+      "context": "industry: Transportation; location: Chicago; country: United States; stage: Acquired; source: https://www.marketwatch.com/story/cars-com-to-lay-off-11-of-full-time-workforce-amid-ai-push-update-bb0c9f35"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Cars.com team,\n\nI saw 11% workforce reduction reported on 2026-04-09. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Transportation often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Firebolt",
+      "signal": "the layoffs.fyi restructure entry dated 2026-02-15",
+      "context": "industry: Data; location: Tel Aviv, Non-U.S.; country: Israel; stage: Series C; source: https://www.calcalistech.com/ctechnews/article/r1cj0csuwl"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Firebolt team,\n\nI saw the layoffs.fyi restructure entry dated 2026-02-15. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Data often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Zupee",
+      "signal": "200 layoffs reported on 2026-01-30",
+      "context": "industry: Consumer; location: New Delhi, Non-U.S.; country: India; stage: Series B; source: https://yourstory.com/2026/01/zupee-cuts-about-200-jobs-in-second-layoff-after-money-gaming-ban"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Zupee team,\n\nI saw 200 layoffs reported on 2026-01-30. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Consumer often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Pendo",
+      "signal": "90 layoffs (10% workforce reduction) reported on 2026-04-07",
+      "context": "industry: Product; location: Raleigh; country: United States; stage: Series F; source: https://www.axios.com/local/raleigh/2026/04/07/raleigh-software-unicorn-pendo-layoffs-jobs"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Pendo team,\n\nI saw 90 layoffs (10% workforce reduction) reported on 2026-04-07. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Product often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Ericsson",
+      "signal": "1,600 layoffs reported on 2026-01-15",
+      "context": "industry: Other; location: Stockholm, Non-U.S.; country: Sweden; stage: Post-IPO; source: https://www.reuters.com/business/world-at-work/ericsson-shed-1600-jobs-sweden-2026-01-15/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Ericsson team,\n\nI saw 1,600 layoffs reported on 2026-01-15. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in your market often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Snowflake",
+      "signal": "the layoffs.fyi restructure entry dated 2026-03-19",
+      "context": "industry: Data; location: SF Bay Area; country: United States; stage: Post-IPO; source: https://www.businessinsider.com/snowflake-layoffs-strategy-ai-growth-2026-3"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Snowflake team,\n\nI saw the layoffs.fyi restructure entry dated 2026-03-19. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Data often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Synopsys",
+      "signal": "2,000 layoffs (10% workforce reduction) reported on 2025-11-12",
+      "context": "industry: Other; location: SF Bay Area; country: United States; stage: Post-IPO; source: https://www.reuters.com/business/world-at-work/synopsys-cut-about-10-its-workforce-2025-11-12/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Synopsys team,\n\nI saw 2,000 layoffs (10% workforce reduction) reported on 2025-11-12. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in your market often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Salesforce",
+      "signal": "4,000 layoffs reported on 2025-08-31",
+      "context": "industry: Sales; location: SF Bay Area; country: United States; stage: Post-IPO; source: https://www.businessinsider.com/marc-benioff-says-salesforce-cut-4000-roles-because-of-agents-2025-9"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Salesforce team,\n\nI saw 4,000 layoffs reported on 2025-08-31. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Sales often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "TrueCar",
+      "signal": "100 layoffs (30% workforce reduction) reported on 2026-02-24",
+      "context": "industry: Transportation; location: Los Angeles; country: United States; stage: Post-IPO; source: https://aimgroup.com/2026/02/24/truecar-cuts-30-of-staff/"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi TrueCar team,\n\nI saw 100 layoffs (30% workforce reduction) reported on 2026-02-24. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Transportation often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "FranShares",
+      "signal": "100% workforce reduction reported on 2026-03-17",
+      "context": "industry: Finance; location: Chicago; country: United States; stage: Seed; source: https://www.bizjournals.com/chicago/news/2026/03/17/franshares-chicago-startup-shuts-down.html"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi FranShares team,\n\nI saw 100% workforce reduction reported on 2026-03-17. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Finance often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "StarkWare",
+      "signal": "the layoffs.fyi restructure entry dated 2026-04-13",
+      "context": "industry: Crypto; location: Tel Aviv, Non-U.S.; country: Israel; stage: Series D; source: https://www.calcalistech.com/ctechnews/article/sy7u2uq3wx"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi StarkWare team,\n\nI saw the layoffs.fyi restructure entry dated 2026-04-13. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Crypto often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If this is active, would a 15-minute scoping call help? If not, no reply needed.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "The Gist",
+      "signal": "100% workforce reduction reported on 2025-09-03",
+      "context": "industry: Other; location: Tel Aviv, Non-U.S.; country: Israel; stage: Seed; source: https://www.calcalistech.com/ctechnews/article/jeyngl375"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi The Gist team,\n\nI saw 100% workforce reduction reported on 2025-09-03. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in your market often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. Would 15 minutes next week be useful to compare options?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  },
+  {
+    "input": {
+      "company": "Believer Meats",
+      "signal": "the layoffs.fyi restructure entry dated 2025-12-11",
+      "context": "industry: Food; location: Jerusalem, Non-U.S.; country: Israel; stage: Series B; source: https://www.calcalistech.com/ctechnews/article/bknaajdzbe"
+    },
+    "output": "Subject: Context: delivery capacity after restructure\n\nHi Believer Meats team,\n\nI saw the layoffs.fyi restructure entry dated 2025-12-11. I cannot tell from the outside whether delivery capacity is actually constrained, but teams in Food often use this moment to separate critical roadmap work from work that can pause.\n\nTenacious supports managed engineering teams when there is a real delivery gap, with scope confirmed before any capacity commitment. If you are reviewing delivery capacity, I can send a one-page comparison of engagement models.\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+  }
+]

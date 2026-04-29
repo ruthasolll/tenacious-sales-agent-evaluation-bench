@@ -1,0 +1,35 @@
+[
+  {
+    "id": "post_layoff_capacity_context",
+    "tone_markers": [
+      "direct",
+      "grounded",
+      "honest",
+      "professional",
+      "non_condescending"
+    ],
+    "cta": "Would 15 minutes next week be useful to compare options?"
+  },
+  {
+    "id": "post_restructure_resource_offer",
+    "tone_markers": [
+      "direct",
+      "grounded",
+      "honest",
+      "professional",
+      "non_condescending"
+    ],
+    "cta": "If you are reviewing delivery capacity, I can send a one-page comparison of engagement models."
+  },
+  {
+    "id": "low_assumption_reengagement",
+    "tone_markers": [
+      "direct",
+      "grounded",
+      "honest",
+      "professional",
+      "non_condescending"
+    ],
+    "cta": "If this is active, would a 15-minute scoping call help? If not, no reply needed."
+  }
+]

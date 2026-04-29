@@ -1,0 +1,79 @@
+{
+  "number_of_rows": 4360,
+  "top_5_companies_by_layoffs": [
+    {
+      "company": "Amazon",
+      "layoffs": 58124
+    },
+    {
+      "company": "Intel",
+      "layoffs": 43115
+    },
+    {
+      "company": "Meta",
+      "layoffs": 35700
+    },
+    {
+      "company": "Oracle",
+      "layoffs": 31294
+    },
+    {
+      "company": "Microsoft",
+      "layoffs": 30055
+    }
+  ],
+  "most_common_industries": [
+    {
+      "industry": "Finance",
+      "count": 518
+    },
+    {
+      "industry": "Retail",
+      "count": 349
+    },
+    {
+      "industry": "Healthcare",
+      "count": 326
+    },
+    {
+      "industry": "Other",
+      "count": 295
+    },
+    {
+      "industry": "Consumer",
+      "count": 295
+    },
+    {
+      "industry": "Transportation",
+      "count": 269
+    },
+    {
+      "industry": "Food",
+      "count": 247
+    },
+    {
+      "industry": "Marketing",
+      "count": 211
+    },
+    {
+      "industry": "Real Estate",
+      "count": 163
+    },
+    {
+      "industry": "Education",
+      "count": 161
+    }
+  ],
+  "missing_values_summary": {
+    "Company": 0,
+    "Location_HQ": 1,
+    "Industry": 2,
+    "Laid_Off_Count": 1510,
+    "Percentage": 1618,
+    "Date": 1,
+    "Source": 3,
+    "Country": 2,
+    "Stage": 5,
+    "Funds_Raised_USD": 492
+  }
+}

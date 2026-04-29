@@ -1,0 +1,369 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tenacious-bench.local/schema.json",
+  "title": "Tenacious-Bench v0.1 Outreach Evaluation Record",
+  "description": "Schema for validating Tenacious-Bench outreach evaluation records. Tone quality is insufficient; operational truthfulness is required.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "input",
+    "output",
+    "evaluation"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "signal_brief",
+        "signal_confidence",
+        "bench_summary",
+        "prior_thread",
+        "requested_capacity"
+      ],
+      "properties": {
+        "signal_brief": {
+          "type": "string",
+          "minLength": 1
+        },
+        "signal_confidence": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "bench_summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "capacity_constraints"
+          ],
+          "properties": {
+            "capacity_constraints": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "role",
+                  "available_headcount",
+                  "seniority",
+                  "earliest_start_days",
+                  "timezone_overlap_hours"
+                ],
+                "properties": {
+                  "role": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "stack": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "available_headcount": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "seniority": {
+                    "$ref": "#/$defs/seniority"
+                  },
+                  "earliest_start_days": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "timezone_overlap_hours": {
+                    "type": "number",
+                    "minimum": 0
+                  }
+                }
+              }
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "prior_thread": {
+          "type": "string"
+        },
+        "requested_capacity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "headcount",
+            "role",
+            "timeline_days",
+            "seniority",
+            "timezone"
+          ],
+          "properties": {
+            "headcount": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "role": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "timeline_days": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "seniority": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/seniority"
+                },
+                {
+                  "type": "null"
+                }
+              ]
+            },
+            "timezone": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "subject",
+        "body"
+      ],
+      "properties": {
+        "subject": {
+          "type": "string",
+          "minLength": 1
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "model_judged_metrics",
+        "rule_based_metrics",
+        "hard_fail_conditions",
+        "score"
+      ],
+      "properties": {
+        "model_judged_metrics": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Scores or labels produced by a judge model or human-equivalent rubric pass.",
+          "required": [
+            "signal_type",
+            "signal_grounding_score",
+            "confidence_alignment_score",
+            "tone"
+          ],
+          "properties": {
+            "signal_type": {
+              "$ref": "#/$defs/signal_type"
+            },
+            "signal_grounding_score": {
+              "$ref": "#/$defs/score_1_to_5"
+            },
+            "confidence_alignment_score": {
+              "$ref": "#/$defs/score_1_to_5"
+            },
+            "tone": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "direct",
+                "grounded",
+                "honest",
+                "professional",
+                "non_condescending"
+              ],
+              "properties": {
+                "direct": {
+                  "$ref": "#/$defs/score_1_to_5"
+                },
+                "grounded": {
+                  "$ref": "#/$defs/score_1_to_5"
+                },
+                "honest": {
+                  "$ref": "#/$defs/score_1_to_5"
+                },
+                "professional": {
+                  "$ref": "#/$defs/score_1_to_5"
+                },
+                "non_condescending": {
+                  "$ref": "#/$defs/score_1_to_5"
+                }
+              }
+            }
+          }
+        },
+        "rule_based_metrics": {
+          "type": "object",
+          "additionalProperties": false,
+          "description": "Deterministic metrics computed externally by the evaluator.",
+          "required": [
+            "has_signal",
+            "capacity_claim_detected",
+            "claimed_headcount",
+            "claimed_timeline_days",
+            "unsupported_capacity_flag",
+            "implicit_overpromise_flag",
+            "human_routing_flag",
+            "word_count",
+            "number_of_asks",
+            "banned_phrase_flag"
+          ],
+          "properties": {
+            "has_signal": {
+              "type": "boolean"
+            },
+            "capacity_claim_detected": {
+              "type": "boolean"
+            },
+            "claimed_headcount": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "claimed_timeline_days": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "unsupported_capacity_flag": {
+              "type": "boolean"
+            },
+            "implicit_overpromise_flag": {
+              "type": "boolean"
+            },
+            "human_routing_flag": {
+              "type": "boolean"
+            },
+            "word_count": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "number_of_asks": {
+              "type": "integer",
+              "minimum": 0
+            },
+            "banned_phrase_flag": {
+              "type": "boolean"
+            }
+          }
+        },
+        "hard_fail_conditions": {
+          "type": "array",
+          "uniqueItems": true,
+          "description": "Centralized hard-fail labels computed by the evaluator from rule_based_metrics.",
+          "items": {
+            "type": "string",
+            "enum": [
+              "unsupported_capacity",
+              "implicit_overpromise",
+              "banned_phrase"
+            ]
+          }
+        },
+        "score": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "overall",
+            "tone_quality",
+            "signal_grounding",
+            "operational_safety"
+          ],
+          "properties": {
+            "overall": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 100
+            },
+            "tone_quality": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 40
+            },
+            "signal_grounding": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "operational_safety": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            }
+          }
+        }
+      }
+    }
+  },
+  "$defs": {
+    "score_1_to_5": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    },
+    "seniority": {
+      "type": "string",
+      "enum": [
+        "junior",
+        "mid",
+        "senior",
+        "architect",
+        "mixed",
+        "unknown"
+      ]
+    },
+    "signal_type": {
+      "type": "string",
+      "enum": [
+        "funding.stage",
+        "funding.amount",
+        "hiring.intent",
+        "hiring.urgency",
+        "hiring.velocity",
+        "hiring.freeze",
+        "layoffs.scale",
+        "layoffs.restructure",
+        "leadership.change",
+        "competitor_gap.capability",
+        "unknown"
+      ]
+    }
+  }
+}
