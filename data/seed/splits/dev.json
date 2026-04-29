@@ -1,0 +1,47 @@
+[
+  {
+    "task_id": "seed-dev-001",
+    "input": {
+      "signal": "$14M Series A in February and Python roles rising from 2 to 7"
+    },
+    "output": {
+      "subject": "Request: Python hiring context",
+      "body": "Hi Maya,\n\nI saw your $14M Series A in February and Python roles rising from 2 to 7. If recruiting capacity is the bottleneck, Tenacious can scope managed Python support against confirmed availability.\n\nWould 15 minutes next week be useful?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+    },
+    "rubric": {
+      "requires_signal": true,
+      "requires_cta": true,
+      "tone_target": "high"
+    }
+  },
+  {
+    "task_id": "seed-dev-002",
+    "input": {
+      "signal": "12% team contraction in March"
+    },
+    "output": {
+      "subject": "Context: delivery capacity",
+      "body": "Hi Daniel,\n\nI saw the 12% team contraction in March. I cannot tell from the outside whether delivery capacity is constrained, but if you are reviewing the next phase of roadmap coverage, Tenacious can share the engagement patterns we see most often.\n\nWould a short scoping call help?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+    },
+    "rubric": {
+      "requires_signal": true,
+      "requires_cta": true,
+      "tone_target": "high"
+    }
+  },
+  {
+    "task_id": "seed-dev-003",
+    "input": {
+      "signal": "new CTO announcement on April 14"
+    },
+    "output": {
+      "subject": "Context: engineering model brief",
+      "body": "Hi Priya,\n\nI saw the new CTO announcement on April 14. New engineering leaders often review vendor mix in the first 90 days, though I do not want to assume that is active for you.\n\nWould a one-page brief on offshore engagement models be useful?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+    },
+    "rubric": {
+      "requires_signal": true,
+      "requires_cta": true,
+      "tone_target": "high"
+    }
+  }
+]
