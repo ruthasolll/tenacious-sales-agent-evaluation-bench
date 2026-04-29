@@ -3,14 +3,15 @@
 from __future__ import annotations
 
 import argparse
-import hashlib
 import json
+import random
 from pathlib import Path
 from typing import Any, Dict, List, Tuple
 
 
 DEFAULT_INPUT = Path("data/generated_tasks.json")
 DEFAULT_OUTPUT_DIR = Path("data/splits")
+DEFAULT_SEED = 42
 
 
 Task = Dict[str, Any]
@@ -26,38 +27,35 @@ def load_tasks(path: Path) -> List[Task]:
     return data
 
 
-def stable_task_key(task: Task) -> str:
-    """Return a deterministic hash key for a task."""
-    payload = json.dumps(task, sort_keys=True, ensure_ascii=False)
-    return hashlib.sha256(payload.encode("utf-8")).hexdigest()
-
-
 def split_tasks(
     tasks: List[Task],
     train_ratio: float = 0.5,
     dev_ratio: float = 0.3,
+    seed: int = DEFAULT_SEED,
 ) -> Tuple[List[Task], List[Task], List[Task]]:
-    """Split tasks deterministically into train, dev, and held-out lists."""
+    """Shuffle tasks with a fixed seed and split into train, dev, and held-out lists."""
     if not tasks:
         return [], [], []
 
-    ordered = sorted(tasks, key=stable_task_key)
-    total = len(ordered)
-    train_count = int(total * train_ratio)
-    dev_count = int(total * dev_ratio)
+    shuffled = list(tasks)
+    random.Random(seed).shuffle(shuffled)
 
-    train = ordered[:train_count]
-    dev = ordered[train_count : train_count + dev_count]
-    held_out = ordered[train_count + dev_count :]
+    total = len(shuffled)
+    train_end = int(total * train_ratio)
+    dev_end = int(total * (train_ratio + dev_ratio))
+
+    train = shuffled[:train_end]
+    dev = shuffled[train_end:dev_end]
+    held_out = shuffled[dev_end:]
     return train, dev, held_out
 
 
 def save_splits(train: List[Task], dev: List[Task], held_out: List[Task], output_dir: Path) -> None:
     """Write split files to the output directory."""
     output_dir.mkdir(parents=True, exist_ok=True)
-    (output_dir / "train.json").write_text(json.dumps(train, indent=2), encoding="utf-8")
-    (output_dir / "dev.json").write_text(json.dumps(dev, indent=2), encoding="utf-8")
-    (output_dir / "held_out.json").write_text(json.dumps(held_out, indent=2), encoding="utf-8")
+    (output_dir / "train.json").write_text(json.dumps(train, indent=2) + "\n", encoding="utf-8")
+    (output_dir / "dev.json").write_text(json.dumps(dev, indent=2) + "\n", encoding="utf-8")
+    (output_dir / "held_out.json").write_text(json.dumps(held_out, indent=2) + "\n", encoding="utf-8")
 
 
 def parse_args() -> argparse.Namespace:
