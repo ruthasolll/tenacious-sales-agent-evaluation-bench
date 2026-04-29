@@ -1,0 +1,37 @@
+{
+  "dataset_counts": {
+    "source": "contamination_check.json",
+    "counts_by_source_mode": {
+      "trace_derived": 60,
+      "programmatic": 60,
+      "multi_llm_synthesis": 50,
+      "hand_authored_adversarial": 30
+    },
+    "counts_by_partition": {
+      "train": 100,
+      "dev": 60,
+      "held_out": 40
+    },
+    "counts_by_failure_dimension": {
+      "timezone_stack_feasibility": 20,
+      "start_date_truthfulness": 20,
+      "signal_fabrication": 20,
+      "prospect_safe_language": 20,
+      "channel_scheduling_handoff": 20,
+      "capacity_grounding": 20,
+      "confidence_alignment": 20,
+      "pricing_scope_control": 20,
+      "single_ask_structure": 20,
+      "non_condescending_competitor_gap": 20
+    }
+  },
+  "evaluator_demo": {
+    "source": "examples/example_tasks.json",
+    "command": "python scoring_evaluator.py --tasks examples/example_tasks.json --quiet"
+  },
+  "week10_failure_cost": {
+    "source": "week10_artifacts/target_failure_mode.md",
+    "bench_overcommitment_trigger_rate": 0.5433,
+    "annual_loss_usd": 2281860
+  }
+}

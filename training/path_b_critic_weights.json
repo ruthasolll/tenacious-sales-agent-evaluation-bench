@@ -1,0 +1,43 @@
+{
+  "path": "B",
+  "input": "C:\\Users\\ruths\\Desktop\\TRP1\\tenacious-sales-agent-evaluation-bench\\training_data\\path_b_preferences.jsonl",
+  "examples": 100,
+  "epochs": 5,
+  "learning_rate": 0.05,
+  "margin": 0.05,
+  "weights": {
+    "signal_grounding": 0.25,
+    "confidence_alignment": 0.2,
+    "operational_safety": 0.25,
+    "tone_quality": 0.2,
+    "structure_quality": 0.1,
+    "hard_fail_count": -0.35
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "accuracy": 1.0,
+      "updates": 0
+    },
+    {
+      "epoch": 2,
+      "accuracy": 1.0,
+      "updates": 0
+    },
+    {
+      "epoch": 3,
+      "accuracy": 1.0,
+      "updates": 0
+    },
+    {
+      "epoch": 4,
+      "accuracy": 1.0,
+      "updates": 0
+    },
+    {
+      "epoch": 5,
+      "accuracy": 1.0,
+      "updates": 0
+    }
+  ]
+}

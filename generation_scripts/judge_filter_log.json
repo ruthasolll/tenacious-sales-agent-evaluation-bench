@@ -1,0 +1,2017 @@
+{
+  "seed": 11011,
+  "judge_prompts": [
+    "pairwise_dedup.txt",
+    "pointwise_quality.txt",
+    "preference_leakage_guard.txt"
+  ],
+  "thresholds": {
+    "input_coherence": 4,
+    "ground_truth_verifiability": 4,
+    "rubric_application_clarity": 4
+  },
+  "accepted": 200,
+  "rejected": 0,
+  "records": [
+    {
+      "task_id": "TB-V01-0001",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0002",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0003",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0004",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0005",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0006",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0007",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0008",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0009",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0010",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0011",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0012",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0013",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0014",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0015",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0016",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0017",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0018",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0019",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0020",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0021",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0022",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0023",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0024",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0025",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0026",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0027",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0028",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0029",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0030",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0031",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0032",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0033",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0034",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0035",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0036",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0037",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0038",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0039",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0040",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0041",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0042",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0043",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0044",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0045",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0046",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0047",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0048",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0049",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0050",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0051",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0052",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0053",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0054",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0055",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0056",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0057",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0058",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0059",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0060",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0061",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0062",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0063",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0064",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0065",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0066",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0067",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0068",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0069",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0070",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0071",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0072",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0073",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0074",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0075",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0076",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0077",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0078",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0079",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0080",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0081",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0082",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0083",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0084",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0085",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0086",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0087",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0088",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0089",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0090",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0091",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0092",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0093",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0094",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0095",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0096",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0097",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0098",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0099",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0100",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0101",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0102",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0103",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0104",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0105",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0106",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0107",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0108",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0109",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0110",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0111",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0112",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0113",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0114",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0115",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0116",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0117",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0118",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0119",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0120",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0121",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0122",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0123",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0124",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0125",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0126",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0127",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0128",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0129",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0130",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0131",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0132",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0133",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0134",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0135",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0136",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0137",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0138",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0139",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0140",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0141",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0142",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0143",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0144",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0145",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0146",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0147",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0148",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0149",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0150",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0151",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0152",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0153",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0154",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0155",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0156",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0157",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0158",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0159",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0160",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0161",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0162",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0163",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0164",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0165",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0166",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0167",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0168",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0169",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0170",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0171",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0172",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0173",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0174",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0175",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0176",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0177",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0178",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0179",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0180",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0181",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0182",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0183",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0184",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0185",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0186",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0187",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0188",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0189",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0190",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0191",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0192",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0193",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0194",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0195",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0196",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    },
+    {
+      "task_id": "TB-V01-0197",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0198",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0199",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 93.75
+    },
+    {
+      "task_id": "TB-V01-0200",
+      "scores": {
+        "input_coherence": 5,
+        "ground_truth_verifiability": 5,
+        "rubric_application_clarity": 5
+      },
+      "accepted": true,
+      "reference_score": 100.0
+    }
+  ]
+}

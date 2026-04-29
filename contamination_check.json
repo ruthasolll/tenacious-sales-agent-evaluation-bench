@@ -1,0 +1,38 @@
+{
+  "checks": {
+    "heldout_train_8gram_overlap_max": 6,
+    "heldout_train_similarity_max": 0.7895,
+    "embedding_similarity_threshold": 0.85,
+    "time_shift_verification_failures": []
+  },
+  "passed": true,
+  "offending_pairs": [],
+  "split_sizes": {
+    "train": 100,
+    "dev": 60,
+    "held_out": 40
+  },
+  "counts_by_source_mode": {
+    "trace_derived": 60,
+    "programmatic": 60,
+    "multi_llm_synthesis": 50,
+    "hand_authored_adversarial": 30
+  },
+  "counts_by_partition": {
+    "train": 100,
+    "dev": 60,
+    "held_out": 40
+  },
+  "counts_by_failure_dimension": {
+    "timezone_stack_feasibility": 20,
+    "start_date_truthfulness": 20,
+    "signal_fabrication": 20,
+    "prospect_safe_language": 20,
+    "channel_scheduling_handoff": 20,
+    "capacity_grounding": 20,
+    "confidence_alignment": 20,
+    "pricing_scope_control": 20,
+    "single_ask_structure": 20,
+    "non_condescending_competitor_gap": 20
+  }
+}

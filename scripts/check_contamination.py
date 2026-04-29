@@ -43,7 +43,10 @@ def task_input_key(task: Task) -> str:
 
 def task_output_key(task: Task) -> str:
     """Return a canonical string key for a task output."""
-    return str(task.get("output", "")).strip().lower()
+    output = task.get("output") or task.get("candidate_output") or task.get("reference_output") or {}
+    if isinstance(output, dict):
+        output = f"{output.get('subject', '')}\n{output.get('body', '')}"
+    return str(output).strip().lower()
 
 
 def company_signal_pair(task: Task) -> Pair:
@@ -51,8 +54,14 @@ def company_signal_pair(task: Task) -> Pair:
     task_input = task.get("input", {})
     if not isinstance(task_input, dict):
         task_input = {}
-    company = str(task_input.get("company", "")).strip().lower()
-    signal = str(task_input.get("signal", "")).strip().lower()
+    prospect = task_input.get("prospect", {})
+    signal_brief = task_input.get("signal_brief", {})
+    if not isinstance(prospect, dict):
+        prospect = {}
+    if not isinstance(signal_brief, dict):
+        signal_brief = {}
+    company = str(task_input.get("company") or prospect.get("company", "")).strip().lower()
+    signal = str(task_input.get("signal") or signal_brief.get("summary", "")).strip().lower()
     return company, signal
 
 

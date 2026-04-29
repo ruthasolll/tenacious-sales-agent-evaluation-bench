@@ -1,0 +1,8 @@
+Path B local critic training run
+input=C:\Users\ruths\Desktop\TRP1\tenacious-sales-agent-evaluation-bench\training_data\path_b_preferences.jsonl
+examples=100
+epochs=5
+learning_rate=0.05
+margin=0.05
+final_accuracy=1.0
+weights={"confidence_alignment": 0.2, "hard_fail_count": -0.35, "operational_safety": 0.25, "signal_grounding": 0.25, "structure_quality": 0.1, "tone_quality": 0.2}

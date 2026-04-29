@@ -1,0 +1,2002 @@
+[
+  {
+    "task_id": "TB-V01-0001",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P01",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0002",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P02",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0003",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P03",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0004",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P04",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0005",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P05",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0006",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P06",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0007",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P07",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0008",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P08",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0009",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P09",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0010",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P10",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0011",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P01",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0012",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P02",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0013",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P03",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0014",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P04",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0015",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P05",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0016",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P06",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0017",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P07",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0018",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P08",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0019",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P09",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0020",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P10",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0021",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P01",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0022",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P02",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0023",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P03",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0024",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P04",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0025",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P05",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0026",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P06",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0027",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P07",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0028",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P08",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0029",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P09",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0030",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P10",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0031",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P01",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0032",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P02",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0033",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P03",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0034",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P04",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0035",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P05",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0036",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P06",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0037",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P07",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0038",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P08",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0039",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P09",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0040",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P10",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0041",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P01",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0042",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P02",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0043",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P03",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0044",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P04",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0045",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P05",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0046",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P06",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0047",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P07",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0048",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P08",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0049",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P09",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0050",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P10",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0051",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P01",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0052",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P02",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0053",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P03",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0054",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P04",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0055",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P05",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0056",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P06",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0057",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P07",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0058",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P08",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0059",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P09",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0060",
+    "source_mode": "trace_derived",
+    "probe_id": "W10-P10",
+    "generation_model_family": "trace_reconstructor",
+    "generation_model": "week10-trace-restructure-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0061",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P01",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0062",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P02",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0063",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P03",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0064",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P04",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0065",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P05",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0066",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P06",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0067",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P07",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0068",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P08",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0069",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P09",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0070",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P10",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0071",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P01",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0072",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P02",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0073",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P03",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0074",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P04",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0075",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P05",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0076",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P06",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0077",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P07",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0078",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P08",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0079",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P09",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0080",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P10",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0081",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P01",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0082",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P02",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0083",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P03",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0084",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P04",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0085",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P05",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0086",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P06",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0087",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P07",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0088",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P08",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0089",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P09",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0090",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P10",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0091",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P01",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0092",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P02",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0093",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P03",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0094",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P04",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0095",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P05",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0096",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P06",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0097",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P07",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0098",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P08",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0099",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P09",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0100",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P10",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0101",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P01",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0102",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P02",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0103",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P03",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0104",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P04",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0105",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P05",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0106",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P06",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0107",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P07",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0108",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P08",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0109",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P09",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0110",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P10",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0111",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P01",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0112",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P02",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0113",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P03",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0114",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P04",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0115",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P05",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0116",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P06",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0117",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P07",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0118",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P08",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0119",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P09",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0120",
+    "source_mode": "programmatic",
+    "probe_id": "W10-P10",
+    "generation_model_family": "programmatic_template",
+    "generation_model": "tenacious-template-sweeper-v0",
+    "judge_model_family": "open_weight",
+    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0121",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P01",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0122",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P02",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0123",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P03",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0124",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P04",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0125",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P05",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0126",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P06",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0127",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P07",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0128",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P08",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0129",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P09",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0130",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P10",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0131",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P01",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0132",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P02",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0133",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P03",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0134",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P04",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0135",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P05",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0136",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P06",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0137",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P07",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0138",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P08",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0139",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P09",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0140",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P10",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0141",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P01",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0142",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P02",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0143",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P03",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0144",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P04",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0145",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P05",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0146",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P06",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0147",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P07",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0148",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P08",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0149",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P09",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0150",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P10",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0151",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P01",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0152",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P02",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0153",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P03",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0154",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P04",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0155",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P05",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0156",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P06",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0157",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P07",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0158",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P08",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0159",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P09",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0160",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P10",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0161",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P01",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0162",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P02",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0163",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P03",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0164",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P04",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0165",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P05",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0166",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P06",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0167",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P07",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0168",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P08",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0169",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P09",
+    "generation_model_family": "frontier",
+    "generation_model": "gpt-5-class-sim",
+    "judge_model_family": "open_weight",
+    "judge_model": "prometheus-2-style-open-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0170",
+    "source_mode": "multi_llm_synthesis",
+    "probe_id": "W10-P10",
+    "generation_model_family": "open_weight",
+    "generation_model": "qwen3-next-80b-a3b-sim",
+    "judge_model_family": "frontier",
+    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0171",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P01",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0172",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P02",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0173",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P03",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0174",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P04",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0175",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P05",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0176",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P06",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0177",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P07",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0178",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P08",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0179",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P09",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0180",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P10",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0181",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P01",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0182",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P02",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0183",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P03",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0184",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P04",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0185",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P05",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0186",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P06",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0187",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P07",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0188",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P08",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0189",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P09",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0190",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P10",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0191",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P01",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0192",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P02",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0193",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P03",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0194",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P04",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0195",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P05",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0196",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P06",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0197",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P07",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0198",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P08",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0199",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P09",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  },
+  {
+    "task_id": "TB-V01-0200",
+    "source_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P10",
+    "generation_model_family": "human_adversarial",
+    "generation_model": "human-authored-week10-probe",
+    "judge_model_family": "frontier",
+    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "leakage_risk": false
+  }
+]

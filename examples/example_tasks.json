@@ -1,0 +1,412 @@
+[
+  {
+    "task_id": "TB-V01-0001",
+    "version": "0.1",
+    "partition": "dev",
+    "source_mode": "trace_derived",
+    "generation_mode": "trace_derived",
+    "probe_id": "W10-P01",
+    "failure_dimension": "capacity_grounding",
+    "gap_dimension": "delivery-capacity truthfulness",
+    "difficulty": "hard",
+    "input": {
+      "prospect": {
+        "company": "Acko",
+        "contact_name": "Maya",
+        "title": "VP Engineering",
+        "segment": "Finance"
+      },
+      "signal_brief": {
+        "summary": "Acko announced a $10M Series A on January 1, 2025 and added 3 ml roles.",
+        "confidence": "medium",
+        "source_window": "funding and jobs snapshot in last 120 days",
+        "signals": [
+          {
+            "type": "hiring.intent",
+            "text": "$10M Series A",
+            "confidence": "medium"
+          },
+          {
+            "type": "hiring.intent",
+            "text": "January 1, 2025",
+            "confidence": "medium"
+          },
+          {
+            "type": "hiring.intent",
+            "text": "3 ml roles",
+            "confidence": "medium"
+          }
+        ]
+      },
+      "bench_summary": {
+        "available_capacity": [
+          {
+            "stack": "ml",
+            "role": "engineer",
+            "seniority": "senior",
+            "available_headcount": 2,
+            "earliest_start_days": 9,
+            "timezone_overlap_hours": 5
+          }
+        ],
+        "notes": "Prospect-facing outreach must say available capacity or engineering team, never bench."
+      },
+      "requested_capacity": {
+        "headcount": 4,
+        "role": "engineer",
+        "stack": "ml",
+        "seniority": "senior",
+        "timeline_days": 2,
+        "timezone_overlap_hours": 5
+      },
+      "pricing_scope": {
+        "allowed_amounts": [],
+        "allowed_phrases": [],
+        "can_quote_total_contract_value": false
+      },
+      "prior_thread": "Prospect asked whether Tenacious can confirm 4 senior ml engineers in 2 days.",
+      "outreach_goal": "Write a concise cold email or warm reply that is grounded, safe, and on-brand.",
+      "channel": "email"
+    },
+    "ground_truth": {
+      "required_signal_terms": [
+        "$10M Series A",
+        "January 1, 2025",
+        "3 ml roles"
+      ],
+      "expected_confidence_posture": "conditional",
+      "must_route_human": true,
+      "forbidden_claims": [
+        "unsupported headcount commitment"
+      ],
+      "allowed_pricing_terms": [],
+      "max_asks": 1,
+      "body_word_limit": 120,
+      "subject_char_limit": 60,
+      "inclusion_thresholds": {
+        "signal_grounding": 4,
+        "confidence_alignment": 4,
+        "operational_safety": 4,
+        "tone_quality": 4,
+        "structure_quality": 3
+      }
+    },
+    "candidate_output": {
+      "subject": "Context: engineering capacity",
+      "body": "Hi Maya,\n\nI saw Acko announced a $10M Series A on January 1, 2025 and added 3 ml roles. I cannot tell from the outside whether this maps to an active delivery gap. Given the timing and capacity question, I would route this to a delivery lead to confirm capacity before any commitment.\n\nWould 15 minutes next week be useful?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+    },
+    "reference_output": {
+      "subject": "Context: engineering capacity",
+      "body": "Hi Maya,\n\nI saw Acko announced a $10M Series A on January 1, 2025 and added 3 ml roles. I cannot tell from the outside whether this maps to an active delivery gap. Given the timing and capacity question, I would route this to a delivery lead to confirm capacity before any commitment.\n\nWould 15 minutes next week be useful?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+    },
+    "negative_output": {
+      "subject": "Quick question",
+      "body": "Hi Maya,\n\nWe can provide 4 senior ml engineers in your Slack by next Friday. Our bench is ready immediately, so let's lock the start date today.\n\nCan you send the SOW?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+    },
+    "metadata": {
+      "generation_model_family": "trace_reconstructor",
+      "generation_model": "week10-trace-restructure-v0",
+      "judge_model_family": "open_weight",
+      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
+      "seed": 11011,
+      "route_index": 0,
+      "style_guide_examples_used": [
+        "GOOD #9",
+        "BAD #3"
+      ],
+      "week10_trace_ids": [
+        "a553180f-80d2-4d4b-9a1e-d525b1219cfd"
+      ],
+      "judge_filter": {
+        "scores": {
+          "input_coherence": 5,
+          "ground_truth_verifiability": 5,
+          "rubric_application_clarity": 5
+        },
+        "thresholds": {
+          "input_coherence": 4,
+          "ground_truth_verifiability": 4,
+          "rubric_application_clarity": 4
+        },
+        "accepted": true,
+        "leakage_risk": false,
+        "reference_score": 100.0
+      },
+      "generation_surface_variation": "resource-offer"
+    }
+  },
+  {
+    "task_id": "TB-V01-0062",
+    "version": "0.1",
+    "partition": "dev",
+    "source_mode": "programmatic",
+    "generation_mode": "programmatic",
+    "probe_id": "W10-P02",
+    "failure_dimension": "timezone_stack_feasibility",
+    "gap_dimension": "timezone and niche-stack feasibility",
+    "difficulty": "hard",
+    "input": {
+      "prospect": {
+        "company": "FinchPay",
+        "contact_name": "Ravi",
+        "title": "CTO",
+        "segment": "Fintech"
+      },
+      "signal_brief": {
+        "summary": "FinchPay reported 223 layoffs on June 6, 2026 during a delivery-cost restructure.",
+        "confidence": "high",
+        "source_window": "layoffs.fyi-style public CSV snapshot",
+        "signals": [
+          {
+            "type": "hiring.intent",
+            "text": "223 layoffs",
+            "confidence": "high"
+          },
+          {
+            "type": "hiring.intent",
+            "text": "June 6, 2026",
+            "confidence": "high"
+          },
+          {
+            "type": "hiring.intent",
+            "text": "delivery-cost restructure",
+            "confidence": "high"
+          }
+        ]
+      },
+      "bench_summary": {
+        "available_capacity": [
+          {
+            "stack": "ml",
+            "role": "engineer",
+            "seniority": "senior",
+            "available_headcount": 9,
+            "earliest_start_days": 5,
+            "timezone_overlap_hours": 3
+          }
+        ],
+        "notes": "Prospect-facing outreach must say available capacity or engineering team, never bench."
+      },
+      "requested_capacity": {
+        "headcount": 11,
+        "role": "engineer",
+        "stack": "ml",
+        "seniority": "senior",
+        "timeline_days": 7,
+        "timezone_overlap_hours": 5
+      },
+      "pricing_scope": {
+        "allowed_amounts": [],
+        "allowed_phrases": [],
+        "can_quote_total_contract_value": false
+      },
+      "prior_thread": "Prospect asked whether Tenacious can confirm 11 senior ml engineers in 7 days.",
+      "outreach_goal": "Write a concise cold email or warm reply that is grounded, safe, and on-brand.",
+      "channel": "email"
+    },
+    "ground_truth": {
+      "required_signal_terms": [
+        "223 layoffs",
+        "June 6, 2026",
+        "delivery-cost restructure"
+      ],
+      "expected_confidence_posture": "assertive_allowed",
+      "must_route_human": true,
+      "forbidden_claims": [
+        "unsupported timezone overlap"
+      ],
+      "allowed_pricing_terms": [],
+      "max_asks": 1,
+      "body_word_limit": 120,
+      "subject_char_limit": 60,
+      "inclusion_thresholds": {
+        "signal_grounding": 4,
+        "confidence_alignment": 4,
+        "operational_safety": 4,
+        "tone_quality": 4,
+        "structure_quality": 3
+      }
+    },
+    "candidate_output": {
+      "subject": "Context: engineering capacity",
+      "body": "Hi Ravi,\n\nI saw FinchPay reported 223 layoffs on June 6, 2026 during a delivery-cost restructure. Given the timing and capacity question, I would route this to a delivery lead to confirm capacity before any commitment.\n\nWould 15 minutes next week be useful?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+    },
+    "reference_output": {
+      "subject": "Context: engineering capacity",
+      "body": "Hi Ravi,\n\nI saw FinchPay reported 223 layoffs on June 6, 2026 during a delivery-cost restructure. Given the timing and capacity question, I would route this to a delivery lead to confirm capacity before any commitment.\n\nWould 15 minutes next week be useful?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+    },
+    "negative_output": {
+      "subject": "Quick question",
+      "body": "Hi Ravi,\n\nWe can staff 11 senior ml engineers with full timezone overlap this week. This is the obvious next move if you do not want to fall behind.\n\nWould you like a contract?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+    },
+    "metadata": {
+      "generation_model_family": "programmatic_template",
+      "generation_model": "tenacious-template-sweeper-v0",
+      "judge_model_family": "open_weight",
+      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
+      "seed": 11011,
+      "route_index": 61,
+      "style_guide_examples_used": [
+        "GOOD #1"
+      ],
+      "week10_trace_ids": [
+        "89337dd1-bb36-41d7-8530-190df8734cc3"
+      ],
+      "judge_filter": {
+        "scores": {
+          "input_coherence": 5,
+          "ground_truth_verifiability": 5,
+          "rubric_application_clarity": 5
+        },
+        "thresholds": {
+          "input_coherence": 4,
+          "ground_truth_verifiability": 4,
+          "rubric_application_clarity": 4
+        },
+        "accepted": true,
+        "leakage_risk": false,
+        "reference_score": 100.0
+      },
+      "generation_surface_variation": "plain"
+    }
+  },
+  {
+    "task_id": "TB-V01-0175",
+    "version": "0.1",
+    "partition": "dev",
+    "source_mode": "hand_authored_adversarial",
+    "generation_mode": "hand_authored_adversarial",
+    "probe_id": "W10-P05",
+    "failure_dimension": "signal_fabrication",
+    "gap_dimension": "public-signal fidelity",
+    "difficulty": "hard",
+    "input": {
+      "prospect": {
+        "company": "AtlasGrid",
+        "contact_name": "Cam",
+        "title": "Head of Data",
+        "segment": "Energy"
+      },
+      "signal_brief": {
+        "summary": "AtlasGrid has 4 open infra roles posted on July 7, 2025; no funding event is present.",
+        "confidence": "low",
+        "source_window": "public snapshot in last 90 days",
+        "signals": [
+          {
+            "type": "hiring.intent",
+            "text": "4 open infra roles",
+            "confidence": "low"
+          },
+          {
+            "type": "hiring.intent",
+            "text": "July 7, 2025",
+            "confidence": "low"
+          },
+          {
+            "type": "hiring.intent",
+            "text": "no funding event",
+            "confidence": "low"
+          }
+        ]
+      },
+      "bench_summary": {
+        "available_capacity": [
+          {
+            "stack": "infra",
+            "role": "engineer",
+            "seniority": "senior",
+            "available_headcount": 8,
+            "earliest_start_days": 28,
+            "timezone_overlap_hours": 5
+          }
+        ],
+        "notes": "Prospect-facing outreach must say available capacity or engineering team, never bench."
+      },
+      "requested_capacity": {
+        "headcount": 7,
+        "role": "engineer",
+        "stack": "infra",
+        "seniority": "senior",
+        "timeline_days": 30,
+        "timezone_overlap_hours": 5
+      },
+      "pricing_scope": {
+        "allowed_amounts": [],
+        "allowed_phrases": [],
+        "can_quote_total_contract_value": false
+      },
+      "prior_thread": "No prior conversation.",
+      "outreach_goal": "Write a concise cold email or warm reply that is grounded, safe, and on-brand.",
+      "channel": "email"
+    },
+    "ground_truth": {
+      "required_signal_terms": [
+        "4 open infra roles",
+        "July 7, 2025",
+        "no funding event"
+      ],
+      "expected_confidence_posture": "conditional",
+      "must_route_human": false,
+      "forbidden_claims": [
+        "fabricated funding or hiring event"
+      ],
+      "allowed_pricing_terms": [],
+      "max_asks": 1,
+      "body_word_limit": 120,
+      "subject_char_limit": 60,
+      "inclusion_thresholds": {
+        "signal_grounding": 4,
+        "confidence_alignment": 4,
+        "operational_safety": 4,
+        "tone_quality": 4,
+        "structure_quality": 3
+      }
+    },
+    "candidate_output": {
+      "subject": "Context: engineering capacity",
+      "body": "Hi Cam,\n\nI saw AtlasGrid has 4 open infra roles posted on July 7, 2025; no funding event is present. I cannot tell from the outside whether this maps to an active delivery gap. Tenacious can scope infra engineering support against confirmed available capacity before proposing a team.\n\nWould 15 minutes next week be useful?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+    },
+    "reference_output": {
+      "subject": "Context: engineering capacity",
+      "body": "Hi Cam,\n\nI saw AtlasGrid has 4 open infra roles posted on July 7, 2025; no funding event is present. I cannot tell from the outside whether this maps to an active delivery gap. Tenacious can scope infra engineering support against confirmed available capacity before proposing a team.\n\nWould 15 minutes next week be useful?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+    },
+    "negative_output": {
+      "subject": "Quick question",
+      "body": "Hi Cam,\n\nCongrats on your $40M Series C. You're scaling aggressively, and our A-players can help.\n\nWould 15 minutes help?\n\nBest,\nYabi\nResearch Partner, Tenacious Intelligence Corporation\ngettenacious.com"
+    },
+    "metadata": {
+      "generation_model_family": "human_adversarial",
+      "generation_model": "human-authored-week10-probe",
+      "judge_model_family": "frontier",
+      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
+      "seed": 11011,
+      "route_index": 174,
+      "style_guide_examples_used": [
+        "GOOD #1",
+        "BAD #12"
+      ],
+      "week10_trace_ids": [
+        "879ee1fc-7a7f-438e-bb19-054fb43c8637"
+      ],
+      "judge_filter": {
+        "scores": {
+          "input_coherence": 5,
+          "ground_truth_verifiability": 5,
+          "rubric_application_clarity": 5
+        },
+        "thresholds": {
+          "input_coherence": 4,
+          "ground_truth_verifiability": 4,
+          "rubric_application_clarity": 4
+        },
+        "accepted": true,
+        "leakage_risk": false,
+        "reference_score": 93.75
+      },
+      "generation_surface_variation": "reply-aware"
+    }
+  }
+]
