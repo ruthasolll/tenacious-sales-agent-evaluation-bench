@@ -6,7 +6,7 @@ Tenacious outreach is a constraint-aware decision system, not a tone optimizatio
 
 ## Supporting Trace Evidence
 
-The available Week 10 `trace_log.jsonl` contains 150 tau2 retail traces, not B2B outreach traces. Using task/simulation as the trace key, five real examples show the gap: task 11 / `a553180f-80d2-4d4b-9a1e-d525b1219cfd` failed with reward 0; task 34 / `89337dd1-bb36-41d7-8530-190df8734cc3` failed; task 76 / `0857ba6e-d8cb-4ec8-b024-3d5ddc298fc6` failed; task 104 / `0c380837-0cac-490f-a053-8cb13e79ed6b` failed; task 105 / `879ee1fc-7a7f-438e-bb19-054fb43c8637` failed after 1192 seconds. These traces record retail reward, cost, and duration, but no signal brief, bench summary, capacity claim, confidence flag, or prospect-facing message. That absence is itself evidence: the existing benchmark cannot grade Tenacious's core risk.
+The available Week 10 `trace_log.jsonl` contains ~150 τ²-Bench retail traces rather than B2B outreach traces. Using task/simulation as the trace key, five real examples show the gap: task 11 / `a553180f-80d2-4d4b-9a1e-d525b1219cfd` failed with reward 0; task 34 / `89337dd1-bb36-41d7-8530-190df8734cc3` failed; task 76 / `0857ba6e-d8cb-4ec8-b024-3d5ddc298fc6` failed; task 104 / `0c380837-0cac-490f-a053-8cb13e79ed6b` failed; task 105 / `879ee1fc-7a7f-438e-bb19-054fb43c8637` failed after 1192 seconds. These traces record retail reward, cost, and duration, but no signal brief, bench summary, capacity claim, confidence flag, or prospect-facing message. That absence is itself evidence: the existing benchmark cannot grade Tenacious's core risk.
 
 ## Key Failure Patterns
 
@@ -18,11 +18,11 @@ GOOD #1 grounds personalization in a "$14M Series A" and Python roles rising fro
 
 ## Benchmark Gaps
 
-tau2-Bench or generic outreach benchmarks would reward fluency, politeness, and task completion, but not delivery truth. They would not know that "bench" is banned externally, that Go capacity is 4, that weak signals require interrogative language, or that multi-phase total contract values route to humans. They also under-detect implicit guarantees. "Engineers in your Slack by next Friday" is not just optimistic copy; it is an operational commitment requiring bench-summary support.
+τ²-Bench or generic outreach benchmarks would reward fluency, politeness, and task completion, but not delivery truth. They would not know that "bench" is banned externally, that Go capacity is 4, that weak signals require interrogative language, or that multi-phase total contract values route to humans. They also under-detect implicit guarantees. "Engineers in your Slack by next Friday" is not just optimistic copy; it is an operational commitment requiring bench-summary support.
 
 ## Evaluation Implications
 
-Tenacious-Bench should make these checks machine-verifiable: at least one grounded signal is cited; signal confidence matches assertive versus conditional wording; capacity claims extract headcount, stack, seniority, overlap, and timeline; extracted claims are compared against `bench_summary`; unsupported capacity is a hard failure; pricing is limited to public bands; banned phrases, external "bench" language, fabricated events, fake urgency, and multi-ask stacking are penalized. Dataset fields must therefore include `signal_brief`, `signal_confidence`, `bench_summary`, `requested_capacity`, `pricing_scope`, `prior_thread`, `candidate_output`, and hard-fail labels.
+Tenacious-Bench should make these checks machine-verifiable: at least one grounded signal is cited; signal confidence matches assertive versus conditional wording; capacity claims extract headcount, stack, seniority, overlap, and timeline; extracted claims are compared against `bench_summary`; unsupported capacity is a hard failure; pricing is limited to public bands; banned phrases, external "bench" language, fabricated events, fake urgency, and multi-ask stacking are penalized. Dataset fields must therefore include `signal_brief`, `signal_confidence`, `bench_summary`, `requested_capacity`, `pricing_scope`, `prior_thread`, `candidate_output`, and hard-fail labels. These constraints directly define the Tenacious-Bench schema and scoring evaluator implemented in `schema.json` and `scoring_evaluator.py`.
 
 ## Risky Edge Cases and Conclusion
 
