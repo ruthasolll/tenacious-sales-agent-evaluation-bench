@@ -41,18 +41,38 @@ GENERIC_OUTPUT_PHRASES = [
     "we are excited",
 ]
 
-CTA_PATTERNS = [
-    r"\b(?:15|min|minute|minutes|call|chat|meeting)\b",
-    r"\blet me know\b",
-    r"\bwould you\b",
-    r"\bwould\b.*\b(useful|help|work)\b",
-    r"\bare you open\b",
-    r"\bcan we\b",
-    r"\bcould we\b",
-    r"\b15[- ]minute",
-    r"\breply\b",
+STRONG_CTA_PATTERNS = [
+    r"\b\d+\s*[- ]?\s*(?:min|minute|minutes)\b",
+    r"\bschedule\b",
+    r"\bcall\b",
+    r"\bchat\b",
+    r"\bmeeting\b",
     r"\bcalendar\b",
 ]
+
+WEAK_CTA_PATTERNS = [
+    r"\blet me know\b",
+    r"\bopen to\b",
+    r"\bhappy to\b",
+    r"\bwould\b.*\b(useful|help|work)\b",
+    r"\bare you open\b",
+    r"\breply\b",
+]
+
+MONTH_TOKENS = {
+    "january",
+    "february",
+    "march",
+    "april",
+    "may",
+    "june",
+    "july",
+    "august",
+    "september",
+    "october",
+    "november",
+    "december",
+}
 
 
 def check_signal_mention(output: Any, signal: str) -> int:
@@ -61,15 +81,33 @@ def check_signal_mention(output: Any, signal: str) -> int:
     signal_text = normalize_text(signal)
     if any(phrase in text for phrase in GENERIC_OUTPUT_PHRASES):
         return 0
-    if not signal_text:
+    signal_tokens = important_tokens(signal_text)
+    if not signal_tokens:
         return 0
     if signal_text in text:
         return 1
 
-    signal_tokens = important_tokens(signal_text)
-    return 1 if signal_tokens and any(token in text for token in signal_tokens) else 0
+    matched_tokens = [token for token in signal_tokens if token in text]
+    if not matched_tokens:
+        return 0
+
+    anchor_tokens = [token for token in signal_tokens if is_signal_anchor(token)]
+    matched_anchors = [token for token in anchor_tokens if token in text]
+    if anchor_tokens:
+        return 1 if matched_anchors and len(matched_tokens) >= 2 else 0
+
+    return 1 if len(matched_tokens) >= min(2, len(signal_tokens)) else 0
 
 
+# ----------------------------
+# TONE CALIBRATION RUBRIC
+# ----------------------------
+# 1 -> spammy, generic, or overpromising
+#      ("We are excited to help you scale your business")
+# 3 -> acceptable but weak personalization
+#      ("I saw you're hiring engineers, we can help")
+# 5 -> highly specific, grounded in signal, and professionally framed
+#      ("I noticed your AI hiring push after the Series C...")
 def check_tone_score(output: Any, signal: str = "") -> int:
     """Score Tenacious tone from 1 to 5.
 
@@ -121,21 +159,22 @@ def check_tone_score(output: Any, signal: str = "") -> int:
     if word_count > 120:
         return 4
 
-    signal_text = normalize_text(signal)
-    signal_tokens = important_tokens(signal_text)
-    has_signal_detail = bool(
-        signal_text and (signal_text in normalized or any(token in normalized for token in signal_tokens))
-    )
-    structured_specific = has_signal_detail and "tenacious" in normalized
+    signal_grounded = check_signal_mention(output, signal) == 1
+    has_strong_cta = contains_strong_cta(normalized)
+    structured_specific = signal_grounded and has_strong_cta and "tenacious" in normalized
     if structured_specific:
         return 5
     return 4
 
 
 def check_cta(output: Any) -> int:
-    """Return 1 when the output contains at least one clear call to action."""
+    """Return 1 only when the output contains a strong meeting-oriented CTA."""
     text = normalize_text(output_to_text(output))
-    return 1 if any(re.search(pattern, text) for pattern in CTA_PATTERNS) else 0
+    if contains_strong_cta(text):
+        return 1
+    if any(re.search(pattern, text) for pattern in WEAK_CTA_PATTERNS):
+        return 0
+    return 0
 
 
 def evaluate_task(task: Mapping[str, Any]) -> Dict[str, Any]:
@@ -204,6 +243,16 @@ def important_tokens(text: str) -> List[str]:
     }
     tokens = re.findall(r"\b[\w$.-]+\b", text)
     return [token for token in tokens if token not in stopwords and len(token) > 1]
+
+
+def is_signal_anchor(token: str) -> bool:
+    """Return whether a token carries concrete signal evidence."""
+    return any(char.isdigit() for char in token) or token.startswith("$") or token in MONTH_TOKENS
+
+
+def contains_strong_cta(text: str) -> bool:
+    """Return whether normalized text contains a strong CTA."""
+    return any(re.search(pattern, text) for pattern in STRONG_CTA_PATTERNS)
 
 
 def count_words(text: str) -> int:
