@@ -1,0 +1,665 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tenacious-bench.local/schema.json",
+  "title": "Tenacious-Bench Outreach Evaluation Schema",
+  "description": "Tone quality is insufficient; operational truthfulness is required.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "task_id",
+    "evaluation_target",
+    "input",
+    "output",
+    "derived_evaluation",
+    "overall_result"
+  ],
+  "properties": {
+    "task_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "evaluation_target": {
+      "type": "object",
+      "additionalProperties": false,
+      "description": "Defines exactly which generated email fields are analyzed by the evaluator.",
+      "required": [
+        "subject_field",
+        "body_field",
+        "word_count_source",
+        "ask_count_source",
+        "banned_phrase_source"
+      ],
+      "properties": {
+        "subject_field": {
+          "const": "output.subject"
+        },
+        "body_field": {
+          "const": "output.body"
+        },
+        "word_count_source": {
+          "const": "output.body"
+        },
+        "ask_count_source": {
+          "const": "output.body"
+        },
+        "banned_phrase_source": {
+          "const": "output.subject + output.body"
+        }
+      }
+    },
+    "input": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "signal_brief",
+        "signal_confidence",
+        "bench_summary",
+        "prior_thread",
+        "requested_capacity"
+      ],
+      "properties": {
+        "signal_brief": {
+          "type": "string",
+          "minLength": 1
+        },
+        "signal_confidence": {
+          "type": "string",
+          "enum": [
+            "low",
+            "medium",
+            "high"
+          ]
+        },
+        "bench_summary": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "capacity_constraints"
+          ],
+          "properties": {
+            "capacity_constraints": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "additionalProperties": false,
+                "required": [
+                  "role",
+                  "available_headcount",
+                  "seniority",
+                  "earliest_start_days",
+                  "timezone_overlap_hours"
+                ],
+                "properties": {
+                  "role": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "stack": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "available_headcount": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "seniority": {
+                    "type": "string",
+                    "enum": [
+                      "junior",
+                      "mid",
+                      "senior",
+                      "architect",
+                      "mixed",
+                      "unknown"
+                    ]
+                  },
+                  "earliest_start_days": {
+                    "type": "integer",
+                    "minimum": 0
+                  },
+                  "timezone_overlap_hours": {
+                    "type": "number",
+                    "minimum": 0
+                  }
+                }
+              }
+            },
+            "notes": {
+              "type": "string"
+            }
+          }
+        },
+        "prior_thread": {
+          "type": "string",
+          "description": "Prior conversation context, empty string if none."
+        },
+        "requested_capacity": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "headcount",
+            "role",
+            "timeline_days",
+            "seniority",
+            "timezone"
+          ],
+          "properties": {
+            "headcount": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "role": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "timeline_days": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "seniority": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "junior",
+                "mid",
+                "senior",
+                "architect",
+                "mixed",
+                "unknown",
+                null
+              ]
+            },
+            "timezone": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        }
+      }
+    },
+    "output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "subject",
+        "body"
+      ],
+      "properties": {
+        "subject": {
+          "type": "string",
+          "minLength": 1
+        },
+        "body": {
+          "type": "string",
+          "minLength": 1
+        }
+      }
+    },
+    "derived_evaluation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "signal_understanding",
+        "tone_evaluation",
+        "capacity_overcommitment",
+        "safety_decision_logic",
+        "structural_metrics"
+      ],
+      "properties": {
+        "signal_understanding": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "has_signal",
+            "signal_type",
+            "signal_grounding_score"
+          ],
+          "properties": {
+            "has_signal": {
+              "type": "boolean"
+            },
+            "signal_type": {
+              "type": "string",
+              "enum": [
+                "funding",
+                "hiring",
+                "layoffs",
+                "unknown"
+              ]
+            },
+            "signal_grounding_score": {
+              "$ref": "#/$defs/score_1_to_5",
+              "description": "Measures whether the email accurately uses the supplied signal facts. This is distinct from confidence alignment."
+            }
+          }
+        },
+        "tone_evaluation": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "direct",
+            "grounded",
+            "honest",
+            "professional",
+            "non_condescending"
+          ],
+          "properties": {
+            "direct": {
+              "$ref": "#/$defs/score_1_to_5"
+            },
+            "grounded": {
+              "$ref": "#/$defs/score_1_to_5"
+            },
+            "honest": {
+              "$ref": "#/$defs/score_1_to_5"
+            },
+            "professional": {
+              "$ref": "#/$defs/score_1_to_5"
+            },
+            "non_condescending": {
+              "$ref": "#/$defs/score_1_to_5"
+            }
+          }
+        },
+        "capacity_overcommitment": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "capacity_claim_detected",
+            "claimed_headcount",
+            "claimed_timeline_days",
+            "unsupported_capacity_flag",
+            "implicit_overpromise_flag"
+          ],
+          "properties": {
+            "capacity_claim_detected": {
+              "type": "boolean"
+            },
+            "claimed_headcount": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "claimed_timeline_days": {
+              "type": [
+                "integer",
+                "null"
+              ],
+              "minimum": 0
+            },
+            "unsupported_capacity_flag": {
+              "type": "boolean"
+            },
+            "implicit_overpromise_flag": {
+              "type": "boolean",
+              "description": "True when the email implies readiness, availability, or guaranteed speed without a supported explicit capacity claim."
+            }
+          }
+        },
+        "safety_decision_logic": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "confidence_alignment_score",
+            "human_routing_flag"
+          ],
+          "properties": {
+            "confidence_alignment_score": {
+              "$ref": "#/$defs/score_1_to_5",
+              "description": "Measures whether wording strength matches input.signal_confidence. Low confidence requires conditional or interrogative language."
+            },
+            "human_routing_flag": {
+              "type": "boolean",
+              "description": "True when capacity is high-risk, requested capacity approaches or exceeds bench constraints, signal confidence is low or medium while requested capacity is material, pricing exceeds public bands, or the email commits contracts, dates, or staffing without verified support."
+            }
+          }
+        },
+        "structural_metrics": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "word_count",
+            "number_of_asks",
+            "banned_phrase_flag"
+          ],
+          "properties": {
+            "word_count": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Computed from output.body."
+            },
+            "number_of_asks": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "Computed from output.body. Values above 2 cap the score at 85."
+            },
+            "banned_phrase_flag": {
+              "type": "boolean",
+              "description": "Computed from output.subject and output.body."
+            }
+          }
+        }
+      }
+    },
+    "overall_result": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "hard_fail",
+        "score",
+        "score_components"
+      ],
+      "properties": {
+        "hard_fail": {
+          "type": "boolean"
+        },
+        "score": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 100,
+          "description": "Final score. If hard_fail is true, score must be 0. Otherwise, score is composed from tone quality, signal grounding, and operational safety."
+        },
+        "score_components": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "tone_quality",
+            "signal_grounding",
+            "operational_safety"
+          ],
+          "properties": {
+            "tone_quality": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 40
+            },
+            "signal_grounding": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            },
+            "operational_safety": {
+              "type": "number",
+              "minimum": 0,
+              "maximum": 30
+            }
+          }
+        },
+        "failure_reasons": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "overall_result": {
+            "properties": {
+              "hard_fail": {
+                "const": true
+              }
+            },
+            "required": [
+              "hard_fail"
+            ]
+          }
+        },
+        "required": [
+          "overall_result"
+        ]
+      },
+      "then": {
+        "properties": {
+          "overall_result": {
+            "properties": {
+              "score": {
+                "const": 0
+              }
+            },
+            "required": [
+              "score"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "derived_evaluation": {
+            "properties": {
+              "capacity_overcommitment": {
+                "properties": {
+                  "unsupported_capacity_flag": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "unsupported_capacity_flag"
+                ]
+              }
+            },
+            "required": [
+              "capacity_overcommitment"
+            ]
+          }
+        },
+        "required": [
+          "derived_evaluation"
+        ]
+      },
+      "then": {
+        "properties": {
+          "overall_result": {
+            "properties": {
+              "hard_fail": {
+                "const": true
+              }
+            },
+            "required": [
+              "hard_fail"
+            ]
+          }
+        },
+        "required": [
+          "overall_result"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "derived_evaluation": {
+            "properties": {
+              "capacity_overcommitment": {
+                "properties": {
+                  "implicit_overpromise_flag": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "implicit_overpromise_flag"
+                ]
+              }
+            },
+            "required": [
+              "capacity_overcommitment"
+            ]
+          }
+        },
+        "required": [
+          "derived_evaluation"
+        ]
+      },
+      "then": {
+        "properties": {
+          "overall_result": {
+            "properties": {
+              "hard_fail": {
+                "const": true
+              }
+            },
+            "required": [
+              "hard_fail"
+            ]
+          }
+        },
+        "required": [
+          "overall_result"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "derived_evaluation": {
+            "properties": {
+              "structural_metrics": {
+                "properties": {
+                  "banned_phrase_flag": {
+                    "const": true
+                  }
+                },
+                "required": [
+                  "banned_phrase_flag"
+                ]
+              }
+            },
+            "required": [
+              "structural_metrics"
+            ]
+          }
+        },
+        "required": [
+          "derived_evaluation"
+        ]
+      },
+      "then": {
+        "properties": {
+          "overall_result": {
+            "properties": {
+              "hard_fail": {
+                "const": true
+              }
+            },
+            "required": [
+              "hard_fail"
+            ]
+          }
+        },
+        "required": [
+          "overall_result"
+        ]
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "derived_evaluation": {
+            "properties": {
+              "structural_metrics": {
+                "properties": {
+                  "number_of_asks": {
+                    "minimum": 3
+                  }
+                },
+                "required": [
+                  "number_of_asks"
+                ]
+              }
+            },
+            "required": [
+              "structural_metrics"
+            ]
+          }
+        },
+        "required": [
+          "derived_evaluation"
+        ]
+      },
+      "then": {
+        "properties": {
+          "overall_result": {
+            "properties": {
+              "score": {
+                "maximum": 85
+              }
+            },
+            "required": [
+              "score"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "derived_evaluation": {
+            "properties": {
+              "structural_metrics": {
+                "properties": {
+                  "word_count": {
+                    "minimum": 201
+                  }
+                },
+                "required": [
+                  "word_count"
+                ]
+              }
+            },
+            "required": [
+              "structural_metrics"
+            ]
+          }
+        },
+        "required": [
+          "derived_evaluation"
+        ]
+      },
+      "then": {
+        "properties": {
+          "overall_result": {
+            "properties": {
+              "score": {
+                "maximum": 90
+              }
+            },
+            "required": [
+              "score"
+            ]
+          }
+        }
+      }
+    }
+  ],
+  "$defs": {
+    "score_1_to_5": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 5
+    }
+  }
+}
