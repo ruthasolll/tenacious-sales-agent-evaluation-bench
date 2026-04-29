@@ -14,6 +14,22 @@ from typing import Any, Dict, List, Mapping
 
 DATASET_PATH = Path("data/seed/splits/dev.json")
 
+# -------------------------------
+# SCORING CALIBRATION (IMPORTANT)
+# -------------------------------
+# SIGNAL SCORE:
+# 0 = no meaningful reference to input signal
+# 1 = explicit or strong semantic reference to signal
+#
+# TONE SCORE:
+# 1 = spammy / generic / salesy / buzzword-heavy
+# 3 = acceptable but slightly vague or templated
+# 5 = grounded, specific, non-salesy, context-aware
+#
+# CTA SCORE:
+# 0 = no clear next step or call-to-action
+# 1 = explicit invitation to respond, meet, or discuss
+
 BANNED_PHRASES = [
     "world-class",
     "top talent",
@@ -33,6 +49,8 @@ BANNED_PHRASES = [
     "leverage",
     "game-changer",
     "don't miss out",
+    "number one",
+    "#1",
     "per my last email",
 ]
 
@@ -41,22 +59,21 @@ GENERIC_OUTPUT_PHRASES = [
     "we are excited",
 ]
 
-STRONG_CTA_PATTERNS = [
+CTA_PATTERNS = [
+    r"\bwould (?:this|it|that).*(?:help|work|useful)\b",
+    r"\bare you open to\b",
+    r"\bcan we\b",
+    r"\bcould we\b",
+    r"\bworth (?:a |quick )?(?:chat|call|discussion)\b",
+    r"\blet me know\b",
+    r"\bhappy to\b",
+    r"\bopen to\b",
     r"\b\d+\s*[- ]?\s*(?:min|minute|minutes)\b",
     r"\bschedule\b",
     r"\bcall\b",
     r"\bchat\b",
     r"\bmeeting\b",
     r"\bcalendar\b",
-]
-
-WEAK_CTA_PATTERNS = [
-    r"\blet me know\b",
-    r"\bopen to\b",
-    r"\bhappy to\b",
-    r"\bwould\b.*\b(useful|help|work)\b",
-    r"\bare you open\b",
-    r"\breply\b",
 ]
 
 MONTH_TOKENS = {
@@ -87,7 +104,7 @@ def check_signal_mention(output: Any, signal: str) -> int:
     if signal_text in text:
         return 1
 
-    matched_tokens = [token for token in signal_tokens if token in text]
+    matched_tokens = [token for token in signal_tokens if len(token) > 3 and token in text]
     if not matched_tokens:
         return 0
 
@@ -146,9 +163,9 @@ def check_tone_score(output: Any, signal: str = "") -> int:
     if any(phrase in normalized for phrase in condescending):
         return 2
 
-    hype_or_overclaim = ["guarantee", "definitely", "always", "unbeatable"]
-    if any(term in normalized for term in hype_or_overclaim):
-        return 3
+    urgency_or_overclaim = ["guarantee", "definitely", "always", "unbeatable", "instantly", "urgently"]
+    if any(term in normalized for term in urgency_or_overclaim):
+        return 2
 
     if word_count == 0:
         return 1
@@ -160,21 +177,17 @@ def check_tone_score(output: Any, signal: str = "") -> int:
         return 4
 
     signal_grounded = check_signal_mention(output, signal) == 1
-    has_strong_cta = contains_strong_cta(normalized)
-    structured_specific = signal_grounded and has_strong_cta and "tenacious" in normalized
+    has_cta = contains_cta(normalized)
+    structured_specific = signal_grounded and has_cta and "tenacious" in normalized
     if structured_specific:
         return 5
     return 4
 
 
 def check_cta(output: Any) -> int:
-    """Return 1 only when the output contains a strong meeting-oriented CTA."""
+    """Return 1 when the output contains a clear response, meeting, or discussion CTA."""
     text = normalize_text(output_to_text(output))
-    if contains_strong_cta(text):
-        return 1
-    if any(re.search(pattern, text) for pattern in WEAK_CTA_PATTERNS):
-        return 0
-    return 0
+    return 1 if contains_cta(text) else 0
 
 
 def evaluate_task(task: Mapping[str, Any]) -> Dict[str, Any]:
@@ -250,9 +263,9 @@ def is_signal_anchor(token: str) -> bool:
     return any(char.isdigit() for char in token) or token.startswith("$") or token in MONTH_TOKENS
 
 
-def contains_strong_cta(text: str) -> bool:
-    """Return whether normalized text contains a strong CTA."""
-    return any(re.search(pattern, text) for pattern in STRONG_CTA_PATTERNS)
+def contains_cta(text: str) -> bool:
+    """Return whether normalized text contains a clear CTA."""
+    return any(re.search(pattern, text) for pattern in CTA_PATTERNS)
 
 
 def count_words(text: str) -> int:
@@ -267,6 +280,10 @@ def main() -> None:
     average = sum(result["total"] for result in results) / len(results) if results else 0.0
 
     print(json.dumps({"results": results, "average_score": round(average, 3)}, indent=2))
+    print("TASK VARIANCE CHECK:")
+    print("signal:", [result["scores"]["signal"] for result in results])
+    print("tone:", [result["scores"]["tone"] for result in results])
+    print("cta:", [result["scores"]["cta"] for result in results])
 
 
 if __name__ == "__main__":

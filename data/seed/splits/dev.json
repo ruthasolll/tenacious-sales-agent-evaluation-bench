@@ -43,5 +43,65 @@
       "requires_cta": true,
       "tone_target": "high"
     }
+  },
+  {
+    "task_id": "edge-001",
+    "input": {
+      "company": "OpenAI",
+      "signal": "Hiring ML engineers",
+      "context": "Research org"
+    },
+    "output": "We are the #1 global AI talent provider and can 10x your hiring instantly.",
+    "rubric": {
+      "requires_signal": true,
+      "requires_cta": true,
+      "tone_target": "low",
+      "edge_case": "over_salesy_email"
+    }
+  },
+  {
+    "task_id": "edge-002",
+    "input": {
+      "company": "AtlasGrid",
+      "signal": "launched a healthcare analytics pilot with Mayo Clinic",
+      "context": "Health data platform"
+    },
+    "output": "Hi team,\n\nI saw your recent news. Tenacious supports teams that need flexible engineering help.\n\nLet me know if this makes sense.",
+    "rubric": {
+      "requires_signal": true,
+      "requires_cta": true,
+      "tone_target": "medium",
+      "edge_case": "vague_signal"
+    }
+  },
+  {
+    "task_id": "edge-003",
+    "input": {
+      "company": "FinchPay",
+      "signal": "announced a payments reliability hiring push in April",
+      "context": "Fintech infrastructure"
+    },
+    "output": "Hi Ravi,\n\nI saw the payments reliability hiring push in April. Tenacious works with fintech infrastructure teams when delivery coverage needs careful scoping.\n\nBest,\nYabi",
+    "rubric": {
+      "requires_signal": true,
+      "requires_cta": true,
+      "tone_target": "medium",
+      "edge_case": "no_cta"
+    }
+  },
+  {
+    "task_id": "edge-004",
+    "input": {
+      "company": "BrightHire",
+      "signal": "Series B funding announcement in May",
+      "context": "HR platform"
+    },
+    "output": "Hi June,\n\nI saw the Series B funding announcement in May and know you urgently need engineers this week. Tenacious can guarantee coverage immediately.\n\nCan we schedule a call?",
+    "rubric": {
+      "requires_signal": true,
+      "requires_cta": true,
+      "tone_target": "low",
+      "edge_case": "hallucinated_urgency"
+    }
   }
 ]
