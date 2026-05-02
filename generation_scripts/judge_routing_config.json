@@ -1,4 +1,5 @@
 {
+  "rotation_policy": "STRICT_SEPARATION: A model instance cannot both generate and judge the same task. Judge family IDs must differ from Generation family IDs.",
   "dev": {
     "description": "Cheap development-tier judges for iteration and dataset filtering dry runs.",
     "families": {

@@ -185,6 +185,8 @@ def load_judge_routing_config(path: Path) -> Dict[str, Any]:
         missing = {"frontier", "open_weight"} - set(families)
         if missing:
             raise ValueError(f"Judge routing tier {tier!r} missing families: {sorted(missing)}")
+    if "rotation_policy" not in data:
+        data["rotation_policy"] = "Implicit routing policy applied: judge family must mismatch generation family."
     return dict(data)
 
 
@@ -237,6 +239,10 @@ def route_models(
 
     tier_config = judge_routes[judge_tier]
     judge_model = tier_config["families"][judge_family]
+    rotation_policy = judge_routes.get("rotation_policy", "STRICT_SEPARATION")
+
+    if generation_family in ("frontier", "open_weight") and generation_family == judge_family:
+        raise RuntimeError(f"Anti-leakage rotation policy {rotation_policy!r} violation: generation_family {generation_family} cannot match judge_family.")
 
     return {
         "generation_model_family": generation_family,
@@ -246,7 +252,8 @@ def route_models(
         "judge_tier": judge_tier,
         "judge_model_id": judge_model,
         "pairwise_judge_model_id": tier_config["pairwise_model_id"],
-        "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
+        "routing_policy": rotation_policy,
+        "enforced_anti_leakage": True,
     }
 
 
