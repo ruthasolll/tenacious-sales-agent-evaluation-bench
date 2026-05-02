@@ -31,6 +31,32 @@ DEFAULT_SEED = 11011
 BENCH_DIR = ROOT / "tenacious_bench_v0.1"
 DATA_SPLITS_DIR = ROOT / "data" / "splits"
 PROMPT_DIR = ROOT / "prompts" / "judge"
+DEFAULT_JUDGE_TIER = "dev"
+DEFAULT_JUDGE_ROUTING_CONFIG = ROOT / "generation_scripts" / "judge_routing_config.json"
+JUDGE_THRESHOLDS = {
+    "input_coherence": 4,
+    "ground_truth_verifiability": 4,
+    "rubric_application_clarity": 4,
+}
+
+DEFAULT_JUDGE_ROUTES = {
+    "dev": {
+        "description": "Cheap development-tier judges for iteration and dataset filtering dry runs.",
+        "families": {
+            "frontier": "dev-tier/gpt-4.1-mini-judge-sim",
+            "open_weight": "dev-tier/qwen2.5-7b-judge-sim",
+        },
+        "pairwise_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
+    },
+    "eval": {
+        "description": "Reserved evaluation-tier judges for final filtering and reportable evidence.",
+        "families": {
+            "frontier": "eval-tier/gpt-5-class-judge-sim",
+            "open_weight": "eval-tier/prometheus-2-7b-judge-sim",
+        },
+        "pairwise_model_id": "eval-tier/claude-sonnet-judge-pairwise-sim",
+    },
+}
 
 SOURCE_MODE_TARGETS = {
     "trace_derived": 60,
@@ -145,7 +171,30 @@ def load_judge_prompts() -> Dict[str, str]:
     return prompts
 
 
-def route_models(source_mode: str, probe: Mapping[str, str], index: int) -> Dict[str, str]:
+def load_judge_routing_config(path: Path) -> Dict[str, Any]:
+    """Load explicit dev/eval judge model IDs, falling back to the in-code defaults."""
+    if not path.exists():
+        return DEFAULT_JUDGE_ROUTES
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if not isinstance(data, Mapping):
+        raise ValueError(f"Expected judge routing config object at {path}")
+    for tier in ("dev", "eval"):
+        if tier not in data:
+            raise ValueError(f"Judge routing config must define a {tier!r} tier")
+        families = data[tier].get("families", {})
+        missing = {"frontier", "open_weight"} - set(families)
+        if missing:
+            raise ValueError(f"Judge routing tier {tier!r} missing families: {sorted(missing)}")
+    return dict(data)
+
+
+def route_models(
+    source_mode: str,
+    probe: Mapping[str, str],
+    index: int,
+    judge_tier: str,
+    judge_routes: Mapping[str, Any],
+) -> Dict[str, str]:
     """Return separate generation and judge model metadata.
 
     Routing policy:
@@ -174,29 +223,41 @@ def route_models(source_mode: str, probe: Mapping[str, str], index: int) -> Dict
         generation_family = "open_weight"
         generation_model = "qwen3-next-80b-a3b-sim"
 
+    if judge_tier not in judge_routes:
+        raise ValueError(f"Unknown judge tier {judge_tier!r}; expected one of {sorted(judge_routes)}")
+
     if generation_family == "frontier":
         judge_family = "open_weight"
-        judge_model = "prometheus-2-style-open-judge-sim"
     elif generation_family == "open_weight":
         judge_family = "frontier"
-        judge_model = "claude-sonnet-4.6-class-judge-sim"
     elif generation_family == "human_adversarial":
         judge_family = "frontier"
-        judge_model = "gpt-5-class-judge-spotcheck-sim"
     else:
         judge_family = "open_weight"
-        judge_model = "deepseek-v3.2-cheap-judge-sim"
+
+    tier_config = judge_routes[judge_tier]
+    judge_model = tier_config["families"][judge_family]
 
     return {
         "generation_model_family": generation_family,
         "generation_model": generation_model,
         "judge_model_family": judge_family,
         "judge_model": judge_model,
+        "judge_tier": judge_tier,
+        "judge_model_id": judge_model,
+        "pairwise_judge_model_id": tier_config["pairwise_model_id"],
         "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
     }
 
 
-def build_task(index: int, source_mode: str, probe: Mapping[str, str], rng: random.Random) -> Dict[str, Any]:
+def build_task(
+    index: int,
+    source_mode: str,
+    probe: Mapping[str, str],
+    rng: random.Random,
+    judge_tier: str,
+    judge_routes: Mapping[str, Any],
+) -> Dict[str, Any]:
     """Build one deterministic benchmark task."""
     company, contact, title, industry = PROSPECTS[index % len(PROSPECTS)]
     stack = STACKS[(index + len(source_mode)) % len(STACKS)]
@@ -208,7 +269,7 @@ def build_task(index: int, source_mode: str, probe: Mapping[str, str], rng: rand
     signal_text, signal_terms, source_window = build_signal(probe, company, stack, index)
     must_route = probe["probe_id"] in {"W10-P01", "W10-P02", "W10-P03", "W10-P06", "W10-P10"}
     pricing_scope = build_pricing_scope(probe)
-    route = route_models(source_mode, probe, index)
+    route = route_models(source_mode, probe, index, judge_tier, judge_routes)
 
     task = {
         "task_id": f"TB-V01-{index + 1:04d}",
@@ -549,17 +610,45 @@ def judge_filter(task: Mapping[str, Any]) -> Dict[str, Any]:
         "ground_truth_verifiability": 5 if task["ground_truth"]["required_signal_terms"] else 2,
         "rubric_application_clarity": 5 if reference_score["passed"] else 3,
     }
-    accepted = not leakage_risk and all(value >= 4 for value in scores.values())
+    threshold_failures = [
+        {
+            "dimension": name,
+            "score": value,
+            "threshold": JUDGE_THRESHOLDS[name],
+            "reason": f"{name} score {value} is below threshold {JUDGE_THRESHOLDS[name]}",
+        }
+        for name, value in scores.items()
+        if value < JUDGE_THRESHOLDS[name]
+    ]
+    reasons = []
+    if leakage_risk:
+        reasons.append(
+            {
+                "code": "preference_leakage_risk",
+                "reason": "generation_model_family and judge_model_family are identical",
+            }
+        )
+    reasons.extend({"code": "threshold_failure", **failure} for failure in threshold_failures)
+    if not reasons:
+        reasons.append(
+            {
+                "code": "passed_all_thresholds",
+                "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected",
+            }
+        )
+
+    accepted = not leakage_risk and not threshold_failures
     return {
         "scores": scores,
-        "thresholds": {
-            "input_coherence": 4,
-            "ground_truth_verifiability": 4,
-            "rubric_application_clarity": 4,
-        },
+        "thresholds": JUDGE_THRESHOLDS,
         "accepted": accepted,
+        "passed": accepted,
+        "status": "pass" if accepted else "fail",
+        "reasons": reasons,
         "leakage_risk": leakage_risk,
         "reference_score": reference_score["overall"],
+        "judge_tier": task["metadata"]["judge_tier"],
+        "judge_model_id": task["metadata"]["judge_model_id"],
     }
 
 
@@ -618,7 +707,7 @@ def harder_task(a: Dict[str, Any], b: Dict[str, Any]) -> Dict[str, Any]:
     return a
 
 
-def build_all_tasks(seed: int) -> List[Dict[str, Any]]:
+def build_all_tasks(seed: int, judge_tier: str, judge_routes: Mapping[str, Any]) -> List[Dict[str, Any]]:
     """Build and filter all tasks."""
     rng = random.Random(seed)
     load_judge_prompts()
@@ -627,7 +716,16 @@ def build_all_tasks(seed: int) -> List[Dict[str, Any]]:
     for source_mode, target in SOURCE_MODE_TARGETS.items():
         for _ in range(target):
             probe = PROBES[index % len(PROBES)]
-            tasks.append(build_task(index=index, source_mode=source_mode, probe=probe, rng=rng))
+            tasks.append(
+                build_task(
+                    index=index,
+                    source_mode=source_mode,
+                    probe=probe,
+                    rng=rng,
+                    judge_tier=judge_tier,
+                    judge_routes=judge_routes,
+                )
+            )
             index += 1
     accepted = [task for task in tasks if task["metadata"]["judge_filter"]["accepted"]]
     deduped, decisions = pairwise_deduplicate(accepted)
@@ -810,7 +908,13 @@ def write_jsonl(path: Path, rows: Iterable[Mapping[str, Any]]) -> None:
     path.write_text("\n".join(json.dumps(row, sort_keys=True) for row in rows) + "\n", encoding="utf-8")
 
 
-def write_outputs(tasks: Sequence[Dict[str, Any]], splits: Mapping[str, List[Dict[str, Any]]], seed: int) -> None:
+def write_outputs(
+    tasks: Sequence[Dict[str, Any]],
+    splits: Mapping[str, List[Dict[str, Any]]],
+    seed: int,
+    judge_tier: str,
+    judge_routes: Mapping[str, Any],
+) -> None:
     """Write benchmark, logs, examples, training data, and evidence graph."""
     write_json(ROOT / "data" / "generated_tasks.json", list(tasks))
     for split_name, split_tasks in splits.items():
@@ -833,6 +937,9 @@ def write_outputs(tasks: Sequence[Dict[str, Any]], splits: Mapping[str, List[Dic
             "generation_model": task["metadata"]["generation_model"],
             "judge_model_family": task["metadata"]["judge_model_family"],
             "judge_model": task["metadata"]["judge_model"],
+            "judge_tier": task["metadata"]["judge_tier"],
+            "judge_model_id": task["metadata"]["judge_model_id"],
+            "pairwise_judge_model_id": task["metadata"]["pairwise_judge_model_id"],
             "leakage_risk": task["metadata"]["judge_filter"]["leakage_risk"],
         }
         for task in tasks
@@ -842,19 +949,24 @@ def write_outputs(tasks: Sequence[Dict[str, Any]], splits: Mapping[str, List[Dic
         ROOT / "generation_scripts" / "judge_filter_log.json",
         {
             "seed": seed,
+            "judge_tier": judge_tier,
+            "judge_routing_config": judge_routes[judge_tier],
             "judge_prompts": sorted(path.name for path in PROMPT_DIR.glob("*.txt")),
-            "thresholds": {
-                "input_coherence": 4,
-                "ground_truth_verifiability": 4,
-                "rubric_application_clarity": 4,
-            },
+            "thresholds": JUDGE_THRESHOLDS,
             "accepted": len(tasks),
-            "rejected": 0,
+            "rejected": sum(1 for task in tasks if not task["metadata"]["judge_filter"]["accepted"]),
             "records": [
                 {
                     "task_id": task["task_id"],
+                    "partition": task["partition"],
+                    "source_mode": task["source_mode"],
+                    "failure_dimension": task["failure_dimension"],
+                    "judge_tier": task["metadata"]["judge_tier"],
+                    "judge_model_id": task["metadata"]["judge_model_id"],
                     "scores": task["metadata"]["judge_filter"]["scores"],
                     "accepted": task["metadata"]["judge_filter"]["accepted"],
+                    "status": task["metadata"]["judge_filter"]["status"],
+                    "reasons": task["metadata"]["judge_filter"]["reasons"],
                     "reference_score": task["metadata"]["judge_filter"]["reference_score"],
                 }
                 for task in tasks
@@ -895,6 +1007,11 @@ def write_outputs(tasks: Sequence[Dict[str, Any]], splits: Mapping[str, List[Dic
                 "counts_by_partition": counts["counts_by_partition"],
                 "counts_by_failure_dimension": counts["counts_by_failure_dimension"],
             },
+            "judge_filter": {
+                "source": "generation_scripts/judge_filter_log.json",
+                "judge_tier": judge_tier,
+                "thresholds": JUDGE_THRESHOLDS,
+            },
             "evaluator_demo": {
                 "source": "examples/example_tasks.json",
                 "command": "python scoring_evaluator.py --tasks examples/example_tasks.json --quiet",
@@ -917,19 +1034,23 @@ def parse_args() -> argparse.Namespace:
     """Parse CLI args."""
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--seed", type=int, default=DEFAULT_SEED)
+    parser.add_argument("--judge-tier", choices=["dev", "eval"], default=DEFAULT_JUDGE_TIER)
+    parser.add_argument("--judge-routing-config", type=Path, default=DEFAULT_JUDGE_ROUTING_CONFIG)
     return parser.parse_args()
 
 
 def main() -> None:
     """Generate and write Tenacious-Bench v0.1."""
     args = parse_args()
-    tasks = build_all_tasks(args.seed)
+    judge_routes = load_judge_routing_config(args.judge_routing_config)
+    tasks = build_all_tasks(args.seed, args.judge_tier, judge_routes)
     splits = stratified_split(tasks)
-    write_outputs(tasks, splits, args.seed)
+    write_outputs(tasks, splits, args.seed, args.judge_tier, judge_routes)
     print(
         json.dumps(
             {
                 "seed": args.seed,
+                "judge_tier": args.judge_tier,
                 "generated": len(tasks),
                 "splits": {name: len(split_tasks) for name, split_tasks in splits.items()},
                 "source_modes": dict(Counter(task["source_mode"] for task in tasks)),

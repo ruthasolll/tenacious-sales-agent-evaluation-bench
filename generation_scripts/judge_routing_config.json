@@ -1,0 +1,18 @@
+{
+  "dev": {
+    "description": "Cheap development-tier judges for iteration and dataset filtering dry runs.",
+    "families": {
+      "frontier": "dev-tier/gpt-4.1-mini-judge-sim",
+      "open_weight": "dev-tier/qwen2.5-7b-judge-sim"
+    },
+    "pairwise_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim"
+  },
+  "eval": {
+    "description": "Reserved evaluation-tier judges for final filtering and reportable evidence.",
+    "families": {
+      "frontier": "eval-tier/gpt-5-class-judge-sim",
+      "open_weight": "eval-tier/prometheus-2-7b-judge-sim"
+    },
+    "pairwise_model_id": "eval-tier/claude-sonnet-judge-pairwise-sim"
+  }
+}

@@ -49,8 +49,36 @@ DEFAULT_DATASET_PATH = ROOT / "training_data" / "dpo_dataset.jsonl"
 DEFAULT_OUTPUT_DIR = ROOT / "outputs"
 
 MODEL_NAME = "unsloth/qwen2.5-1.5b"
+MODEL_REVISION = "1582479a65dd3252951448feee6868d2cfda6452"
 MAX_SEQ_LENGTH = 1024
 MAX_PROMPT_LENGTH = 512
+DPO_TRAINING_CONFIG = {
+    "epochs": 1,
+    "per_device_train_batch_size": 1,
+    "gradient_accumulation_steps": 8,
+    "learning_rate": 2e-5,
+    "warmup_ratio": 0.03,
+    "lr_scheduler_type": "linear",
+    "optim": "adamw_8bit",
+    "beta": 0.1,
+    "loss_type": "sigmoid",
+}
+LORA_CONFIG = {
+    "lora_only": True,
+    "r": 16,
+    "lora_alpha": 16,
+    "lora_dropout": 0.0,
+    "bias": "none",
+    "target_modules": [
+        "q_proj",
+        "k_proj",
+        "v_proj",
+        "o_proj",
+        "gate_proj",
+        "up_proj",
+        "down_proj",
+    ],
+}
 
 
 class LossPrinterCallback(TrainerCallback):
@@ -74,8 +102,18 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--dataset-path", type=Path, default=DEFAULT_DATASET_PATH)
     parser.add_argument("--output-dir", type=Path, default=DEFAULT_OUTPUT_DIR)
     parser.add_argument("--model-name", default=MODEL_NAME)
+    parser.add_argument("--model-revision", default=MODEL_REVISION)
     parser.add_argument("--max-seq-length", type=int, default=MAX_SEQ_LENGTH)
     parser.add_argument("--max-prompt-length", type=int, default=MAX_PROMPT_LENGTH)
+    parser.add_argument("--epochs", type=int, default=DPO_TRAINING_CONFIG["epochs"])
+    parser.add_argument("--batch-size", type=int, default=DPO_TRAINING_CONFIG["per_device_train_batch_size"])
+    parser.add_argument("--grad-accum", type=int, default=DPO_TRAINING_CONFIG["gradient_accumulation_steps"])
+    parser.add_argument("--learning-rate", type=float, default=DPO_TRAINING_CONFIG["learning_rate"])
+    parser.add_argument("--warmup-ratio", type=float, default=DPO_TRAINING_CONFIG["warmup_ratio"])
+    parser.add_argument("--lr-scheduler", default=DPO_TRAINING_CONFIG["lr_scheduler_type"])
+    parser.add_argument("--lora-r", type=int, default=LORA_CONFIG["r"])
+    parser.add_argument("--lora-alpha", type=int, default=LORA_CONFIG["lora_alpha"])
+    parser.add_argument("--lora-dropout", type=float, default=LORA_CONFIG["lora_dropout"])
     parser.add_argument("--seed", type=int, default=42)
     return parser.parse_args()
 
@@ -124,10 +162,19 @@ def load_dpo_dataset(dataset_path: Path) -> Dataset:
     return dataset
 
 
-def load_model_and_tokenizer(model_name: str, max_seq_length: int):
+def load_model_and_tokenizer(
+    model_name: str,
+    model_revision: str,
+    max_seq_length: int,
+    lora_r: int,
+    lora_alpha: int,
+    lora_dropout: float,
+    seed: int,
+):
     """Load the 4-bit base model and attach trainable LoRA adapters."""
     model, tokenizer = FastLanguageModel.from_pretrained(
         model_name=model_name,
+        revision=model_revision,
         max_seq_length=max_seq_length,
         dtype=None,
         load_in_4bit=True,
@@ -139,54 +186,46 @@ def load_model_and_tokenizer(model_name: str, max_seq_length: int):
 
     model = FastLanguageModel.get_peft_model(
         model,
-        r=16,
-        target_modules=[
-            "q_proj",
-            "k_proj",
-            "v_proj",
-            "o_proj",
-            "gate_proj",
-            "up_proj",
-            "down_proj",
-        ],
-        lora_alpha=16,
-        lora_dropout=0,
-        bias="none",
+        r=lora_r,
+        target_modules=LORA_CONFIG["target_modules"],
+        lora_alpha=lora_alpha,
+        lora_dropout=lora_dropout,
+        bias=LORA_CONFIG["bias"],
         use_gradient_checkpointing="unsloth",
-        random_state=42,
+        random_state=seed,
         max_seq_length=max_seq_length,
     )
     return model, tokenizer
 
 
-def make_dpo_config(output_dir: Path, max_seq_length: int, max_prompt_length: int, seed: int) -> DPOConfig:
+def make_dpo_config(args: argparse.Namespace) -> DPOConfig:
     """Create a latest-TRL DPOConfig instead of deprecated TrainingArguments."""
     return DPOConfig(
-        output_dir=str(output_dir),
-        per_device_train_batch_size=1,
-        gradient_accumulation_steps=8,
-        num_train_epochs=1,
-        learning_rate=2e-5,
+        output_dir=str(args.output_dir),
+        per_device_train_batch_size=args.batch_size,
+        gradient_accumulation_steps=args.grad_accum,
+        num_train_epochs=args.epochs,
+        learning_rate=args.learning_rate,
         logging_steps=10,
         logging_first_step=True,
         save_strategy="epoch",
         save_total_limit=2,
         fp16=not is_bfloat16_supported(),
         bf16=is_bfloat16_supported(),
-        optim="adamw_8bit",
-        warmup_ratio=0.03,
-        lr_scheduler_type="linear",
+        optim=DPO_TRAINING_CONFIG["optim"],
+        warmup_ratio=args.warmup_ratio,
+        lr_scheduler_type=args.lr_scheduler,
         max_grad_norm=0.3,
-        seed=seed,
+        seed=args.seed,
         dataloader_num_workers=0,
         gradient_checkpointing=True,
         remove_unused_columns=False,
         report_to="none",
-        beta=0.1,
-        loss_type="sigmoid",
-        max_length=max_seq_length,
-        max_prompt_length=max_prompt_length,
-        max_completion_length=max_seq_length - max_prompt_length,
+        beta=DPO_TRAINING_CONFIG["beta"],
+        loss_type=DPO_TRAINING_CONFIG["loss_type"],
+        max_length=args.max_seq_length,
+        max_prompt_length=args.max_prompt_length,
+        max_completion_length=args.max_seq_length - args.max_prompt_length,
         truncation_mode="keep_end",
         precompute_ref_log_probs=False,
         reference_free=False,
@@ -208,13 +247,42 @@ def main() -> None:
     args.output_dir.mkdir(parents=True, exist_ok=True)
 
     train_dataset = load_dpo_dataset(args.dataset_path)
-    model, tokenizer = load_model_and_tokenizer(args.model_name, args.max_seq_length)
-    dpo_config = make_dpo_config(
-        output_dir=args.output_dir,
+    model, tokenizer = load_model_and_tokenizer(
+        model_name=args.model_name,
+        model_revision=args.model_revision,
         max_seq_length=args.max_seq_length,
-        max_prompt_length=args.max_prompt_length,
+        lora_r=args.lora_r,
+        lora_alpha=args.lora_alpha,
+        lora_dropout=args.lora_dropout,
         seed=args.seed,
     )
+    dpo_config = make_dpo_config(args)
+    visible_config = {
+        "model_name": args.model_name,
+        "model_revision": args.model_revision,
+        "dataset_path": str(args.dataset_path),
+        "output_dir": str(args.output_dir),
+        "seed": args.seed,
+        "dpo": {
+            "epochs": dpo_config.num_train_epochs,
+            "per_device_train_batch_size": dpo_config.per_device_train_batch_size,
+            "gradient_accumulation_steps": dpo_config.gradient_accumulation_steps,
+            "learning_rate": dpo_config.learning_rate,
+            "warmup_ratio": dpo_config.warmup_ratio,
+            "lr_scheduler_type": dpo_config.lr_scheduler_type,
+            "optim": dpo_config.optim,
+            "beta": dpo_config.beta,
+            "loss_type": dpo_config.loss_type,
+        },
+        "lora": {
+            **LORA_CONFIG,
+            "r": args.lora_r,
+            "lora_alpha": args.lora_alpha,
+            "lora_dropout": args.lora_dropout,
+        },
+    }
+    print("Resolved training config:")
+    print(json.dumps(visible_config, indent=2))
 
     trainer = DPOTrainer(
         model=model,
@@ -241,14 +309,8 @@ def main() -> None:
     tokenizer.save_pretrained(str(args.output_dir))
 
     summary = {
-        "model_name": args.model_name,
-        "dataset_path": str(args.dataset_path),
-        "output_dir": str(args.output_dir),
+        **visible_config,
         "train_examples": len(train_dataset),
-        "epochs": dpo_config.num_train_epochs,
-        "per_device_train_batch_size": dpo_config.per_device_train_batch_size,
-        "gradient_accumulation_steps": dpo_config.gradient_accumulation_steps,
-        "learning_rate": dpo_config.learning_rate,
         "train_loss": metrics.get("train_loss"),
     }
     summary_path = args.output_dir / "training_summary.json"

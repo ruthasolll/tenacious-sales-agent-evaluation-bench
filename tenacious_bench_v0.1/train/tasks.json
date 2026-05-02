@@ -107,7 +107,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 1,
@@ -129,8 +132,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -237,7 +250,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 2,
@@ -259,8 +275,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -373,7 +399,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 4,
@@ -396,8 +425,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -510,7 +549,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 7,
@@ -533,8 +575,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -647,7 +699,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 9,
@@ -669,8 +724,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -777,7 +842,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 10,
@@ -800,8 +868,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -914,7 +992,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 11,
@@ -936,8 +1017,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -1050,7 +1141,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 13,
@@ -1073,8 +1167,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -1187,7 +1291,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 14,
@@ -1210,8 +1317,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -1330,7 +1447,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 15,
@@ -1353,8 +1473,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -1467,7 +1597,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 23,
@@ -1490,8 +1623,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -1610,7 +1753,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 25,
@@ -1633,8 +1779,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -1747,7 +1903,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 27,
@@ -1770,8 +1929,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -1884,7 +2053,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 29,
@@ -1906,8 +2078,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -2020,7 +2202,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 31,
@@ -2042,8 +2227,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -2156,7 +2351,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 32,
@@ -2178,8 +2376,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -2292,7 +2500,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 33,
@@ -2315,8 +2526,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -2435,7 +2656,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 35,
@@ -2458,8 +2682,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -2572,7 +2806,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 36,
@@ -2595,8 +2832,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -2709,7 +2956,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 37,
@@ -2732,8 +2982,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -2846,7 +3106,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 38,
@@ -2869,8 +3132,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -2983,7 +3256,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 40,
@@ -3006,8 +3282,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -3114,7 +3400,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 42,
@@ -3136,8 +3425,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -3250,7 +3549,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 43,
@@ -3273,8 +3575,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -3393,7 +3705,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 45,
@@ -3416,8 +3731,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -3530,7 +3855,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 48,
@@ -3553,8 +3881,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -3667,7 +4005,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 51,
@@ -3689,8 +4030,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -3803,7 +4154,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 52,
@@ -3825,8 +4179,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -3939,7 +4303,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 56,
@@ -3962,8 +4329,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -4076,7 +4453,10 @@
       "generation_model_family": "trace_reconstructor",
       "generation_model": "week10-trace-restructure-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 58,
@@ -4099,8 +4479,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -4213,7 +4603,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 60,
@@ -4236,8 +4629,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -4350,7 +4753,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 64,
@@ -4373,8 +4779,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -4487,7 +4903,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 68,
@@ -4510,8 +4929,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -4618,7 +5047,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 70,
@@ -4641,8 +5073,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -4755,7 +5197,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 71,
@@ -4777,8 +5222,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -4891,7 +5346,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 72,
@@ -4913,8 +5371,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -5027,7 +5495,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 77,
@@ -5050,8 +5521,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -5164,7 +5645,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 78,
@@ -5187,8 +5671,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -5301,7 +5795,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 79,
@@ -5323,8 +5820,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -5437,7 +5944,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 80,
@@ -5460,8 +5970,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -5574,7 +6094,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 81,
@@ -5596,8 +6119,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -5716,7 +6249,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 85,
@@ -5739,8 +6275,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -5847,7 +6393,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 86,
@@ -5870,8 +6419,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -5984,7 +6543,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 89,
@@ -6006,8 +6568,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -6114,7 +6686,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 90,
@@ -6137,8 +6712,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -6251,7 +6836,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 92,
@@ -6273,8 +6861,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -6387,7 +6985,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 96,
@@ -6410,8 +7011,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -6524,7 +7135,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 97,
@@ -6547,8 +7161,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -6661,7 +7285,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 98,
@@ -6684,8 +7311,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -6798,7 +7435,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 99,
@@ -6820,8 +7460,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -6934,7 +7584,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 103,
@@ -6957,8 +7610,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -7071,7 +7734,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 104,
@@ -7094,8 +7760,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -7202,7 +7878,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 106,
@@ -7225,8 +7904,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -7339,7 +8028,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 107,
@@ -7362,8 +8054,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -7470,7 +8172,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 110,
@@ -7493,8 +8198,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -7607,7 +8322,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 112,
@@ -7629,8 +8347,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -7743,7 +8471,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 113,
@@ -7766,8 +8497,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -7880,7 +8621,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 116,
@@ -7903,8 +8647,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -8017,7 +8771,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 118,
@@ -8040,8 +8797,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -8154,7 +8921,10 @@
       "generation_model_family": "programmatic_template",
       "generation_model": "tenacious-template-sweeper-v0",
       "judge_model_family": "open_weight",
-      "judge_model": "deepseek-v3.2-cheap-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 119,
@@ -8176,8 +8946,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -8290,7 +9070,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 121,
@@ -8312,8 +9095,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -8426,7 +9219,10 @@
       "generation_model_family": "open_weight",
       "generation_model": "qwen3-next-80b-a3b-sim",
       "judge_model_family": "frontier",
-      "judge_model": "claude-sonnet-4.6-class-judge-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 123,
@@ -8449,8 +9245,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -8563,7 +9369,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 124,
@@ -8586,8 +9395,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -8706,7 +9525,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 125,
@@ -8729,8 +9551,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -8843,7 +9675,10 @@
       "generation_model_family": "open_weight",
       "generation_model": "qwen3-next-80b-a3b-sim",
       "judge_model_family": "frontier",
-      "judge_model": "claude-sonnet-4.6-class-judge-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 133,
@@ -8866,8 +9701,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -8980,7 +9825,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 134,
@@ -9003,8 +9851,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -9117,7 +9975,10 @@
       "generation_model_family": "open_weight",
       "generation_model": "qwen3-next-80b-a3b-sim",
       "judge_model_family": "frontier",
-      "judge_model": "claude-sonnet-4.6-class-judge-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 137,
@@ -9140,8 +10001,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -9254,7 +10125,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 138,
@@ -9277,8 +10151,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -9391,7 +10275,10 @@
       "generation_model_family": "open_weight",
       "generation_model": "qwen3-next-80b-a3b-sim",
       "judge_model_family": "frontier",
-      "judge_model": "claude-sonnet-4.6-class-judge-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 139,
@@ -9413,8 +10300,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -9527,7 +10424,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 141,
@@ -9549,8 +10449,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -9663,7 +10573,10 @@
       "generation_model_family": "open_weight",
       "generation_model": "qwen3-next-80b-a3b-sim",
       "judge_model_family": "frontier",
-      "judge_model": "claude-sonnet-4.6-class-judge-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 143,
@@ -9686,8 +10599,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -9800,7 +10723,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 144,
@@ -9823,8 +10749,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -9931,7 +10867,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 146,
@@ -9954,8 +10893,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -10068,7 +11017,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 148,
@@ -10091,8 +11043,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -10205,7 +11167,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 151,
@@ -10227,8 +11192,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -10341,7 +11316,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 152,
@@ -10363,8 +11341,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -10477,7 +11465,10 @@
       "generation_model_family": "open_weight",
       "generation_model": "qwen3-next-80b-a3b-sim",
       "judge_model_family": "frontier",
-      "judge_model": "claude-sonnet-4.6-class-judge-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 153,
@@ -10500,8 +11491,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -10614,7 +11615,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 154,
@@ -10637,8 +11641,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -10751,7 +11765,10 @@
       "generation_model_family": "open_weight",
       "generation_model": "qwen3-next-80b-a3b-sim",
       "judge_model_family": "frontier",
-      "judge_model": "claude-sonnet-4.6-class-judge-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 159,
@@ -10773,8 +11790,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -10887,7 +11914,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 160,
@@ -10910,8 +11940,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -11024,7 +12064,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 161,
@@ -11046,8 +12089,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -11160,7 +12213,10 @@
       "generation_model_family": "open_weight",
       "generation_model": "qwen3-next-80b-a3b-sim",
       "judge_model_family": "frontier",
-      "judge_model": "claude-sonnet-4.6-class-judge-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 163,
@@ -11183,8 +12239,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -11303,7 +12369,10 @@
       "generation_model_family": "frontier",
       "generation_model": "gpt-5-class-sim",
       "judge_model_family": "open_weight",
-      "judge_model": "prometheus-2-style-open-judge-sim",
+      "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 165,
@@ -11326,8 +12395,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -11440,7 +12519,10 @@
       "generation_model_family": "open_weight",
       "generation_model": "qwen3-next-80b-a3b-sim",
       "judge_model_family": "frontier",
-      "judge_model": "claude-sonnet-4.6-class-judge-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 167,
@@ -11463,8 +12545,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -11577,7 +12669,10 @@
       "generation_model_family": "open_weight",
       "generation_model": "qwen3-next-80b-a3b-sim",
       "judge_model_family": "frontier",
-      "judge_model": "claude-sonnet-4.6-class-judge-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 169,
@@ -11599,8 +12694,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -11707,7 +12812,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 170,
@@ -11730,8 +12838,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -11844,7 +12962,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 171,
@@ -11866,8 +12987,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -11980,7 +13111,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 172,
@@ -12002,8 +13136,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -12116,7 +13260,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 173,
@@ -12139,8 +13286,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -12253,7 +13410,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 178,
@@ -12276,8 +13436,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -12390,7 +13560,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 180,
@@ -12413,8 +13586,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -12527,7 +13710,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 181,
@@ -12549,8 +13735,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -12657,7 +13853,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 182,
@@ -12679,8 +13878,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -12793,7 +14002,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 184,
@@ -12816,8 +14028,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "reply-aware"
     }
@@ -12930,7 +14152,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 187,
@@ -12953,8 +14178,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -13067,7 +14302,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 188,
@@ -13090,8 +14328,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -13204,7 +14452,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 191,
@@ -13226,8 +14477,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -13340,7 +14601,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 192,
@@ -13362,8 +14626,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 100.0
+        "reference_score": 100.0,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "plain"
     }
@@ -13476,7 +14750,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 193,
@@ -13499,8 +14776,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }
@@ -13613,7 +14900,10 @@
       "generation_model_family": "human_adversarial",
       "generation_model": "human-authored-week10-probe",
       "judge_model_family": "frontier",
-      "judge_model": "gpt-5-class-judge-spotcheck-sim",
+      "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+      "judge_tier": "dev",
+      "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+      "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
       "routing_policy": "source-mode conditional routing with multi-LLM rotation and no same-family judge",
       "seed": 11011,
       "route_index": 194,
@@ -13636,8 +14926,18 @@
           "rubric_application_clarity": 4
         },
         "accepted": true,
+        "passed": true,
+        "status": "pass",
+        "reasons": [
+          {
+            "code": "passed_all_thresholds",
+            "reason": "all judge-filter dimensions cleared thresholds and no leakage risk was detected"
+          }
+        ],
         "leakage_risk": false,
-        "reference_score": 93.75
+        "reference_score": 93.75,
+        "judge_tier": "dev",
+        "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim"
       },
       "generation_surface_variation": "resource-offer"
     }

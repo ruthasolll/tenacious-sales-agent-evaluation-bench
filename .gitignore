@@ -1,3 +1,19 @@
 __pycache__/
+**/__pycache__/
 *.py[cod]
 .venv/
+
+# Local/Colab model artifacts. Keep small tracked JSON summaries in outputs/.
+outputs/checkpoint-*/
+outputs/*.safetensors
+outputs/*.bin
+outputs/adapter_config.json
+outputs/added_tokens.json
+outputs/merges.txt
+outputs/README.md
+outputs/special_tokens_map.json
+outputs/tokenizer.json
+outputs/tokenizer_config.json
+outputs/train_results.json
+outputs/trainer_state.json
+outputs/vocab.json

@@ -6,7 +6,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -16,7 +19,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -26,7 +32,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -36,7 +45,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -46,7 +58,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -56,7 +71,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -66,7 +84,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -76,7 +97,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -86,7 +110,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -96,7 +123,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -106,7 +136,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -116,7 +149,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -126,7 +162,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -136,7 +175,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -146,7 +188,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -156,7 +201,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -166,7 +214,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -176,7 +227,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -186,7 +240,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -196,7 +253,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -206,7 +266,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -216,7 +279,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -226,7 +292,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -236,7 +305,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -246,7 +318,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -256,7 +331,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -266,7 +344,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -276,7 +357,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -286,7 +370,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -296,7 +383,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -306,7 +396,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -316,7 +409,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -326,7 +422,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -336,7 +435,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -346,7 +448,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -356,7 +461,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -366,7 +474,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -376,7 +487,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -386,7 +500,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -396,7 +513,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -406,7 +526,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -416,7 +539,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -426,7 +552,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -436,7 +565,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -446,7 +578,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -456,7 +591,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -466,7 +604,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -476,7 +617,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -486,7 +630,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -496,7 +643,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -506,7 +656,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -516,7 +669,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -526,7 +682,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -536,7 +695,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -546,7 +708,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -556,7 +721,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -566,7 +734,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -576,7 +747,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -586,7 +760,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -596,7 +773,10 @@
     "generation_model_family": "trace_reconstructor",
     "generation_model": "week10-trace-restructure-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -606,7 +786,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -616,7 +799,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -626,7 +812,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -636,7 +825,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -646,7 +838,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -656,7 +851,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -666,7 +864,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -676,7 +877,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -686,7 +890,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -696,7 +903,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -706,7 +916,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -716,7 +929,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -726,7 +942,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -736,7 +955,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -746,7 +968,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -756,7 +981,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -766,7 +994,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -776,7 +1007,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -786,7 +1020,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -796,7 +1033,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -806,7 +1046,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -816,7 +1059,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -826,7 +1072,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -836,7 +1085,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -846,7 +1098,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -856,7 +1111,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -866,7 +1124,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -876,7 +1137,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -886,7 +1150,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -896,7 +1163,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -906,7 +1176,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -916,7 +1189,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -926,7 +1202,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -936,7 +1215,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -946,7 +1228,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -956,7 +1241,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -966,7 +1254,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -976,7 +1267,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -986,7 +1280,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -996,7 +1293,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1006,7 +1306,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1016,7 +1319,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1026,7 +1332,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1036,7 +1345,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1046,7 +1358,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1056,7 +1371,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1066,7 +1384,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1076,7 +1397,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1086,7 +1410,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1096,7 +1423,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1106,7 +1436,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1116,7 +1449,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1126,7 +1462,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1136,7 +1475,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1146,7 +1488,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1156,7 +1501,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1166,7 +1514,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1176,7 +1527,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1186,7 +1540,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1196,7 +1553,10 @@
     "generation_model_family": "programmatic_template",
     "generation_model": "tenacious-template-sweeper-v0",
     "judge_model_family": "open_weight",
-    "judge_model": "deepseek-v3.2-cheap-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1206,7 +1566,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1216,7 +1579,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1226,7 +1592,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1236,7 +1605,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1246,7 +1618,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1256,7 +1631,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1266,7 +1644,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1276,7 +1657,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1286,7 +1670,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1296,7 +1683,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1306,7 +1696,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1316,7 +1709,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1326,7 +1722,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1336,7 +1735,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1346,7 +1748,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1356,7 +1761,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1366,7 +1774,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1376,7 +1787,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1386,7 +1800,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1396,7 +1813,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1406,7 +1826,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1416,7 +1839,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1426,7 +1852,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1436,7 +1865,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1446,7 +1878,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1456,7 +1891,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1466,7 +1904,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1476,7 +1917,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1486,7 +1930,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1496,7 +1943,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1506,7 +1956,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1516,7 +1969,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1526,7 +1982,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1536,7 +1995,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1546,7 +2008,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1556,7 +2021,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1566,7 +2034,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1576,7 +2047,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1586,7 +2060,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1596,7 +2073,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1606,7 +2086,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1616,7 +2099,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1626,7 +2112,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1636,7 +2125,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1646,7 +2138,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1656,7 +2151,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1666,7 +2164,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1676,7 +2177,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1686,7 +2190,10 @@
     "generation_model_family": "frontier",
     "generation_model": "gpt-5-class-sim",
     "judge_model_family": "open_weight",
-    "judge_model": "prometheus-2-style-open-judge-sim",
+    "judge_model": "dev-tier/qwen2.5-7b-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/qwen2.5-7b-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1696,7 +2203,10 @@
     "generation_model_family": "open_weight",
     "generation_model": "qwen3-next-80b-a3b-sim",
     "judge_model_family": "frontier",
-    "judge_model": "claude-sonnet-4.6-class-judge-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1706,7 +2216,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1716,7 +2229,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1726,7 +2242,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1736,7 +2255,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1746,7 +2268,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1756,7 +2281,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1766,7 +2294,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1776,7 +2307,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1786,7 +2320,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1796,7 +2333,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1806,7 +2346,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1816,7 +2359,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1826,7 +2372,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1836,7 +2385,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1846,7 +2398,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1856,7 +2411,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1866,7 +2424,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1876,7 +2437,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1886,7 +2450,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1896,7 +2463,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1906,7 +2476,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1916,7 +2489,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1926,7 +2502,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1936,7 +2515,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1946,7 +2528,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1956,7 +2541,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1966,7 +2554,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1976,7 +2567,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1986,7 +2580,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   },
   {
@@ -1996,7 +2593,10 @@
     "generation_model_family": "human_adversarial",
     "generation_model": "human-authored-week10-probe",
     "judge_model_family": "frontier",
-    "judge_model": "gpt-5-class-judge-spotcheck-sim",
+    "judge_model": "dev-tier/gpt-4.1-mini-judge-sim",
+    "judge_tier": "dev",
+    "judge_model_id": "dev-tier/gpt-4.1-mini-judge-sim",
+    "pairwise_judge_model_id": "dev-tier/qwen2.5-7b-pairwise-dedup-sim",
     "leakage_risk": false
   }
 ]

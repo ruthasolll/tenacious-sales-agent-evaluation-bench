@@ -6,7 +6,9 @@ I choose Path B: a preference-tuned judge/critic. Week 10 evidence points to inc
 
 ## Paper-Grounded Justification
 
-Liu et al. (COLM 2024) argue that small synthetic datasets need source anchoring, filtering, and diversity controls; Tenacious-Bench uses Week 10 probes as anchors, four source modes, judge filtering, and pairwise deduplication. Gu et al.'s LLM-as-a-Judge survey motivates multi-dimension scoring and calibration; the evaluator uses five dimensions and explicit 1-5 thresholds. For Path B, DPO (Rafailov et al.) explains preference-pair training, while SimPO/ORPO motivate lower-cost reference-free critics. Li et al.'s preference-leakage warning is implemented directly: generation and judge model families differ in `metadata`.
+Liu et al. (COLM 2024), §3.2 and §4, argue that synthetic datasets need source anchoring, filtering, and diversity controls; Tenacious-Bench uses Week 10 probes as anchors, four source modes, judge filtering, and pairwise deduplication. Gu et al.'s LLM-as-a-Judge survey, §2.2 and §5, motivates multi-dimension scoring and calibration; the evaluator uses five dimensions and explicit 1-5 thresholds. For Path B, DPO (Rafailov et al., §3) explains preference-pair training, while SimPO (§3) and ORPO (§3) motivate lower-cost reference-free critics. Li et al.'s preference-leakage warning, §4, is implemented directly: generation and judge model families differ in `metadata`.
+
+Path A was rejected because the observed failure is not only bad email generation; it is unsafe acceptance of plausible drafts that violate capacity, pricing, or signal truth. Path C was rejected because the Week 10 artifacts do not expose enough step-level trajectories to label process rewards. Path B fits the data shape: one input, one preferred draft, one rejected draft, and a deterministic rubric explaining the preference.
 
 ## Dataset Construction
 
@@ -20,6 +22,15 @@ The generation pipeline is `generation_scripts/generate_benchmark.py` with seed 
 | Hand-authored adversarial | 30 | Original edge cases aimed at the Week 10 failure taxonomy |
 
 Judge prompts live in `prompts/judge/*.txt`. The pointwise judge requires `input_coherence >= 4`, `ground_truth_verifiability >= 4`, and `rubric_application_clarity >= 4`. Pairwise dedup keeps the more diagnostic task when similarity is high.
+
+The judge filter now exposes an explicit tier flag:
+
+```bash
+python generation_scripts/generate_benchmark.py --judge-tier dev
+python generation_scripts/generate_benchmark.py --judge-tier eval
+```
+
+Model IDs for both tiers live in `generation_scripts/judge_routing_config.json`. The generated `generation_scripts/judge_filter_log.json` records, for every task, the judge tier, judge model ID, pass/fail status, scores, thresholds, and structured reasons.
 
 ## Split and Stratification
 

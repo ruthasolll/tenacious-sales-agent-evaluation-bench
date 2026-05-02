@@ -25,6 +25,15 @@
       "non_condescending_competitor_gap": 20
     }
   },
+  "judge_filter": {
+    "source": "generation_scripts/judge_filter_log.json",
+    "judge_tier": "dev",
+    "thresholds": {
+      "input_coherence": 4,
+      "ground_truth_verifiability": 4,
+      "rubric_application_clarity": 4
+    }
+  },
   "evaluator_demo": {
     "source": "examples/example_tasks.json",
     "command": "python scoring_evaluator.py --tasks examples/example_tasks.json --quiet"
