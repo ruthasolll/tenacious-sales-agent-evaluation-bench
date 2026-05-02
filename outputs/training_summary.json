@@ -1,0 +1,11 @@
+{
+  "model_name": "unsloth/qwen2.5-1.5b",
+  "dataset_path": "/content/tenacious-sales-agent-evaluation-bench/training_data/dpo_dataset.jsonl",
+  "output_dir": "/content/tenacious-sales-agent-evaluation-bench/outputs",
+  "train_examples": 100,
+  "epochs": 1,
+  "per_device_train_batch_size": 1,
+  "gradient_accumulation_steps": 8,
+  "learning_rate": 2e-05,
+  "train_loss": 0.5047985040224515
+}

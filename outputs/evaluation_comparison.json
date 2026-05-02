@@ -1,0 +1,1940 @@
+{
+  "base_model": "unsloth/qwen2.5-1.5b",
+  "adapter_dir": "/content/tenacious-sales-agent-evaluation-bench/outputs",
+  "task_file": "data/splits/dev.json",
+  "dataset_size": 60,
+  "base_summary": {
+    "label": "base",
+    "count": 60,
+    "mean_overall": 58.862,
+    "pass_rate": 0.0
+  },
+  "fine_tuned_summary": {
+    "label": "fine_tuned",
+    "count": 60,
+    "mean_overall": 62.112,
+    "pass_rate": 0.0
+  },
+  "score_delta": 3.25,
+  "examples": [
+    {
+      "task_id": "TB-V01-0175",
+      "base_output": "Subject: [email\u00a0protected]\n\nHi Assistant,\n\nI hope you're doing well! I wanted to reach out about your recent announcement regarding the opening of four infrastructure positions at AtlasGrid. As someone who specializes in data analysis within energy sectors, I'm particularly interested in understanding how these new hires might impact our collective efforts towards optimizing renewable energy solutions across various regions worldwide.\n\nGiven the current state where we have seven engineers with experience in senior-level infrastructure projects, including those related to cloud computing technologies such",
+      "fine_tuned_output": "Subject: [email\u00a0protected]\n\nHi Assistant,\n\nI'm reaching out to you as I've noticed your company's recent job postings for an assistant role at AtlasGrid. Given my experience with similar positions within other companies, I believe we could potentially collaborate on finding solutions tailored specifically to our needs.\n\nCould you please provide me with more information about the specific requirements for this position? Also, if possible, any insights into how they plan to utilize their assistant resources would be greatly appreciated.\n\nThank you",
+      "base_score": {
+        "task_id": "TB-V01-0175",
+        "overall": 60.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0175",
+        "overall": 60.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0005",
+      "base_output": "Subject: 2 Open Data Roles at Snap - Available Capacity for Engineer Position\n\nDear Nora,\n\nI hope you're doing well! I'm reaching out to share some information about our company's recent hiring activity with Snap.\n\nSnap recently announced two new positions within their product engineering department:\n\n* **Data Scientist**: This role focuses on analyzing large datasets to extract insights from various sources like social media platforms, user behavior analytics, etc.\n\t+ Responsibilities include designing algorithms, implementing machine learning models, conducting experiments",
+      "fine_tuned_output": "Subject: 2 Open Data Roles at Snap - Available Capacity?\n\nDear Nora,\n\nI hope you're doing well! I came across your company's recent job postings for two open data roles at Snap. As someone who specializes in consumer tech companies like yours, I'm excited to share some insights based on my analysis of publicly available information from Crunchbase.\n\n**Summary:** At Snap, there have been two new openings announced recently \u2013 an Assistant Engineer and a Senior Data Scientist. Both positions appear to be",
+      "base_score": {
+        "task_id": "TB-V01-0005",
+        "overall": 55.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0005",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0030",
+      "base_output": "Subject: 127 Layoffs at FinchPay - Engineering Team Needed for Data Project\n\nDear Assistant Engineer:\n\nI hope you're doing well! I'm reaching out to discuss an exciting opportunity with your team at FinchPay.\n\nFinchPay recently announced significant changes related to their delivery costs, resulting in over 127 job losses as of February 2nd, 2024. This news comes amidst ongoing discussions about optimizing operations through innovative approaches like those we've been exploring",
+      "fine_tuned_output": "Subject: 127 Layoffs at FinchPay - Engineering Team Needed for Data Project\n\nDear Assistant Engineer:\n\nI hope you're doing well! I'm reaching out to discuss an exciting opportunity with your team at FinchPay.\n\nFinchPay recently announced significant changes related to their delivery costs, resulting in over 127 job losses as of February 2nd, 2024. This news comes amidst ongoing discussions about optimizing operations through innovative approaches like those we've been exploring",
+      "base_score": {
+        "task_id": "TB-V01-0030",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0030",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0184",
+      "base_output": "Subject: 2023 Open ML Roles at Eventbrite - Seeking Engineer with Experience Building Large-Scale Machine Learning Models for Marketing Campaigns\n\nDear Assistant:\n\nI hope you're doing well! I'm reaching out as part of our ongoing efforts to identify potential candidates who can contribute significantly to our growing machine learning (ML) department within your esteemed organization.\n\nAt Eventbrite, we have recently expanded our focus on leveraging advanced analytics through robust ML models. Specifically, we've been looking",
+      "fine_tuned_output": "Subject: 2023 Open ML Roles at Eventbrite - Seeking Engineer with Experience Building Large-Scale Machine Learning Models for Events\n\nDear Assistant:\n\nI hope you're doing well! I'm reaching out as part of our ongoing efforts to identify potential candidates who can contribute significantly to our growing machine learning (ML) capabilities within your esteemed organization.\n\nAt Eventbrite, we have recently expanded our focus on developing advanced ML models tailored specifically for events. This expansion has led us to increase",
+      "base_score": {
+        "task_id": "TB-V01-0184",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "signal_fabrication"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0184",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "signal_fabrication"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0100",
+      "base_output": "Subject: 2023 Q1 Open Go Roles at Quora - Engineering Team Expansion Opportunity\n\nDear [Assistant],\n\nI hope you're doing well! I'm reaching out as part of our ongoing efforts to identify potential partners for our upcoming project. We've been impressed with your recent achievements and would like to discuss how we can collaborate further.\n\nWe have identified several opportunities within Quora's platform development team where additional engineers could contribute effectively. Specifically, there are currently two vacant positions listed below",
+      "fine_tuned_output": "Subject: 2023 Q1 Open Go Roles at Quora - Engineering Team Expansion Opportunity\n\nDear [Assistant],\n\nI hope you're doing well! I'm reaching out as part of our ongoing efforts to identify potential partners for our upcoming project. We've been tracking your company's recent growth metrics and have identified an exciting opportunity within your organization.\n\nQuora recently expanded their open go role pipeline by increasing the number of positions from two to nineteen over the past sixty days. This indicates significant",
+      "base_score": {
+        "task_id": "TB-V01-0100",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0100",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0099",
+      "base_output": "Subject: 2 Python Delivery Pod Competitors Added to Shutterfly's FedRAMP-Lite Expansion",
+      "fine_tuned_output": "Subject: 2 Python Delivery Pod Competitors Added to Shutterfly's FedRAMP-Lite Expansion",
+      "base_score": {
+        "task_id": "TB-V01-0099",
+        "overall": 52.5,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0099",
+        "overall": 52.5,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0132",
+      "base_output": "Subject: 2024 Python Engineer Openings at Quora - High Demand & Low Supply\n\nDear Assistant,\n\nI hope you're doing well! I'm reaching out as an AI assistant with expertise in data analysis and machine learning. My name is [Your Name], and I specialize in helping companies like yours find top talent for their projects.\n\nRecently, we've been tracking some exciting developments within your industry:\n\n* **Quora** has seen significant growth recently, increasing its number of open",
+      "fine_tuned_output": "Subject: 2024 Python Engineer Openings at Quora - Available Capacity for Engineering Team\n\nDear [Assistant],\n\nI hope you're doing well! I'm reaching out as part of our ongoing partnership with Quora regarding their recent increase in open Python roles over the past six months. Specifically, we've noticed an uptick in opportunities within your company's platform development teams since mid-April:\n\n* **Summary**: The number of open Python roles has risen significantly\u2014from just two positions back",
+      "base_score": {
+        "task_id": "TB-V01-0132",
+        "overall": 47.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 3,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "banned_phrase"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0132",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0125",
+      "base_output": "Subject: 2 Open ML Roles at Pilotline - Low Signal with Available Capacity for Engineer Position\n\nDear [Owen],\n\nI hope you're doing well! I'm reaching out to share some insights about your company's recent job postings at Pilotline.\n\n**Summary:** Two new Machine Learning positions have been announced by Pilotline as of today\u2014June 13th, 2024\u2014but there isn't any information regarding potential funding events or upcoming milestones related to these openings.\n\n**",
+      "fine_tuned_output": "Subject: 2 Open ML Roles at Pilotline - Low Signal with Available Capacity for Engineer Position\n\nDear Owen,\n\nI hope you're doing well! I'm reaching out to share some insights about your company's recent job postings at Pilotline.\n\n**Summary:** Two new Machine Learning positions have been announced by Pilotline as of today, but there isn't any information regarding funding events or timelines yet.\n\n**Confidence Level:** Moderate due to limited details provided so far.\n\n**Source Window:** Public",
+      "base_score": {
+        "task_id": "TB-V01-0125",
+        "overall": 61.25,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0125",
+        "overall": 61.25,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0199",
+      "base_output": "Subject: 3rd party product board competitors' gaps - FedRAMP lite expansion",
+      "fine_tuned_output": "Subject: 3rd party product board competitors' gaps - signal details for competitive analysis\n\nDear Assistant,\n\nI hope you're doing well! As we discussed earlier, I wanted to follow up with some additional information regarding our recent discussion about third-party product boards and their potential competition. Specifically, I would like to share some key insights into these competitors based on my findings through market research.\n\nHere's what I've discovered:\n\n* Competitor A has recently expanded its offerings by adding more machine learning capabilities",
+      "base_score": {
+        "task_id": "TB-V01-0199",
+        "overall": 40.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0199",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0135",
+      "base_output": "Subject: [Productboard] Open ML Roles - Potential Opportunity for Your Team\n\nDear Assistant Engineer at Productboard,\n\nI hope you're doing well! As someone who's been following your company closely, I wanted to reach out about some recent developments we've noticed regarding our potential opportunity with your team.\n\nRecently, there have been four open Machine Learning (ML) roles listed on their website as of today\u2014February 23rd, 2023\u2014which indicates an active need within",
+      "fine_tuned_output": "Subject: [Productboard] Open ML Roles - Available Capacity for Engineer Position\n\nDear Assistant,\n\nI hope you're doing well! As someone who specializes in product development at Productboard, I wanted to reach out about some recent updates regarding our company's hiring process.\n\nRecently, we've seen four new Machine Learning (ML) roles being advertised on their website as of today, which indicates an increase in interest from potential candidates looking into joining us. However, there hasn't been any information provided",
+      "base_score": {
+        "task_id": "TB-V01-0135",
+        "overall": 55.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0135",
+        "overall": 55.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0179",
+      "base_output": "Subject: 3rd party software for manufacturing companies to automate their supply chain management process",
+      "fine_tuned_output": "Subject: 3rd party software for manufacturing automation\n\nDear Priya,\n\nI hope you're doing well! I wanted to reach out about your company's needs regarding third-party software solutions for their manufacturing operations. Specifically, we've identified an opportunity where our platform could streamline processes by automating repetitive tasks within your organization.\n\nOur solution offers advanced features such as real-time data integration with existing systems, customizable workflows tailored specifically for your industry, and robust security measures compliant with regulatory standards like HIPAA and",
+      "base_score": {
+        "task_id": "TB-V01-0179",
+        "overall": 40.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0179",
+        "overall": 60.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0121",
+      "base_output": "Subject: 7 senior infra engineer, earliest 9/8/2025, 5h overlap with me\n\nHi Assistant,\n\nI'm excited to share some news about our company's recent announcement! We recently raised $16 million from investors and have expanded our infrastructure team by adding 13 new positions. Our current headcount stands at seven experienced engineers who specialize in building scalable solutions for crypto applications.\n\nIf you're interested in joining us as an assistant developer, please reach",
+      "fine_tuned_output": "Subject: 7 senior infra engineer, earliest 9/8/2025, 5h overlap with me\n\nHi Oren,\n\nI'm excited to hear about your recent announcement! As someone who's been following StarkWare closely, I wanted to reach out about our potential collaboration opportunities.\n\nWe're currently seeking seven experienced senior infrastructure engineers for an upcoming project at StarkWare. Our ideal candidate would have strong experience working within the blockchain space, specifically focusing on Ethereum-based applications.\n\nGiven",
+      "base_score": {
+        "task_id": "TB-V01-0121",
+        "overall": 45.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0121",
+        "overall": 45.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0035",
+      "base_output": "Subject: [Shutterfly] Open Data Roles - Engineering Team Needed for Project X\n\nDear Priya,\n\nI hope you're doing well! I came across your company's recent job postings at Shutterfly regarding open data roles. As someone who specializes in identifying potential partners within the tech industry, I wanted to reach out about an exciting opportunity we have here at Tenacious Intelligence Corporation.\n\nWe recently completed a project with another leading manufacturer of high-quality photo products called Shutterfly, where",
+      "fine_tuned_output": "Subject: [Shutterfly] Open Data Roles - Engineering Team Needed for Project X\n\nDear Priya,\n\nI hope you're doing well! I came across your company's recent job postings at Shutterfly regarding open data roles. Given our shared interest in leveraging technology to drive innovation within manufacturing sectors like yours, we believe there might be an opportunity where our expertise could complement your existing capabilities.\n\nWe specialize in developing cutting-edge solutions tailored specifically for industries such as yours. Our focus lies heavily",
+      "base_score": {
+        "task_id": "TB-V01-0035",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0035",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0049",
+      "base_output": "Subject: 3rd party software for accounting automation\nHi Assistant,\n\nI'm reaching out to you as I am looking for an assistant who can help me with my project requirements. Specifically, we need someone who has experience working with third-party software solutions specifically designed for accounting automation. This includes tools such as QuickBooks Online, Xero, Freshbooks, etc., but also any other relevant platforms.\n\nIf you have worked with these types of systems before, please let us know if you're interested",
+      "fine_tuned_output": "Subject: 3rd party software for accounting automation\nHi Assistant,\n\nI'm reaching out to you as I am looking for an assistant who can help me with my project requirements. Specifically, we need someone who has experience working with third-party software solutions specifically designed for accounting automation. This includes tools such as QuickBooks Online, Xero, Freshbooks, etc., but also any other relevant platforms.\n\nIf you have worked with these types of systems before, please let us know if you're interested",
+      "base_score": {
+        "task_id": "TB-V01-0049",
+        "overall": 60.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0049",
+        "overall": 60.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0170",
+      "base_output": "Subject: 547 Layoffs at Cars.com - Potential Opportunity for ML Engineer with Delivery Cost Restructure\n\nDear [Assistant],\n\nI hope you're doing well! I came across some interesting news regarding Cars.com's recent layoff situation:\n\nCars.com announced 547 job losses on February 2nd, 2022 as part of their ongoing restructuring efforts related to delivery costs.\n\nGiven your experience working within these areas, we believe there may be an opportunity for someone",
+      "fine_tuned_output": "Subject: 547 Layoffs at Cars.com - Potential Opportunity for ML Engineer with Delivery Cost Restructure\n\nDear [Contact],\n\nI hope you're doing well! I came across some interesting news regarding Cars.com's recent layoff announcement:\n\nCars.com reported 549 layoffs on February 2nd, 2022 as part of their ongoing restructuring efforts related to delivery costs.\n\nGiven your experience working within these areas, we believe there may be an opportunity for someone like",
+      "base_score": {
+        "task_id": "TB-V01-0170",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0170",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0139",
+      "base_output": "Subject: 7 Peers Added Data Delivery Pods After FedRAMP-Lite Expansion - Medium Signal Detail for Helix Competitor Gap Brief",
+      "fine_tuned_output": "Subject: 7 Peers Added Data Delivery Pods After FedRAMP-Lite Expansion - Medium Signal Detail for Helix CTO, Priya\n\nDear Priya,\n\nI hope you're doing well! I'm reaching out to discuss our recent findings regarding Helix's competition gaps. Specifically, we've identified seven companies with similar offerings as your company but have recently expanded their services through FedRAMP-Lite certification. These expansions include adding data delivery pods\u2014a critical component of modern cybersecurity solutions\u2014",
+      "base_score": {
+        "task_id": "TB-V01-0139",
+        "overall": 65.0,
+        "scores": {
+          "signal_grounding": 5,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0139",
+        "overall": 82.5,
+        "scores": {
+          "signal_grounding": 5,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0150",
+      "base_output": "Subject: 487 Layoffs - UKG Delivery-Cost Restructure\n\nDear Sam,\n\nI hope you're doing well! I came across your company's recent announcement about 487 layoffs due to a delivery-cost restructuring initiative at [UKG]. This news seems quite concerning for our mutual clients who might be impacted by such changes.\n\nGiven these circumstances, we believe there could be an opportunity for collaboration between us. Specifically, if your organization were looking to enhance its talent acquisition",
+      "fine_tuned_output": "Subject: 487 Layoffs - UKG Delivery-Cost Restructure\n\nDear Sam,\n\nI hope you're doing well! I came across your company's recent announcement about 487 layoffs due to a delivery-cost restructuring initiative at UKG. This news seems quite concerning for our mutual clients who might be impacted by similar changes within their organizations.\n\nGiven these circumstances, we believe there could be an opportunity for collaboration between us. Specifically, if your organization were looking to enhance its",
+      "base_score": {
+        "task_id": "TB-V01-0150",
+        "overall": 78.75,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0150",
+        "overall": 78.75,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0133",
+      "base_output": "Subject: 10 senior Go Engineers for Snap - Available Capacity\n\nDear Nora,\n\nI hope you're doing well! I'm reaching out to share some exciting news about our client, Snap Inc., who recently raised $28 million through their latest round of financing. This investment comes at an opportune time as they continue expanding their product offerings across various segments including consumer electronics.\n\nAs part of these expansions, we've identified several key positions within Snap's organization requiring experienced professionals with expertise in Go",
+      "fine_tuned_output": "Subject: 10 senior Go Engineers for Snap's New Project - Available Capacity & Pricing Scope\n\nDear Nora,\n\nI hope you're doing well! I'm reaching out to discuss your recent announcement from Snap regarding their new project. As someone who has experience with similar projects at other companies, I believe we could be partners here.\n\nWe have identified an opportunity where our company would like to contribute by providing ten experienced senior Go engineers over the next fourteen days. This will help accelerate the development of critical",
+      "base_score": {
+        "task_id": "TB-V01-0133",
+        "overall": 47.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0133",
+        "overall": 45.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0128",
+      "base_output": "Subject: 2023 Open Go Roles at BrightHire - High Demand & Available Capacity\n\nDear Assistant Engineer:\n\nI hope you're doing well! I'm reaching out as part of our ongoing partnership with BrightHire, where we've noticed significant growth in their open-go role pipeline over the past few months. Specifically, they have seen an increase from just two to thirteen new opportunities within the last sixty days.\n\nGiven your experience working with BrightHire's engineering teams, could you",
+      "fine_tuned_output": "Subject: 2023 Open Go Roles at BrightHire - High Demand & Available Capacity\n\nDear [June],\n\nI hope you're doing well! I'm reaching out as part of our ongoing partnership with BrightHire, where we've noticed significant growth in their open go role pipeline over the past few months. Specifically, they have seen an increase from just two to thirteen openings within the span of sixty days. This surge indicates strong demand for these positions across various industries.\n\nGiven your",
+      "base_score": {
+        "task_id": "TB-V01-0128",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "signal_fabrication"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0128",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "signal_fabrication"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0022",
+      "base_output": "Subject: 7 senior infra engineer, earliest starts 5 days, 4 hour overlap",
+      "fine_tuned_output": "Subject: 7 senior infra engineer, earliest starts 5 days, 4 hour overlap\n\nHi Assistant,\n\nI'm reaching out to discuss potential opportunities for our company's growth strategy. We're looking for an experienced senior infrastructure engineer with at least five years of experience working within your organization. The ideal candidate should have strong technical skills, excellent communication abilities, and be able to work independently while also collaborating effectively as part of a larger team.\n\nWe believe you would benefit from having someone who understands both",
+      "base_score": {
+        "task_id": "TB-V01-0022",
+        "overall": 27.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 2,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0022",
+        "overall": 45.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0082",
+      "base_output": "Subject: 283 Layoffs at Meta - Available Capacity for Engineer Position\n\nDear [Daniel],\n\nI hope you're doing well! I came across your recent announcement about 283 layoffs at Meta on May 26th, which caught my attention as an opportunity to discuss potential collaboration opportunities with our shared interest in technology innovation.\n\nGiven your company's focus on consumer products, we believe there might be exciting possibilities for us to explore together. Specifically, given your mention of \"delivery",
+      "fine_tuned_output": "Subject: 283 Layoffs at Meta - Available Capacity for Engineer Position\n\nDear [Daniel],\n\nI hope you're doing well! I came across your recent announcement about 283 layoffs at Meta on May 26th, which caught my attention as an opportunity to discuss potential collaboration opportunities with our shared interest in technology innovation.\n\nGiven the current market conditions and the need for skilled professionals like yourself, we believe there's a strong possibility of finding suitable candidates within your organization. Our",
+      "base_score": {
+        "task_id": "TB-V01-0082",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0082",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0078",
+      "base_output": "Subject: 271 Layoffs at FinchPay - Engineering Team Needed for Delivery-Cost Restructure\n\nDear Assistant Engineer:\n\nI hope you're doing well! I'm reaching out to discuss an exciting opportunity with your team at FinchPay.\n\nFinchPay recently announced significant changes related to their delivery costs, resulting in over 271 job losses as of January 22nd, 2023. This restructuring has created a unique challenge within our company's infrastructure department",
+      "fine_tuned_output": "Subject: 271 Layoffs at FinchPay - Engineering Team Needed for Delivery-Cost Restructure\n\nDear Assistant Engineer:\n\nI hope you're doing well! I'm reaching out to discuss an exciting opportunity with your team at FinchPay.\n\nFinchPay recently announced significant changes related to their delivery costs, resulting in over 271 job losses as of January 22nd, 2023. This restructuring has created a unique challenge within our company's infrastructure department",
+      "base_score": {
+        "task_id": "TB-V01-0078",
+        "overall": 76.25,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0078",
+        "overall": 76.25,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0010",
+      "base_output": "Subject: 67 Car Delivery Cost Layoffs - Potential Hiring Opportunity for Data Engineers at Cars.com\n\nDear [Contact],\n\nI hope you're doing well! I'm reaching out to share some news about recent developments at Cars.com regarding their workforce adjustments related to car deliveries costs.\n\nOn March 10th, 2023, Cars.com announced 67 job losses due to changes in how they manage these expenses. This could be an exciting opportunity if your company's needs align",
+      "fine_tuned_output": "Subject: 67 Car Delivery Cost Layoffs - Potential Hiring Opportunity for Data Engineers at Cars.com\n\nDear [Contact],\n\nI hope you're doing well! I'm reaching out to share some news about recent developments at Cars.com regarding their workforce adjustments related to car deliveries costs.\n\nOn March 10th, 2023, Cars.com announced 67 job losses due to changes in how they manage these expenses. This could be an exciting opportunity if we can find suitable candidates",
+      "base_score": {
+        "task_id": "TB-V01-0010",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0010",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0083",
+      "base_output": "Subject: 5 senior infrastructure engineers needed for Shutterfly's VP Engineering position by July 8th\n\nDear Priya,\n\nI hope you're doing well! I'm reaching out to discuss your company's recent hiring news regarding their VP Engineering role at Shutterfly. As someone who has experience with similar positions within manufacturing companies like yours, I believe we could potentially collaborate effectively if there's an opportunity for us to work together.\n\nGiven the timing of your announcement\u2014June 27,",
+      "fine_tuned_output": "Subject: 5 senior infrastructure engineers needed for Shutterfly's VP Engineering position by July 8th\n\nDear Priya,\n\nI hope you're doing well! I'm reaching out to discuss your company's recent hiring news regarding their VP Engineering role at Shutterfly. As someone who has experience with similar positions within manufacturing companies like yours, I believe we could potentially collaborate effectively if there's an opportunity for us to work together.\n\nGiven the timing of your announcement\u2014June 27,",
+      "base_score": {
+        "task_id": "TB-V01-0083",
+        "overall": 76.25,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0083",
+        "overall": 76.25,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0165",
+      "base_output": "Subject: 2 Open ML Roles at Snap - Available Capacity for Engineer Position\n\nDear Nora,\n\nI hope you're doing well! I'm reaching out to share some information about our company's recent hiring activity with Snap.\n\nSnap recently announced two new positions within their Machine Learning department:\n\n* **Position A**: Senior Machine Learning Engineer \u2013 This role requires expertise in developing advanced algorithms and models tailored specifically for consumer products.\n* **Position B**: Junior Machine Learning Engineer \u2013 Ideal candidates should possess strong analytical skills",
+      "fine_tuned_output": "Subject: 2 Open ML Roles at Snap - Available Capacity?\n\nDear Nora,\n\nI hope you're doing well! I came across your company's recent job postings for two Machine Learning Engineer positions at Snap. Given their current state of affairs\u2014no funding events yet but with some headway towards hiring\u2014I thought we could discuss how our services might align with these opportunities.\n\nGiven the nature of your business, particularly focusing on consumer products, what specific aspects do you find most appealing about leveraging machine learning within",
+      "base_score": {
+        "task_id": "TB-V01-0165",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0165",
+        "overall": 78.75,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0120",
+      "base_output": "Subject: 2024 Go Engineer Open Positions at Eventbrite - Available Capacity for Your Team!\n\nDear Assistant:\n\nI hope you're doing well! I'm reaching out because we've noticed an exciting opportunity with your company's growth plans. At Eventbrite, we have recently expanded our open positions within the Go engineering lead role category, specifically targeting individuals who possess exceptional skills in their field. This expansion comes as part of our strategic plan to enhance user experience across various platforms.\n\nWe",
+      "fine_tuned_output": "Subject: 2024 Go Engineer Open Positions at Eventbrite - Available Capacity for Your Team!\n\nDear Assistant:\n\nI hope you're doing well! I'm reaching out as your assistant here at [Company Name]. We've been following up with our contacts about potential candidates for an upcoming project we have planned for next year.\n\nWe recently saw some exciting news regarding open positions within your department. According to recent data provided by [Source], there's now room for more than just two engineers",
+      "base_score": {
+        "task_id": "TB-V01-0120",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0120",
+        "overall": 42.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0090",
+      "base_output": "Subject: 307 Layoffs at Cars.com - Potential Opportunity for Go Engineers\n\nDear [Contact],\n\nI hope you're doing well! I came across an interesting article about Car's Com's recent layoffs last week. It seems like they've been working on some significant changes related to their delivery costs recently.\n\nAs someone who specializes in technology solutions, I'm curious if there might be any opportunities within these layoffs for our company. Specifically, we have several engineers with experience in Go programming language",
+      "fine_tuned_output": "Subject: 307 Layoffs at Cars.com - Potential Opportunity for Go Engineers\n\nDear [Contact],\n\nI hope you're doing well! I came across some interesting news regarding Car's Com's recent layoff announcement:\n\nCars.com announced 307 job losses on June 6th, 2024 as part of their ongoing cost restructuring efforts. This could present an exciting opportunity for experienced engineers looking to join a company with strong growth prospects while contributing to its success through innovative",
+      "base_score": {
+        "task_id": "TB-V01-0090",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0090",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0069",
+      "base_output": "Subject: 3rd party Python Delivery Pod provider for Snap's consumer segment",
+      "fine_tuned_output": "Subject: 7 Peers Added Python Delivery Pods After FedRAMP-Lite Expansion - Medium Signal Detail for VP Product Engineering at Snap\n\nDear Nora,\n\nI hope you're doing well! I'm reaching out to discuss our recent findings regarding your company's competitive landscape. Specifically, we've identified seven companies within the consumer segment who have recently expanded their offerings with Python-based delivery pods following the introduction of FedRAMP-Lite certification. These developments highlight an emerging trend where tech giants like yours aim",
+      "base_score": {
+        "task_id": "TB-V01-0069",
+        "overall": 40.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0069",
+        "overall": 82.5,
+        "scores": {
+          "signal_grounding": 5,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0054",
+      "base_output": "Subject: 18th Century English Literature Research Assistant Position Open at [Company Name]\n\nDear Sir/Madam,\n\nI hope you're doing well! I'm writing to introduce myself as an aspiring researcher with expertise in 18th century British literature. My passion for historical texts has led me down a path of academic exploration, where my knowledge spans from Shakespearean tragedies to Jane Austen's novels.\n\nAs someone who values precision and accuracy above all else, I am eager to contribute to your",
+      "fine_tuned_output": "Subject: 199 Layoffs - UKG Delivery-Cost Restructure\n\nDear Sam,\n\nI hope you're doing well! I came across your company's recent announcement about 199 layoffs due to a delivery-cost restructuring initiative at [UKG]. This news seems quite concerning for our mutual clients who might be impacted by such changes.\n\nGiven these circumstances, we believe there could be an opportunity for collaboration between us. Our expertise lies primarily in software development with Go language stack,",
+      "base_score": {
+        "task_id": "TB-V01-0054",
+        "overall": 42.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0054",
+        "overall": 78.75,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0091",
+      "base_output": "Subject: 4 senior data engineers for Helix - urgent!\n\nHi Priya,\n\nI hope you're doing well! I'm reaching out to follow up on our conversation from yesterday about your company's recent hiring news at Helix. As we discussed earlier today, we believe there might be an opportunity here with regards to filling four senior data engineering roles within their organization over the next two weeks.\n\nGiven the urgency of these positions, could you please let me know if you have any immediate needs regarding",
+      "fine_tuned_output": "Subject: 4 senior data engineers for Helix - urgent!\n\nHi Priya,\n\nI hope you're doing well! I'm reaching out to follow up on our conversation from yesterday about your company's recent hiring news at Helix. As we discussed earlier today, we believe there may be an opportunity here with regards to filling two additional roles within their existing engineering team.\n\nGiven the urgency of finding these positions quickly due to anticipated growth plans, could you please consider adding me as part of your internal",
+      "base_score": {
+        "task_id": "TB-V01-0091",
+        "overall": 47.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0091",
+        "overall": 47.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0095",
+      "base_output": "Subject: [email\u00a0protected]\n\nHi Assistant,\n\nI hope you're doing well! I wanted to reach out about your recent announcement regarding the opening of four new positions at AtlasGrid. As someone who specializes in data analysis within energy sectors, I'm particularly interested in understanding how these openings align with our shared interests.\n\nCould you please provide more details on what specific skills or experience would be required for each role? Additionally, if possible, could you share any information related to potential timelines or expected",
+      "fine_tuned_output": "Subject: [email\u00a0protected]\n\nHi Assistant,\n\nI'm reaching out to you as I've noticed your company's recent activity with regards to hiring engineers for their go stack project. Given your current state of affairs, could we discuss how we can best support your needs?\n\nIn terms of our services, we specialize in providing tailored solutions based on client requirements. We have experience working across various industries including energy, where we understand the unique challenges faced by companies like yours.\n\nCould you please provide me",
+      "base_score": {
+        "task_id": "TB-V01-0095",
+        "overall": 60.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0095",
+        "overall": 60.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0042",
+      "base_output": "Subject: 163 Car Delivery Cost Layoffs - Potential Hiring Opportunity for Senior Infra Engineer at Cars.com\n\nDear [Contact],\n\nI hope you're doing well! I'm reaching out to share some news about recent developments within your industry that might be of interest to our company's hiring needs.\n\nRecently, Cars.com announced significant changes related to their delivery costs, resulting in over 163 job losses across various departments. This restructuring has led to an increased demand for skilled professionals who",
+      "fine_tuned_output": "Subject: 163 Car Delivery Cost Layoffs - Potential Hiring Opportunity for Senior Infra Engineer at Cars.com\n\nDear [Contact],\n\nI hope you're doing well! I'm reaching out to share some news about recent developments within your industry that might be of interest to our company's hiring needs.\n\nCars.com recently announced significant changes related to their delivery costs, resulting in over 163 job losses as part of these restructuring efforts. This information could provide valuable insights into potential opportunities for",
+      "base_score": {
+        "task_id": "TB-V01-0042",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0042",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0094",
+      "base_output": "Subject: 319 Layoffs at FinchPay - Seeking Engineering Support for Delivery Cost Restructure",
+      "fine_tuned_output": "Subject: 319 Layoffs at FinchPay - Seeking Engineering Support for Delivery Cost Restructure\n\nDear Assistant,\n\nI hope you're doing well! I'm reaching out to discuss an opportunity with your company, FinchPay. We've recently seen some interesting news about their recent restructuring efforts related to delivery costs:\n\nSummary of News:\nFinchPay announced 319 job losses on March 10th, 2024 as part of a broader cost-reduction strategy",
+      "base_score": {
+        "task_id": "TB-V01-0094",
+        "overall": 52.5,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0094",
+        "overall": 55.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0117",
+      "base_output": "Subject: [email\u00a0protected]\n\nHi Assistant,\n\nI hope you're doing well! I wanted to reach out about your recent announcement of a new product feature called \"Snap\" which was released earlier today. As someone who has been following industry trends closely, I'm curious if there's any way we could collaborate with each other to enhance our services based on what you've just done?\n\nCould you please let me know how we can work together? Also, do you have any specific areas where",
+      "fine_tuned_output": "Subject: [email\u00a0protected]\n\nHi Assistant,\n\nI'm reaching out to you as I've been following your work closely over the past few months. Your insights into market trends have been invaluable for my company's decision-making process. Could we schedule a call at your convenience? It would be great if we could discuss how our services can complement each other going forward.\n\nLooking forward to hearing from you soon!\n\nBest regards,\n[Your Name]\n[Company]",
+      "base_score": {
+        "task_id": "TB-V01-0117",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "multi_ask_stack"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0117",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "multi_ask_stack"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0200",
+      "base_output": "Subject: 2024 Budget Request for [Company Name]\n\nDear Assistant Engineer,\n\nI hope you're doing well! I wanted to reach out about our upcoming budget request for next year at [Company Name]. We anticipate needing additional resources to support our growth plans and would like to discuss how we can best allocate funds within your department.\n\nPlease let me know if there's any information you need from my end regarding our current projects and priorities. Your insights will be invaluable as we work towards securing",
+      "fine_tuned_output": "Subject: 2024 Open Infra Engineer Opportunity at Eventbrite - Available Capacity & Pricing Scope\n\nDear Assistant,\n\nI hope you're doing well! I'm reaching out as part of our ongoing efforts to identify potential candidates for an upcoming project at [Eventbrite]. We've recently expanded our infrastructure teams with several new positions across various departments within your organization, including myself who will be joining shortly.\n\nGiven these recent changes, we believe there's an opportunity for someone like yourself to",
+      "base_score": {
+        "task_id": "TB-V01-0200",
+        "overall": 60.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0200",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 5,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0158",
+      "base_output": "Subject: 511 Layoffs at FinchPay - Engineering Team Needed for Delivery Cost Restructure\n\nDear Assistant Engineer:\n\nI hope you're doing well! I'm reaching out to discuss an exciting opportunity with your team at FinchPay.\n\nFinchPay recently announced significant layoffs due to their recent delivery cost restructuring efforts. We believe our company's expertise could be valuable in helping them navigate these changes effectively.\n\nWe have identified several key roles within your department\u2014specifically, we need someone who",
+      "fine_tuned_output": "Subject: 511 Layoffs at FinchPay - Engineering Team Needed for Delivery Cost Restructure\n\nDear Assistant Engineer:\n\nI hope you're doing well! I'm reaching out to discuss an exciting opportunity with your team at FinchPay.\n\nFinchPay recently announced significant layoffs due to their recent delivery cost restructuring efforts. This presents us as a potential solution for filling our engineering team needs while also helping them address these challenges effectively.\n\nWe have identified several key requirements including headcount of 8",
+      "base_score": {
+        "task_id": "TB-V01-0158",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0158",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0026",
+      "base_output": "Subject: 115 Car Delivery Cost Layoffs - High Confidence Opportunity\n\nDear Assistant:\n\nI hope you're doing well! I wanted to reach out about an opportunity we've identified within your organization's capabilities. \n\nCars.com recently announced 115 layoffs related to their recent delivery cost restructuring efforts. This presents us with a unique challenge but also offers significant potential opportunities if properly leveraged. Our goal would be to provide support through our expertise in machine learning and software development while ensuring alignment",
+      "fine_tuned_output": "Subject: 115 Car Delivery Cost Layoffs - High Capacity Engineer Needed\n\nDear [Contact],\n\nI hope you're doing well! I'm reaching out to share some exciting news about our company's recent developments.\n\nRecently, Cars.com announced 115 layoffs due to their delivery cost restructuring efforts. This has created an opportunity for us to fill a key position within your organization as we continue to grow and innovate.\n\nWe have identified a highly skilled senior ML engineer with experience working across multiple",
+      "base_score": {
+        "task_id": "TB-V01-0026",
+        "overall": 59.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 3,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "banned_phrase"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0026",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0181",
+      "base_output": "Subject: 4 senior python engineer, earliest 9 days, 6 hour overlap\n\nHi Nora,\n\nI hope you're doing well! I wanted to reach out about your recent announcement of a $19M series A round with 7 new python roles at Snap. As someone who's been following along closely, I'm excited to learn more about how these additions might impact their product development process.\n\nGiven your company size and industry focus, we believe there could be significant opportunities for our services",
+      "fine_tuned_output": "Subject: 4 senior python engineers for snap - get tenacious to help!\n\nHi Nora,\n\nI hope you're doing well! I wanted to reach out about your recent announcement from Snap. As someone who's been following their progress closely, I'm excited to learn more about how they've grown since then.\n\nGiven your company size of around 60 employees, we believe there could be room for growth within Python development teams at Snap. Specifically, we'd like to discuss opportunities for hiring four",
+      "base_score": {
+        "task_id": "TB-V01-0181",
+        "overall": 59.0,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0181",
+        "overall": 47.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0148",
+      "base_output": "Subject: 2023 Q1 Open Go Roles at Quora - Engineering Team Expansion Opportunity\n\nDear [Assistant],\n\nI hope you're doing well! I'm reaching out as part of our ongoing efforts to identify potential partners for our upcoming project. We've been impressed by your recent achievements with increasing open go roles within Quora over the past six months. Could we discuss how we might collaborate further?\n\nWe believe there's an opportunity here to expand our engineering team through additional hires. Specifically",
+      "fine_tuned_output": "Subject: 2023 Q1 Open Go Roles at Quora - Engineering Team Expansion Opportunity\n\nDear [Assistant],\n\nI hope you're doing well! I'm reaching out as part of our ongoing efforts to identify potential partners for our upcoming project. We've been impressed by your recent achievements with increasing open go roles within Quora over the past six months. Could we discuss how we might collaborate further?\n\nWe believe there's an opportunity here to expand our engineering team through additional hires. Specifically",
+      "base_score": {
+        "task_id": "TB-V01-0148",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0148",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0075",
+      "base_output": "Subject: [Helix] Open Go Roles - Low Signal with Available Capacity for Engineering Team\n\nDear Priya,\n\nI hope you're doing well! I'm reaching out to discuss your company's recent job postings at Helix. As someone who specializes in health tech startups, I've noticed an interesting trend:\n\n* **Open Go Roles**: You have four open positions listed as \"Go\" engineers, which suggests strong technical expertise within your organization.\n* **Low Signal**: However, there isn",
+      "fine_tuned_output": "Subject: [Helix] Open Go Roles - Low Signal with Available Capacity for Engineering Team\n\nDear Priya,\n\nI hope you're doing well! I'm reaching out to discuss your company's recent job postings at Helix. As someone who specializes in health tech startups, I've noticed an interesting trend:\n\n* **Open Go Roles**: You have four open positions listed as \"Go\" engineers, which suggests strong technical expertise within your organization.\n* **Low Signal**: However, there doesn",
+      "base_score": {
+        "task_id": "TB-V01-0075",
+        "overall": 55.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0075",
+        "overall": 55.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0059",
+      "base_output": "Subject: 3rd party software for medical imaging analysis\nHi Priya,\n\nI'm reaching out to discuss your company's needs regarding third-party software solutions for medical image analysis. We specialize in developing custom applications tailored to meet specific business requirements. Our expertise spans various industries including healthcare, finance, retail, and more.\n\nCould you please provide me with some details about what kind of tools would be beneficial for your organization? Specifically, I am interested in understanding how these technologies could enhance efficiency within your",
+      "fine_tuned_output": "Subject: 3rd party software for medical imaging analysis\nHi Priya,\n\nI'm reaching out to discuss your company's needs regarding third-party software solutions for medical image analysis. We specialize in developing custom applications tailored to meet specific business requirements. Our expertise spans various domains including healthcare technology, data analytics, and machine learning algorithms. Could you please provide more details about what kind of tools would be most beneficial for your organization? Additionally, if there were any particular features or functionalities within these systems that",
+      "base_score": {
+        "task_id": "TB-V01-0059",
+        "overall": 60.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0059",
+        "overall": 60.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0153",
+      "base_output": "Subject: 12 Senior Go Engineers for StarkWare - Available Capacity\n\nDear [Contact],\n\nI hope you're doing well! I'm reaching out to share some exciting news about your company, StarkWare.\n\nStarkWare recently raised $10 million through their latest round of financing, which comes as good news for both investors and employees alike. This announcement has led to an increase in job openings within the organization, specifically targeting positions related to software development.\n\nAs someone who specializes in identifying potential",
+      "fine_tuned_output": "Subject: 12 Senior Go Engineers for StarkWare - Available Capacity\n\nDear Oren,\n\nI hope you're doing well! I'm reaching out to discuss your recent announcement from StarkWare. Specifically, we've noticed their latest round of funding raised $10 million at a valuation of over $6 billion. This significant investment comes with an exciting opportunity for growth within the crypto space.\n\nGiven the strong signal around your company's expansion plans, I wanted to inquire about potential hiring needs related to",
+      "base_score": {
+        "task_id": "TB-V01-0153",
+        "overall": 47.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0153",
+        "overall": 47.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0018",
+      "base_output": "Subject: [Meta] Layoffs Report - Potential Hiring Opportunity for Python Engineer with Delivery Cost Restructure Experience",
+      "fine_tuned_output": "Subject: 1216_2027_Metadelays.csv",
+      "base_score": {
+        "task_id": "TB-V01-0018",
+        "overall": 55.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0018",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0050",
+      "base_output": "Subject: 187 Layoffs at Meta - Eng Dir @Meta's E&D Dept., Jan 22nd, 2024",
+      "fine_tuned_output": "Subject: 187 Layoffs at Meta - Eng Dir @Meta - Jan 22nd, 2024 - Delivery Cost Restructure\n\nDear [Assistant],\n\nI hope you're doing well! I wanted to reach out about some recent news from Meta regarding their workforce adjustments last week. Specifically, they announced 187 job losses on January 22nd, which seems quite significant given your role as an Assistant here at Meta.\n\nCould you please let me",
+      "base_score": {
+        "task_id": "TB-V01-0050",
+        "overall": 52.5,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0050",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0093",
+      "base_output": "Subject: 6 senior infra engineer, earliest 21 days, timezone overlap of 5 hours\n\nHi [Contact],\n\nWe're excited to share some news about our recent engagement with Pilotline! They recently raised $26 million through their Series A round, adding seven new infrastructure positions. This announcement comes at an opportune time for us as we continue to expand our network within your industry.\n\nGiven these developments, I wanted to reach out regarding potential opportunities for collaboration. Specifically, we have",
+      "fine_tuned_output": "Subject: 6 senior infra engineer, earliest 21 days, no overlap with me\n\nHi Owen,\n\nI'm reaching out to discuss your recent announcement of a $26M series A round and addition of seven infrastructure roles at Pilotline. I've done some preliminary research into your company's hiring needs for senior infrastructure engineers over the next few weeks. Given your timeline requirements, we believe there may be an opportunity for us to collaborate on finding suitable candidates who meet our criteria:\n\n* **",
+      "base_score": {
+        "task_id": "TB-V01-0093",
+        "overall": 45.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0093",
+        "overall": 59.0,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0076",
+      "base_output": "Subject: 3rd party support needed - help with our new product launch\n\nDear Assistant,\n\nI hope you're doing well! I wanted to reach out about some third-party support we need during our upcoming product launch. We have an exciting project coming up where we'll be launching a brand-new feature into our existing software suite. \n\nWe've identified several key stakeholders who will play crucial roles throughout the process\u2014from strategizing the campaign strategy to executing the actual launches themselves. However, there's one",
+      "fine_tuned_output": "Subject: 3rd party support request - help with our new product launch\n\nDear Assistant,\n\nI hope you're doing well! I'm reaching out because we've been working hard on launching our new product, but we need some extra hands-on assistance during peak times. Specifically, we'd like your expertise in handling customer inquiries related to technical issues, as well as general questions about how our product works. We understand that you have other commitments, so please let us know if there's any way",
+      "base_score": {
+        "task_id": "TB-V01-0076",
+        "overall": 60.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0076",
+        "overall": 60.0,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0142",
+      "base_output": "Subject: 10 senior Python Engineers for FinchPay - Available Capacity & Pricing Scope",
+      "fine_tuned_output": "Subject: 10 senior Python Engineers for FinchPay - Available Capacity & Pricing Scope",
+      "base_score": {
+        "task_id": "TB-V01-0142",
+        "overall": 27.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 2,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0142",
+        "overall": 27.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 2,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0021",
+      "base_output": "Subject: 6 senior ml engineer needed for snap's new product launch\n\nDear Nora,\n\nI hope you're doing well! I'm reaching out to share some exciting news about our client, Snap Inc., who recently raised $11 million through their latest round of financing. This investment comes at an opportune time as they prepare for significant growth initiatives related to their upcoming products.\n\nAs part of these plans, we have identified several key positions within your organization requiring immediate attention from talented individuals with expertise",
+      "fine_tuned_output": "Subject: 6 senior ml engineer needed for snap's new product launch\n\nDear Nora,\n\nI hope you're doing well! I'm reaching out to share some exciting news about our client, Snap Inc., who recently raised $11 million through their latest round of financing. This investment comes at an opportune time as they prepare for significant growth initiatives related to their upcoming products.\n\nGiven your role as Vice President of Product Engineering, we believe there might be opportunities within these projects where additional expertise could",
+      "base_score": {
+        "task_id": "TB-V01-0021",
+        "overall": 47.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0021",
+        "overall": 47.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0097",
+      "base_output": "Subject: 11ml Engineer - Early Start, Medium Capacity, Available for Hire\n\nDear Assistant,\n\nI hope you're doing well! I'm reaching out to share some exciting news about our company's recent investment round. We recently raised $11 million from investors who were impressed by our innovative approach to solving complex problems through machine learning solutions.\n\nAs part of this growth initiative, we've expanded our team with several new hires across various departments including finance. Specifically, we have an opening for",
+      "fine_tuned_output": "Subject: 11ml Engineer - Early Start, Medium Capacity, Available for Hire\n\nDear Assistant,\n\nI hope you're doing well! I'm reaching out to share some exciting news about our company's recent investment round. We recently raised $11 million from investors who were impressed by our innovative approach to solving complex problems through machine learning solutions. This milestone comes at an important time as we continue to grow our team with new hires across various departments including finance.\n\nAs part of these expansions,",
+      "base_score": {
+        "task_id": "TB-V01-0097",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0097",
+        "overall": 42.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0032",
+      "base_output": "Subject: 2024 Open Infra Engineer Hiring Plan for BrightHire - July-August\n\nDear Assistant Manager of Engineering at BrightHire,\n\nI hope you're doing well! I'm writing to follow up on our conversation about your company's hiring needs during the upcoming months. As we discussed earlier, I believe there will be significant opportunities within your organization over the next few quarters due to growth plans related to data analytics initiatives.\n\nGiven these expectations, could you please consider expanding your",
+      "fine_tuned_output": "Subject: 2024 Open Infra Engineer Hiring Plan for BrightHire - July-August\n\nDear Assistant Manager of Engineering at BrightHire,\n\nI hope you're doing well! I'm writing to follow up on our conversation about your company's hiring needs during the upcoming months. As we discussed earlier, I believe there will be significant opportunities within your organization over the next few quarters due to growth plans related to data analytics initiatives.\n\nGiven these expectations, could you please consider expanding your",
+      "base_score": {
+        "task_id": "TB-V01-0032",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0032",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0138",
+      "base_output": "Subject: 3rd party software development opportunity at Cars.com - Engineer position required for delivery cost restructuring project\n\nDear [Contact],\n\nI hope you're doing well! I'm reaching out to share an exciting opportunity with your organization as we continue our partnership efforts.\n\nAt Cars.com, we recently announced significant changes related to their delivery costs, which have led to some recent workforce adjustments. We believe there's potential for collaboration between our teams, particularly focusing on leveraging third-party software solutions to streamline operations within",
+      "fine_tuned_output": "Subject: 451 Car Layoffs - Potential Hiring Opportunity for Senior Go Engineer at Cars.com\n\nDear [Contact],\n\nI hope you're doing well! I'm reaching out to share some news about recent developments within your industry.\n\nRecently, Cars.com announced significant changes related to their delivery costs, resulting in over 451 job losses across various departments. This restructuring has been particularly impactful in the engineering department, where several key positions have been eliminated due to budget cuts.\n\nGiven these circumstances",
+      "base_score": {
+        "task_id": "TB-V01-0138",
+        "overall": 57.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0138",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0118",
+      "base_output": "Subject: 391 Layoffs - UKG Delivery-Cost Restructure\n\nDear Sam,\n\nI hope you're doing well! I came across your company's recent announcement about 391 layoffs due to a delivery-cost restructuring initiative. This news seems quite significant for our industry, especially given the current economic climate.\n\nAs someone who specializes in understanding market trends and staying ahead of technological advancements, I'm curious if there might be any opportunities within these layoffs. Specifically, we've been",
+      "fine_tuned_output": "Subject: 391 Layoffs - UKG Delivery-Cost Restructure\n\nDear Sam,\n\nI hope you're doing well! I came across your company's recent announcement about 391 layoffs due to a delivery-cost restructuring initiative. This news seems quite concerning for our mutual interest in talent acquisition solutions.\n\nCould we discuss how we can leverage these insights into finding suitable candidates? Specifically, do you have any open positions within your organization?\n\nLooking forward to hearing from you soon!\n\nWarm",
+      "base_score": {
+        "task_id": "TB-V01-0118",
+        "overall": 78.75,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0118",
+        "overall": 59.0,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 3,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "banned_phrase",
+          "multi_ask_stack"
+        ]
+      }
+    },
+    {
+      "task_id": "TB-V01-0012",
+      "base_output": "Subject: 20% off your first order with us!\n\nHey Assistant! \ud83e\udd16\n\nI hope you're doing well today. \ud83d\ude0a\n\nWe've got some great news for you! Our assistant service has been upgraded, so now we offer an exclusive discount of up to 20%. That's right - save big bucks by taking advantage of our special deal. Just head over to [our website](https://www.gettenacious.com) and apply code \"ASSISTANT",
+      "fine_tuned_output": "Subject: 2023 Q1 Open Infra Roles at Northstar API - High Demand & Available Capacity\n\nDear Assistant,\n\nI hope you're doing well! I'm reaching out as part of our ongoing partnership with Northstar API. We've noticed an increase in open infrastructure roles within your company over the past few months, which aligns perfectly with our recent findings about demand for these positions across various industries.\n\nGiven the current market conditions and industry trends, we believe there's significant opportunity",
+      "base_score": {
+        "task_id": "TB-V01-0012",
+        "overall": 62.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 5
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0012",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0068",
+      "base_output": "Subject: 2023 Q1 Open Infra Engineer Hiring Plan for Quora - High Demand & Low Supply Opportunity!\n\nDear Assistant:\n\nI hope you're doing well! I'm reaching out as part of our ongoing partnership with Quora. We've noticed an exciting opportunity within their organization where we believe your expertise can be invaluable.\n\nQuora has recently expanded its infrastructure by increasing open infro roles from 2 to **21** over the past six months. This growth presents both",
+      "fine_tuned_output": "Subject: 2023 Q1 Open Infra Engineer Hiring Plan for Quora - High Demand & Low Supply\n\nDear [Assistant],\n\nI hope you're doing well! I'm reaching out as part of our ongoing partnership with Quora regarding their recent increase in open infrastructure roles over the past six months. Specifically, we've noticed an uptick in demand across various teams within your organization, particularly focusing on engineers specializing in the field of Infrastructure Engineering.\n\nGiven these developments, could you please",
+      "base_score": {
+        "task_id": "TB-V01-0068",
+        "overall": 76.25,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0068",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0089",
+      "base_output": "Subject: 6 Peers Added Python Delivery Pods After FedRAMP-Lite Expansion - Medium Signal Detail",
+      "fine_tuned_output": "Subject: 6 Peers Added Python Delivery Pods After FedRAMP-Lite Expansion - Medium Signal Detail: 6 Peers (Medium), Python Delivery Pods (Medium), FedRAMP-Lite Expansion (Medium)",
+      "base_score": {
+        "task_id": "TB-V01-0089",
+        "overall": 65.0,
+        "scores": {
+          "signal_grounding": 5,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0089",
+        "overall": 65.0,
+        "scores": {
+          "signal_grounding": 5,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0092",
+      "base_output": "Subject: 2024 ML Engineer Openings at Northstar API - Available Capacity for Engineering Team\n\nDear Assistant,\n\nI hope you're doing well! I'm reaching out as an extension of our partnership with Northstar API, where we've recently seen significant growth in their open machine learning roles over the past month. Specifically, they have expanded these positions by increasing them from two to eleven within just sixty days. This swift expansion indicates strong demand for skilled professionals who specialize in artificial intelligence technologies",
+      "fine_tuned_output": "Subject: 2024 ML Engineer Openings at Northstar API - Available Capacity for Engineering Team\n\nDear Assistant,\n\nI hope you're doing well! I'm reaching out as an extension of our partnership with Northstar API, where we've recently seen significant growth in their open machine learning roles over the past month. Specifically, they have expanded these positions by increasing them from two to eleven within just sixty days. This swift expansion indicates strong demand for skilled professionals who specialize in artificial intelligence technologies",
+      "base_score": {
+        "task_id": "TB-V01-0092",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0092",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0025",
+      "base_output": "Subject: 2 Open Data Roles at StarkWare - Low Signal with Available Capacity for Engineering Team",
+      "fine_tuned_output": "Subject: 2 Open Data Roles at StarkWare - Low Signal with Available Capacity for Engineering Team\n\nDear Oren,\n\nI hope you're doing well! I came across your company's recent job postings regarding data roles at StarkWare, which caught my attention as an opportunity to discuss potential collaboration opportunities within our shared interest in technology innovation.\n\nGiven the current state of affairs\u2014two open positions listed on their website dated back to April 25th, 2024\u2014their lack of",
+      "base_score": {
+        "task_id": "TB-V01-0025",
+        "overall": 52.5,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 2
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0025",
+        "overall": 55.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 2,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0098",
+      "base_output": "Subject: 331 Layoffs at Meta - High Confidence Signal for Engineering Team Expansion\n\nDear [Daniel],\n\nI hope you're doing well! I'm reaching out to share an exciting opportunity with your esteemed organization.\n\nMeta recently announced 331 job losses on July 14th, 2027 due to their recent cost-reduction initiatives. This significant reduction has left many employees feeling uncertain about future prospects within the company. However, we believe there's potential for growth",
+      "fine_tuned_output": "Subject: 331 Layoffs at Meta - High Confidence Signal for Engineering Team Expansion\n\nDear [Daniel],\n\nI hope you're doing well! I'm reaching out to share an exciting opportunity with your esteemed organization.\n\nMeta recently announced 331 layoffs across various departments, including our beloved consumer segment. This news comes as no surprise given their recent delivery cost restructuring efforts. The timing coincides perfectly with your company's need for additional engineers specializing in infrastructure development.\n\nHere\u2019s what we\u2019ve",
+      "base_score": {
+        "task_id": "TB-V01-0098",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0098",
+        "overall": 70.0,
+        "scores": {
+          "signal_grounding": 3,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 3
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0183",
+      "base_output": "Subject: [Company] - New VP Engineering Announcement\n\nDear Assistant,\n\nI hope you're doing well! As someone who's been following your work closely for some time now, I wanted to reach out about an exciting development at our esteemed company, [Company].\n\nRecently, we've announced the appointment of [Name], as the newly appointed Vice President of Engineering. This move comes with significant implications for both the product roadmap and overall growth strategy within the organization.\n\nGiven the ambitious nature of these roles",
+      "fine_tuned_output": "Subject: [Company] - New VP Engineering Announcement\n\nDear Assistant,\n\nI hope you're doing well! As we discussed earlier today, I wanted to follow up with an update regarding our conversation about potential opportunities at [Company]. Specifically, I'm interested in exploring any recent announcements related to hiring for the position of Vice President Engineering at [Company].\n\nCould you please provide me with more details on their latest recruitment efforts? This would help us better understand how they prioritize talent acquisition within your organization.",
+      "base_score": {
+        "task_id": "TB-V01-0183",
+        "overall": 78.75,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0183",
+        "overall": 78.75,
+        "scores": {
+          "signal_grounding": 4,
+          "confidence_alignment": 5,
+          "operational_safety": 3,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": []
+      }
+    },
+    {
+      "task_id": "TB-V01-0191",
+      "base_output": "Subject: 5 senior Python Engineers for AtlasGrid - Available Capacity\n\nDear Cam,\n\nI hope you're doing well! I'm reaching out to discuss your company's recent hiring news at AtlasGrid. Specifically, we've noticed their latest executive appointment as mentioned by [source]. Given your interest in talent acquisition, could you please consider our proposal?\n\nWe have identified an ideal candidate who fits perfectly within your requirements:\n\n**Senior Python Engineer**\n*Highly skilled with advanced Python programming*\n*Experience working",
+      "fine_tuned_output": "Subject: 5 senior Python Engineers for AtlasGrid - Available Capacity\n\nDear Cam,\n\nI hope you're doing well! I'm reaching out to discuss your company's recent hiring news at AtlasGrid. Specifically, we've noticed their latest executive appointment as mentioned by [source]. Given the timing and nature of this hire, could you please let me know if there's any opportunity for us to collaborate with your organization? We'd be interested in exploring potential partnerships related to our expertise in data science and",
+      "base_score": {
+        "task_id": "TB-V01-0191",
+        "overall": 47.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      },
+      "fine_tuned_score": {
+        "task_id": "TB-V01-0191",
+        "overall": 47.5,
+        "scores": {
+          "signal_grounding": 1,
+          "confidence_alignment": 5,
+          "operational_safety": 1,
+          "tone_quality": 5,
+          "structure_quality": 4
+        },
+        "passed": false,
+        "hard_fail_conditions": [
+          "unsupported_capacity"
+        ]
+      }
+    }
+  ]
+}
