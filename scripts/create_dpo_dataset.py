@@ -45,6 +45,7 @@ def build_prompt(task: Task) -> str:
         f"{instruction}\n"
         "<|im_end|>\n"
         "<|im_start|>assistant\n"
+        "Subject: "
     )
 
 
@@ -136,8 +137,6 @@ def build_task_instruction(task: Task) -> str:
             "Yabi",
             "Research Partner, Tenacious Intelligence Corporation",
             "gettenacious.com",
-            "",
-            "Email:",
         ]
     )
     return "\n".join(line.rstrip() for line in lines if line is not None).strip()
@@ -281,6 +280,14 @@ def output_to_text(output: Any) -> str:
     return str(output or "").strip()
 
 
+def strip_subject_prefix(text: str) -> str:
+    """Remove the literal Subject: prefix because the prompt already provides it."""
+    text = text.strip()
+    if text.lower().startswith("subject:"):
+        return text.split(":", 1)[1].lstrip()
+    return text
+
+
 def get_mapping(mapping: Mapping[str, Any], key: str) -> Mapping[str, Any]:
     """Safely fetch a nested mapping."""
     value = mapping.get(key) if isinstance(mapping, Mapping) else {}
@@ -324,8 +331,9 @@ def main() -> None:
     strategy_counts: Counter[str] = Counter()
 
     for index, task in enumerate(tasks):
-        chosen = choose_output(task)
+        chosen = strip_subject_prefix(choose_output(task))
         rejected, strategy = make_rejected(task, chosen, index)
+        rejected = strip_subject_prefix(rejected)
         rows.append(
             {
                 "prompt": build_prompt(task),

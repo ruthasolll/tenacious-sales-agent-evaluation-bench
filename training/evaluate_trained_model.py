@@ -103,6 +103,7 @@ def build_prompt(task: Mapping[str, Any]) -> str:
         f"{instruction}\n"
         "<|im_end|>\n"
         "<|im_start|>assistant\n"
+        "Subject: "
     )
 
 
@@ -193,8 +194,6 @@ def build_task_instruction(task: Mapping[str, Any]) -> str:
             "Yabi",
             "Research Partner, Tenacious Intelligence Corporation",
             "gettenacious.com",
-            "",
-            "Email:",
         ]
     )
     return "\n".join(line.rstrip() for line in lines).strip()
@@ -283,7 +282,7 @@ def generate_outputs(
                 eos_token_id=tokenizer.eos_token_id,
             )
         new_tokens = generated[0][inputs["input_ids"].shape[-1] :]
-        output = tokenizer.decode(new_tokens, skip_special_tokens=True).strip()
+        output = ensure_subject_prefix(tokenizer.decode(new_tokens, skip_special_tokens=True))
         outputs.append(output)
         if index == 1:
             print(f"\nFirst generated output from {label}:\n{output}\n")
@@ -318,6 +317,16 @@ def output_to_candidate_output(text: str) -> Dict[str, str]:
         subject = lines[0].split(":", 1)[1].strip()
         body = "\n".join(lines[1:]).strip()
     return {"subject": subject, "body": body}
+
+
+def ensure_subject_prefix(text: str) -> str:
+    """Reattach the prompt-side Subject: cue so scoring sees a normal email."""
+    text = text.strip()
+    if not text:
+        return "Subject:"
+    if text.lower().startswith("subject:"):
+        return text
+    return f"Subject: {text}"
 
 
 def summarize_scores(label: str, results: Sequence[Mapping[str, Any]]) -> Dict[str, Any]:
