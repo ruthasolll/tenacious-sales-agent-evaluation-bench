@@ -25,13 +25,22 @@ os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 
 import torch
 from datasets import Dataset, load_dataset
-from transformers import TrainerCallback
+
+# Import Unsloth before TRL so any available compatibility patches are applied first.
+from unsloth import FastLanguageModel, is_bfloat16_supported
+
+try:
+    from unsloth import PatchDPOTrainer
+except ImportError:
+    PatchDPOTrainer = None
 
 
+if PatchDPOTrainer is not None:
+    PatchDPOTrainer()
+else:
+    print("PatchDPOTrainer is unavailable in this Unsloth version; using native TRL DPOTrainer.")
 
-# Unsloth must patch TRL before DPOTrainer is constructed.
-PatchDPOTrainer()
-
+from transformers import TrainerCallback  # noqa: E402
 from trl import DPOConfig, DPOTrainer  # noqa: E402
 
 
