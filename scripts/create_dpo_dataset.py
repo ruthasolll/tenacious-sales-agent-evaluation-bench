@@ -16,6 +16,11 @@ from typing import Any, Dict, List, Mapping, Sequence, Tuple
 
 DEFAULT_INPUT = Path("data/splits/train.json")
 DEFAULT_OUTPUT = Path("training_data/dpo_dataset.jsonl")
+SYSTEM_MESSAGE = (
+    "You are Yabi, a concise Tenacious sales research partner. Write grounded B2B outreach emails. "
+    "Never invent signals, funding, pricing, availability, or capacity. Do not use hype, spam phrases, "
+    "or the word bench in prospect-facing copy."
+)
 
 
 Task = Mapping[str, Any]
@@ -30,7 +35,21 @@ def load_tasks(path: Path) -> List[Task]:
 
 
 def build_prompt(task: Task) -> str:
-    """Combine input fields into a readable prompt string."""
+    """Combine input fields into a Qwen chat-template prompt string."""
+    instruction = build_task_instruction(task)
+    return (
+        "<|im_start|>system\n"
+        f"{SYSTEM_MESSAGE}\n"
+        "<|im_end|>\n"
+        "<|im_start|>user\n"
+        f"{instruction}\n"
+        "<|im_end|>\n"
+        "<|im_start|>assistant\n"
+    )
+
+
+def build_task_instruction(task: Task) -> str:
+    """Combine input fields into a readable user instruction."""
     task_input = get_mapping(task, "input")
     prospect = get_mapping(task_input, "prospect")
     signal_brief = get_mapping(task_input, "signal_brief")
@@ -102,6 +121,23 @@ def build_prompt(task: Task) -> str:
             f"Prior thread: {task_input.get('prior_thread', '')}",
             f"Channel: {task_input.get('channel', '')}",
             f"Goal: {task_input.get('outreach_goal', '')}",
+            "",
+            "Return only the email. Keep it under 120 words. Include exactly one subject line.",
+            "Use this structure:",
+            "Subject: <short subject>",
+            "",
+            "Hi <contact>,",
+            "",
+            "<2 short grounded paragraphs>",
+            "",
+            "<one clear 15-minute CTA>",
+            "",
+            "Best,",
+            "Yabi",
+            "Research Partner, Tenacious Intelligence Corporation",
+            "gettenacious.com",
+            "",
+            "Email:",
         ]
     )
     return "\n".join(line.rstrip() for line in lines if line is not None).strip()

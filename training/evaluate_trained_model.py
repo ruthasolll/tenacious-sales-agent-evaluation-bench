@@ -39,6 +39,11 @@ DEFAULT_TEST_PATH = ROOT / "data" / "splits" / "test.json"
 DEFAULT_FALLBACK_TEST_PATH = ROOT / "data" / "splits" / "held_out.json"
 DEFAULT_RESULTS_PATH = ROOT / "outputs" / "evaluation_comparison.json"
 MAX_SEQ_LENGTH = 1024
+SYSTEM_MESSAGE = (
+    "You are Yabi, a concise Tenacious sales research partner. Write grounded B2B outreach emails. "
+    "Never invent signals, funding, pricing, availability, or capacity. Do not use hype, spam phrases, "
+    "or the word bench in prospect-facing copy."
+)
 
 
 def parse_args() -> argparse.Namespace:
@@ -88,7 +93,21 @@ def load_tasks(path: Path) -> List[Mapping[str, Any]]:
 
 
 def build_prompt(task: Mapping[str, Any]) -> str:
-    """Use the same prompt shape as the DPO dataset builder."""
+    """Use the same Qwen chat-template prompt shape as the DPO dataset builder."""
+    instruction = build_task_instruction(task)
+    return (
+        "<|im_start|>system\n"
+        f"{SYSTEM_MESSAGE}\n"
+        "<|im_end|>\n"
+        "<|im_start|>user\n"
+        f"{instruction}\n"
+        "<|im_end|>\n"
+        "<|im_start|>assistant\n"
+    )
+
+
+def build_task_instruction(task: Mapping[str, Any]) -> str:
+    """Build the human-readable user instruction."""
     task_input = get_mapping(task, "input")
     prospect = get_mapping(task_input, "prospect")
     signal_brief = get_mapping(task_input, "signal_brief")
@@ -160,7 +179,21 @@ def build_prompt(task: Mapping[str, Any]) -> str:
             f"Channel: {task_input.get('channel', '')}",
             f"Goal: {task_input.get('outreach_goal', '')}",
             "",
-            "Return only the email. Keep it under 120 words. Include a subject line.",
+            "Return only the email. Keep it under 120 words. Include exactly one subject line.",
+            "Use this structure:",
+            "Subject: <short subject>",
+            "",
+            "Hi <contact>,",
+            "",
+            "<2 short grounded paragraphs>",
+            "",
+            "<one clear 15-minute CTA>",
+            "",
+            "Best,",
+            "Yabi",
+            "Research Partner, Tenacious Intelligence Corporation",
+            "gettenacious.com",
+            "",
             "Email:",
         ]
     )
@@ -244,6 +277,8 @@ def generate_outputs(
                 **inputs,
                 max_new_tokens=max_new_tokens,
                 do_sample=False,
+                repetition_penalty=1.15,
+                no_repeat_ngram_size=6,
                 pad_token_id=tokenizer.pad_token_id,
                 eos_token_id=tokenizer.eos_token_id,
             )
