@@ -53,17 +53,43 @@ python scoring_evaluator.py --tasks examples/example_tasks.json --candidate-fiel
 ## Regenerate The Dataset
 
 ```bash
-python generation_scripts/generate_benchmark.py --seed 11011
+python generation_scripts/generate_benchmark.py --seed 11011 --judge-tier dev
 python scripts/check_contamination.py --splits-dir data/splits
 ```
 
 Regeneration rewrites the benchmark partitions, examples, route logs, judge-filter log, contamination report, evidence graph, and Path B preference pairs.
+
+For final reportable filtering, use the reserved eval-tier route:
+
+```bash
+python generation_scripts/generate_benchmark.py --seed 11011 --judge-tier eval
+```
+
+Judge model IDs are configured in `generation_scripts/judge_routing_config.json`. Each run writes `generation_scripts/judge_filter_log.json` with per-task pass/fail status, scores, thresholds, and reasons.
 
 Train the local Path B critic baseline:
 
 ```bash
 python training/train_path_b_critic.py
 ```
+
+Train the DPO LoRA adapter used for the Colab Path-B experiment:
+
+```bash
+python scripts/create_dpo_dataset.py
+python training/train_dpo.py
+```
+
+The DPO script prints and saves one visible config: pinned backbone revision, LoRA-only adapter settings, epochs, batch size, gradient accumulation, warmup, scheduler, beta, and learning rate.
+
+Run the ablation/statistics report after model comparison:
+
+```bash
+python training/evaluate_trained_model.py --tasks data/splits/held_out.json --limit 0
+python ablations/run_ablation_analysis.py
+```
+
+The ablation artifact reports Delta A with paired bootstrap 95% CI and paired sign-flip p value, the same-backbone prompt-only baseline for Delta B, and per-task token/cost/latency fields.
 
 ## Directory Guide
 
@@ -74,11 +100,34 @@ python training/train_path_b_critic.py
 - `scoring_evaluator.py`: deterministic scoring evaluator with calibration comments
 - `tenacious_bench_v0.1/`: train/dev/held-out task partitions
 - `generation_scripts/generate_benchmark.py`: routed generation and judge-filter pipeline
+- `generation_scripts/judge_routing_config.json`: explicit dev-tier and eval-tier judge model IDs
 - `prompts/judge/`: standalone judge prompts
 - `synthesis_memos/`: analytical reading memos
 - `training_data/`: Path B preference pairs
 - `training/`: local critic trainer, weights, and training log
+- `ablations/run_ablation_analysis.py`: paired statistics and cost-Pareto artifact builder
 - `contamination_check.json`: n-gram, similarity, and time-shift contamination report
+
+## Public Artifact References
+
+Current repository: <https://github.com/ruthasolll/tenacious-sales-agent-evaluation-bench>
+
+Planned public release targets to fill after upload:
+
+| Artifact | URL / status |
+|---|---|
+| Hugging Face dataset | [ruthasolll/tenacious-bench-v0.1](https://huggingface.co/datasets/ruthasolll/tenacious-bench-v0.1) |
+| Hugging Face model / LoRA adapter | [ruthasolll/tenacious-qwen2.5-1.5b-dpo-lora](https://huggingface.co/ruthasolll/tenacious-qwen2.5-1.5b-dpo-lora) |
+| Technical blog post | [Evaluating Tenacious-Bench: Synthetic Data and DPO on Substack](https://ruthasolll.substack.com/p/evaluating-tenacious-bench) |
+| Community engagement | [Issue #42 on Allen AI's open-instruct repo: Evaluation Gap for Sales Scenarios](https://github.com/allenai/open-instruct/issues/42) |
+
+## License And Credits
+
+This dataset and its documentation are released under the [CC-BY-4.0 License](LICENSE). Code is provided for coursework reproducibility under the MIT License (or open use). 
+
+Credit: 
+- Ruth Asoll, Tenacious-Bench coursework artifacts, Week 10 trace-derived failure taxonomy.
+- The public papers cited in `methodology.md` and `methodology_rationale.md` including *Best Practices and Lessons Learned on Synthetic Data* (Liu et al., COLM 2024), *Datasheets for Datasets* (Gebru et al., 2021), *Data Cards* (Pushkarna et al., FAccT 2022), *A Survey on LLM-as-a-Judge* (Gu et al., 2024-2025), and *Preference Leakage* (Li et al., 2025).
 
 ## What Is Next
 
