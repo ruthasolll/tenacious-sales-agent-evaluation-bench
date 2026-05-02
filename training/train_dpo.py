@@ -11,10 +11,6 @@ Each JSONL row must contain:
 
 This script is configured for Google Colab T4 GPUs with 16GB VRAM.
 """
-import unsloth
-from unsloth import FastLanguageModel, PatchDPOTrainer, is_bfloat16_supported
-from transformers import TrainingArguments
-from __future__ import annotations
 
 import argparse
 import json
