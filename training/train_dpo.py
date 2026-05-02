@@ -30,7 +30,7 @@ os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 import torch
 from datasets import Dataset, load_dataset
 from transformers import TrainerCallback
-from unsloth import FastLanguageModel, PatchDPOTrainer, is_bfloat16_supported
+
 
 
 # Unsloth must patch TRL before DPOTrainer is constructed.
