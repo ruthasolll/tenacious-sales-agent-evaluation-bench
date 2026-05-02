@@ -7,8 +7,6 @@ The script checks that the LoRA adapter in outputs/ is actually loaded, then
 generates and scores base-model and fine-tuned outputs side by side.
 """
 
-from __future__ import annotations
-
 import argparse
 import gc
 import json
@@ -23,6 +21,7 @@ os.environ.setdefault("PYTORCH_CUDA_ALLOC_CONF", "expandable_segments:True")
 os.environ.setdefault("TOKENIZERS_PARALLELISM", "false")
 
 import torch
+import unsloth
 from peft import PeftModel
 from unsloth import FastLanguageModel
 
@@ -49,8 +48,8 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--adapter-dir", type=Path, default=DEFAULT_ADAPTER_DIR)
     parser.add_argument("--tasks", type=Path, default=DEFAULT_TEST_PATH)
     parser.add_argument("--output", type=Path, default=DEFAULT_RESULTS_PATH)
-    parser.add_argument("--limit", type=int, default=0, help="Optional max number of tasks. 0 means all tasks.")
-    parser.add_argument("--max-new-tokens", type=int, default=180)
+    parser.add_argument("--limit", type=int, default=3, help="Max tasks to evaluate. Use 0 for all tasks.")
+    parser.add_argument("--max-new-tokens", type=int, default=96)
     parser.add_argument("--max-seq-length", type=int, default=MAX_SEQ_LENGTH)
     parser.add_argument("--side-by-side", type=int, default=3)
     return parser.parse_args()
@@ -161,6 +160,7 @@ def build_prompt(task: Mapping[str, Any]) -> str:
             f"Channel: {task_input.get('channel', '')}",
             f"Goal: {task_input.get('outreach_goal', '')}",
             "",
+            "Return only the email. Keep it under 120 words. Include a subject line.",
             "Email:",
         ]
     )
@@ -235,7 +235,9 @@ def generate_outputs(
     """Generate one output per prompt."""
     outputs = []
     model.eval()
+    total = len(prompts)
     for index, prompt in enumerate(prompts, start=1):
+        print(f"Generating {label} output {index}/{total}...")
         inputs = tokenizer(prompt, return_tensors="pt", truncation=True, max_length=max_seq_length).to(model.device)
         with torch.inference_mode():
             generated = model.generate(
@@ -346,9 +348,16 @@ def main() -> None:
         raise RuntimeError("CUDA is required. In Colab, set runtime type to T4 GPU.")
 
     tasks = load_tasks(args.tasks)
-    if args.limit > 0:
-        tasks = tasks[: args.limit]
-    print(f"Evaluation dataset size: {len(tasks)}")
+    loaded_count = len(tasks)
+    if args.limit == 0:
+        selected_tasks = tasks
+    else:
+        selected_tasks = tasks[: args.limit]
+    tasks = selected_tasks
+    print(f"Evaluation dataset size loaded: {loaded_count}")
+    print(f"Evaluation dataset size selected: {len(tasks)}")
+    if args.limit != 0 and loaded_count > len(tasks):
+        print("Using a short debug subset by default. Pass --limit 0 to evaluate all tasks.")
     if not tasks:
         raise ValueError("No evaluation tasks loaded; cannot compare models.")
 
